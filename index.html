@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<title>Lückenheft – C-Tests Kapitel 1</title>
+<title>Lückenheft – Mut zur Lücke</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -64,7 +64,13 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset
 .masthead h1{font-family:var(--hand);font-weight:700;color:var(--ink);font-size:clamp(54px,15vw,80px);line-height:.85;margin:0;letter-spacing:-.5px}
 .masthead svg{display:block;width:min(270px,70vw);height:16px;margin:2px 0 0 4px;color:var(--red)}
 .masthead p{margin:14px 0 0;color:var(--muted);font-size:16.5px;max-width:34em}
-.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0 6px}
+.books{display:grid;grid-template-columns:1fr 1fr;margin:24px 0 0;border-bottom:1.5px solid var(--line)}
+.book{background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-1.5px;padding:8px 4px 10px;font-family:var(--hand);font-size:30px;line-height:1;color:var(--muted);text-align:center}
+.book small{display:block;font-family:var(--serif);font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.book[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--red)}
+.passage .part{display:block;font-style:italic;font-size:17.5px;line-height:1.35;color:var(--muted);margin:26px 0 4px}
+.passage .part:first-child{margin-top:0}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 6px}
 .mode{display:flex;flex-direction:column;justify-content:flex-start;border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 14px;text-align:left}
 .mode strong{display:block;font-size:17px;font-weight:600}
 .mode span{display:block;font-size:14px;color:var(--muted);line-height:1.35;margin-top:2px}
@@ -106,7 +112,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset
 .gap input{
   font-family:var(--hand);font-size:25px;font-weight:500;line-height:1.05;color:var(--ink);
   background:transparent;border:0;border-bottom:2px solid var(--ink);border-radius:0;
-  padding:0 1px;margin:0 0 0 -1px;width:2.8em;outline:none;-webkit-appearance:none;appearance:none;
+  padding:0 1px;margin:0 0 0 -1px;width:2.8em;max-width:42vw;outline:none;-webkit-appearance:none;appearance:none;
   vertical-align:baseline;caret-color:var(--red);
 }
 .gap input:focus{background:var(--ink-soft);border-radius:5px 5px 0 0}
@@ -135,7 +141,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset
 .badge{grid-column:1/-1;justify-self:start;font-family:var(--hand);font-size:24px;color:var(--green);margin:-4px 0 0}
 .legend{font-size:14.5px;color:var(--muted);margin:22px 0 12px;line-height:1.5}
 .legend .fix{font-size:20px}
-.r{white-space:nowrap}
+.r{white-space:normal}
+#resPassage{overflow-wrap:anywhere}
+.passage{overflow-x:clip}
 .r .u{font-family:var(--hand);font-size:25px;color:var(--ink)}
 .r.ok .u::after,.r.hint .u::after{content:"\2713";font-family:var(--serif);font-size:13px;color:var(--green);margin-left:1px;vertical-align:super}
 .r.hint .u::after{content:"\2713\00BD"}
@@ -180,11 +188,15 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset
     <header class="masthead">
       <h1>Lückenheft</h1>
       <svg viewBox="0 0 270 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 10 C 60 4, 120 13, 180 7 S 250 6, 267 9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
-      <p>20 C-Tests aus Kapitel 1, je 50 Lücken. Ergänze jedes Wort, gib ab und lass dich vom Rotstift korrigieren.</p>
+      <p id="intro"></p>
     </header>
+    <div class="books" role="tablist" aria-label="Buch">
+      <button class="book" role="tab" id="bookB1" data-book="b1"><small>Mut zur Lücke</small>Band 1</button>
+      <button class="book" role="tab" id="bookB2" data-book="b2"><small>Mut zur Lücke</small>Band 2</button>
+    </div>
     <div class="modes" role="group" aria-label="Modus">
       <button class="mode" id="modeU" aria-pressed="true"><strong>Übung</strong><span>Ohne Zeitlimit, mit Tipps. Fortschritt wird gespeichert.</span></button>
-      <button class="mode" id="modeP" aria-pressed="false"><strong>Prüfung</strong><span>5 Minuten pro Text, keine Tipps.</span></button>
+      <button class="mode" id="modeP" aria-pressed="false"><strong>Prüfung</strong><span id="examInfo"></span></button>
     </div>
     <ul class="list" id="list"></ul>
     <div class="foot"><span id="totals"></span><button class="link" id="resetAll">Alles zurücksetzen</button></div>
@@ -283,11 +295,71 @@ raw:`Der Begriff d[er] Nachhal[tigkeit] ist i[n] Zeiten d[es] Klimawandels u[nd]
 {id:20, short:'Atomausstieg nach Fukushima', title:'Ausstieg aus der Atomenergie nach Fukushima',
 raw:`Na[ch] einem Erdbe[ben] in d[er] japanischen Reg[ion] Tōhoku u[nd] dem dar[aus] entstandenen Tsunami ereig[nete] sich a[m] 11. Mä[rz] 2011 d[er] größte GAU (grö[ßter] anzunehmender Unf[all]) eines Atomkraftwer[kes|ks] seit d[er] Reaktorkatastrophe v[on] Tschernobyl i[m] Jahr 1986. D[as] Atomkraftwerk Fukus[hima] I havarierte u[nd] verlor du[rch] Kernschmelzen u[nd] Beschädigungen v[ier] seiner se[chs] Reaktorblöcke. D[as] katastrophale Austr[eten] von Radioaktiv[ität] in d[ie] Umwelt i[st] in sei[nen] Folgen f[ür] den pazifi[schen] Raum na[ch] wie v[or] nicht abzuse[hen]. Auch i[m] weit entfe[rnten] Deutschland zo[gen] die Ereig[nisse] große Kre[ise]. Nach vielzä[hligen] Demonstrationen ge[gen] die Nutz[ung] von Kernener[gie] durch d[ie] neu ersta[rkte] Anti-Atomkraft-Bewegung gin[gen] zum Beis[piel] mehrere hoffnu[ngslos] veraltete Kernkraftwer[ke] in Deutschla[nd] vom Netz.`}
 ];
+// Band 2 keeps its original ids ("1"-"20") so saved grades stay attached.
+TEXTS.forEach(t => { t.num = t.id; t.id = String(t.id); t.book = 'b2'; t.seconds = 300; });
+const BAND1 = [
+{id:"b1-71", book:"b1", num:71, short:"Schlagzeilen", title:"Schlagzeilen", raw:"Schlagzei[len] sind d[ie] Überschriften, d[ie] in Zeitu[ngen] auf d[er] Titelseite ste[hen]. Die Schlagzei[le] wird im[mer] in größ[eren] Buchstaben gedr[uckt] als d[er] Rest d[es] Textes. D[er] Text ei[ner] Schlagzeile kompri[miert] die Informa[tionen] des folge[nden] Zeitungsartikels a[uf] wenige Wo[rte], damit m[an] auf d[en] ersten Bl[ick] das Th[ema] des Arti[kels] gut verst[ehen] kann."},
+{id:"b1-72", book:"b1", num:72, short:"Rauchverbot", title:"Rauchverbot", raw:"D[ie] Bundesländer d[er] Bundesrepublik ha[ben] sich 2007 a[uf] ein umfass[endes] Rauchverbot geei[nigt], das i[n] Gaststätten u[nd] anderen öffent[lichen] Gebäuden gi[lt]. Zwar wer[den] von d[en] Bundesländern se[it] der Einfüh[rung] dieses Verb[ots] in d[en] Jahren 2007 u[nd] 2008 immer no[ch] Ausnahmen z[u] dieser Re[gel] geprüft, do[ch] die Lu[ft] wird f[ür] Raucher i[n] Zukunft dün[ner] werden."},
+{id:"b1-73", book:"b1", num:73, short:"Butter", title:"Produktion von Butter", raw:"Die Herste[llung] von But[ter] war b[is] ins 19. Jahrhun[dert] reine Handarb[eit]. Der Ra[hm], der si[ch] auf d[er] gemolkenen Mil[ch] bildete, wu[rde] abgeschöpft u[nd] dann s[o] lange i[n] einem Butterfa[ss] gestampft, b[is] sich d[ie] Butter bild[ete]. Erst du[rch] die Industria[lisierung] wurde m[it] der Zentr[ifuge] eine schne[llere] und günst[igere] Gewinnung v[on] Butter mög[lich]."},
+{id:"b1-74", book:"b1", num:74, short:"Rundfunkgebühren", title:"Rundfunkgebühren", raw:"I[n] Deutschland gi[bt] es staat[liche] und priv[ate] Fernsehsender. Di[ese] Tatsache bel[ebt] die Medienlands[chaft], sorgt ab[er] auch f[ür] Zündstoff: Wäh[rend] die priv[aten] Fernsehsender si[ch] hauptsächlich üb[er] Werbung u[nd] die da[mit] verbundenen Einna[hmen] finanzieren, ste[hen] den staatl[ichen] Sendern z[ur] Finanzierung Gebü[hren] zur Verfü[gung], die v[on] jedem Rundfunkteiln[ehmer] über d[ie] Gebühreneinzugszentrale (GEZ) eingez[ogen] werden."},
+{id:"b1-75", book:"b1", num:75, short:"Nationale Wirtschaft", title:"Verbesserung der nationalen Wirtschaft", raw:"Seit d[em] Jahr 2007 i[st] nach eini[gen] Jahren d[er] Wirtschaftskrise i[n] der Bundesrepu[blik] Deutschland wie[der] ein leic[hter] Aufschwung i[n] der Wirts[chaft] zu verzei[chnen]. Die Nachfr[age] steigt, e[s] werden wie[der] mehr Arbeitsplä[tze] geschaffen u[nd] für d[ie] Zukunft i[st] ein Absi[nken] der Arbeitslosenzah[len] sehr wahrsch[einlich]. Experten hof[fen], dass die[ser] erfreuliche Tre[nd] weiter anda[uert]."},
+{id:"b1-76", book:"b1", num:76, short:"Silvester", title:"Silvester", raw:"D[er] Jahreswechsel i[n] Deutschland wi[rd] auch Silv[ester] genannt. A[n] diesem T[ag], dem 31. Deze[mber] eines Jah[res], wird u[m] Mitternacht d[as] neue Ja[hr] begrüßt. D[ie] Deutschen t[un] dies tradit[ionell] mit Feuerwerkskör[pern], die wen[ige] Tage v[or] Silvester i[n] Spezialgeschäften u[nd] Supermärkten erhäl[tlich] sind. N[ur] an Silv[ester] dürfen Privatpers[onen] in Deutschla[nd] ein Feuerwe[rk] zünden."},
+{id:"b1-77", book:"b1", num:77, short:"Fahreignungsregister", title:"Das deutsche Fahreignungsregister (Verkehrszentralregister)", raw:"Das Kraftfahrt-Bundesa[mt] führt m[it] dem Fahreignungsregi[ster] in Flensbu[rg] ein Verzei[chnis] aller i[n] Deutschland auffä[llig] gewordenen Verkehrsteiln[ehmer]. Für Vers[töße] gegen d[as] Straßenverkehrsgesetz wer[den] ab ei[ner] Bußgeldhöhe v[on] über vier[zig] Euro u[nd] je na[ch] Schwere d[es] Delikts Pun[kte] vergeben. Erre[icht] ein Verkehrsteiln[ehmer] einen Punktest[and] von 18 Punk[ten], so wi[rd] ihm d[ie] Fahrerlaubnis entzo[gen]."},
+{id:"b1-78", book:"b1", num:78, short:"Internetportale", title:"Internetportale", raw:"Im[mer] neue Internetport[ale] werden täg[lich] eingerichtet, i[n] denen Mens[chen] ihre Te[xte], Filme u[nd] andere For[men] der Präsen[tation] einem weltwei[ten] Publikum zugän[glich] machen kön[nen]. Wir kön[nen] zuschauen, w[ie] die Ti[ere] anderer Mens[chen] schlafen, ab[er] auch Beri[chte] über polit[ische] Ereignisse anse[hen]. Aber si[nd] solche Por[tale] wirklich sinn[voll] für d[ie] Information d[er] Menschen?"},
+{id:"b1-79", book:"b1", num:79, short:"Computerisierung", title:"Computerisierung", raw:"Durch d[ie] immer wei[ter] um si[ch] greifende Computer[isierung] unserer Gesell[schaft] hat si[ch] die A[rt], wie Mens[chen] kommunizieren, inzwi[schen] drastisch verän[dert]. Wo frü[her] Anrufe getä[tigt] wurden, u[m] Informationen m[it] Gesprächspartnern auszuta[uschen], werden he[ute] SMS, E-Ma[il] oder Inst[ant] Messenger verwe[ndet], um m[it] Mitmenschen i[n] Kontakt z[u] treten. Tägl[ich] werden ne[ue] Kommunikationskanäle entwi[ckelt]."},
+{id:"b1-80", book:"b1", num:80, short:"Alternative Medizin", title:"Alternative Medizin", raw:"In d[en] letzten Jah[ren] ist i[n] der Med[izin] ein Tre[nd] zu verzei[chnen], der w[eg] von d[er] Schulmedizin u[nd] hin z[u] alternativen Heilmeth[oden] führt. Vi[ele] Menschen si[nd] von traditi[oneller] Medizin u[nd] ihren Behandlungsar[ten] enttäuscht u[nd] suchen Heil[ung] durch Meth[oden] wie Akupunk[tur] oder du[rch] chinesische Med[izin]. Aber au[ch] Homöopathie wi[rd] immer belie[bter]."},
+{id:"b1-81", book:"b1", num:81, short:"Weihnachtspost", title:"Weihnachtspost", raw:"Weihnachten i[st] die Ze[it] des Jah[res], in d[er] Karten a[n] Verwandte, Freu[nde] und Beka[nnte] verschickt wer[den]. Man wün[scht] sich da[bei] meist e[in] fröhliches Weihnachtsfe[st] und ei[nen] guten St[art] ins näch[ste] Jahr. Seit[dem] das Intern[et] für vi[ele] Menschen ei[ne] größere Ro[lle] spielt, wer[den] Grußkarten ab[er] auch im[mer] häufiger p[er] E-Mail versc[hickt]."},
+{id:"b1-82", book:"b1", num:82, short:"Leben mit Behinderung", title:"Leben mit Behinderung", raw:"Mens[chen], die i[n] Deutschland m[it] einer Behind[erung] leben, se[hen] sich du[rch] bauliche Gegeben[heiten] und techn[ische] Probleme im[mer] wieder m[it] deutlichen Einschrä[nkungen] ihrer Bewegungsfrei[heit] konfrontiert. Se[it] einigen Jah[ren] jedoch arbe[itet] die Selbstbestimmt-leben-Bewe[gung] behinderter Mens[chen] aktiv m[it] der Bundesregie[rung] zusammen, u[m] diese Einschrä[nkungen] dauerhaft u[nd] für d[ie] Betroffenen zufri[eden] stellend z[u] beseitigen."},
+{id:"b1-83", book:"b1", num:83, short:"Beleuchtung und Natur", title:"Beleuchtung und Auswirkungen auf die Natur", raw:"Durch d[ie] zunehmende Beleuc[htung] unserer Umge[bung] bei Na[cht] ergeben si[ch] häufig Prob[leme] für d[ie] Umwelt. Nützl[iche] Insekten z[um] Beispiel, d[ie] sich frü[her] in d[er] gesamten Na[tur] verteilten, wer[den] von nächtl[icher] Straßenbeleuchtung s[o] sehr angez[ogen], dass s[ie] leichte Be[ute] für ih[re] natürlichen Fei[nde] werden. Di[es] führt z[u] einem Rückga[ng] der Artenbest[ände]."},
+{id:"b1-84", book:"b1", num:84, short:"Kopierverbot", title:"Kopierverbot", raw:"D[as] Kopieren u[nd] Brennen urheberrecht[lich] geschützter DV[Ds], CDs u[nd] anderer Datenträ[ger] mithilfe d[es] Computers i[st] seit eini[ger] Zeit i[n] Deutschland ab[er] auch i[n] den mei[sten] anderen Län[dern] der Er[de] verboten. Au[ch] das Herunterla[den] kopierter Dat[eien] aus d[em] Internet i[st] von die[sem] Verbot betr[offen]. Die Stra[fen] für sol[che] Handlungen si[nd] hart."},
+{id:"b1-85", book:"b1", num:85, short:"Fastfood", title:"Fastfood als gesellschaftliches Phänomen", raw:"Fastfood i[st] für vi[ele] Menschen i[n] der heut[igen] Zeit ei[ne] günstige u[nd] vor al[lem] schnelle Altern[ative] zum Koc[hen] zuhause. Du[rch] immer en[gere] Zeitfenster, zuneh[mende] Arbeitsbelastung u[nd] die allg[emein] wahrnehmbare Beschle[unigung] von Ablä[ufen] in uns[erer] Gesellschaft neh[men] sich im[mer] weniger Mens[chen] die Ze[it], langsam z[u] kochen o[der] kochen z[u] lassen."},
+{id:"b1-86", book:"b1", num:86, short:"Parkgebühren", title:"Parkgebühren", raw:"D[as] Parken v[on] Autos i[n] Innenstädten wi[rd] immer teu[rer]. Besonders d[ie] Stadtverwaltungen größ[erer] Städte ha[ben] die Pre[ise] für Parkplä[tze] und Parkhäu[ser] stark angeh[oben]. Dafür gi[bt] es meh[rere] Gründe. Einer[seits] ist di[es] ein Vers[uch], Autos a[us] den überla[steten] Innenstädten fernzu[halten]. Andererseits si[nd] hohe Parkgebü[hren] auch e[in] gutes Gesc[häft] für d[ie] Städte."},
+{id:"b1-87", book:"b1", num:87, short:"Altenpflege", title:"Altenpflege", raw:"Die Verso[rgung] von al[ten] Menschen i[n] Deutschland gesch[ieht] seit ein[igen] Jahrzehnten hauptsä[chlich] über d[ie] Nutzung v[on] Einrichtungen z[ur] Altenpflege. Na[ch] der Industria[lisierung] und d[en] beiden Weltkri[egen] ließ i[n] Deutschland d[er] familiäre Zusammenha[lt] immer me[hr] nach. Desw[egen] entscheiden si[ch] inzwischen n[ur] noch se[hr] wenige Fami[lien], Senioren i[m] direkten Familienverb[and] zu pfl[egen]."},
+{id:"b1-88", book:"b1", num:88, short:"Kinderarbeit", title:"Kinderarbeit", raw:"We[nn] Firmen a[us] den Industrienati[onen] ihre Wa[ren] in ärm[eren] Ländern d[er] Welt gün[stig] produzieren las[sen], sollten s[ie] Verantwortung f[ür] die Arbeitsbedin[gungen] der Mitarbe[iter] und d[ie] möglichen Auswir[kungen] der Produ[ktion] auf d[ie] Umwelt übern[ehmen]. Besonders ge[nau] sollten s[ie] dabei kontrol[lieren], dass b[ei] der Ferti[gung] ihrer Wa[ren] keine Kinderarb[eit] zum Eins[atz] kommt."},
+{id:"b1-89", book:"b1", num:89, short:"Arbeiten am Computer", title:"Arbeiten am Computer", raw:"Ein Computerarbeitspl[atz] sollte ga[nz] bestimmte Vorausse[tzungen] erfüllen, u[m] ein gesu[ndes] Arbeiten oh[ne] Beschwerden mög[lich] zu mac[hen]. Wichtig i[st], dass d[ie] Person i[n] der richt[igen] Höhe si[tzt] und d[ie] Augen d[en] korrekten Abst[and] zum Computerbildsch[irm] haben. Si[nd] diese wicht[igen] Bedingungen nic[ht] erfüllt, s[o] können sta[rke] Rückenschmerzen u[nd] Augenprobleme d[ie] Folge se[in]."},
+{id:"b1-90", book:"b1", num:90, short:"Urlaubsgewohnheiten", title:"Urlaubsgewohnheiten", raw:"Die Urlaubsgewohn[heiten] der Deuts[chen] werden im[mer] wieder z[um] Thema wissensch[aftlicher] Untersuchungen. D[ie] Frage, wa[rum] die Deuts[chen] in besti[mmte] Länder rei[sen] und o[b] sie die[se] Reisen i[m] Familienverband od[er] gemeinsam m[it] Freunden untern[ehmen], ist ni[cht] nur f[ür] die Tourismusbran[che] interessant. W[ie] erholen si[ch] die Deuts[chen] und w[as] tun sie i[m] Urlaub?"},
+{id:"b1-91", book:"b1", num:91, short:"Kochen", title:"Kochen", raw:"He[ute] muss m[an] meist n[ur] den He[rd] anschalten, u[m] zu koc[hen]. In früh[eren] Zeiten jed[och] (und manc[hmal] auch he[ute] noch) muss[ten] vor d[em] Kochen zunä[chst] Feuerholz geha[ckt], die Feuerste[lle] oder d[er] Herd vorbe[reitet] und d[as] Feuer entf[acht] werden. Er[st] wenn d[as] Feuer ei[ne] bestimmte Stä[rke] erreicht ha[tte], konnte geko[cht] werden."},
+{id:"b1-92", book:"b1", num:92, short:"Frühling", title:"Frühling", raw:"D[er] Frühling i[st] in d[er] Regel im[mer] die Jahresze[it], in d[er] das Wet[ter] am wechselh[aftesten] ist. Sch[nee] wechselt si[ch] mit Ha[gel], Regen, Sonnensch[ein] und manc[hmal] sogar au[ch] Gewittern a[b]. An ei[nem] Tag begi[nnt] die Na[tur] zu blü[hen]. Die ers[ten] Knospen wach[sen] an d[en] Bäumen. Do[ch] dann fol[gt] ein erne[uter] Wintereinbruch."},
+{id:"b1-93", book:"b1", num:93, short:"Erinnerungen an die Kindheit", title:"Erinnerungen an die Kindheit", raw:"Immer we[nn] ich a[ls] Kind Fer[ien] hatte, fuh[ren] meine Elt[ern] mit m[ir] und mei[nen] zwei Geschw[istern] in Url[aub]. Meistens fuh[ren] wir da[bei] nicht se[hr] weit: Manc[hmal] fuhren w[ir] an d[ie] Nordsee, and[ere] Male a[n] die Osts[ee] und ein[mal] sogar na[ch] Südfrankreich. D[ie] Sommerferien wa[ren] immer d[ie] absoluten Höhepun[kte] des Jah[res]."},
+{id:"b1-94", book:"b1", num:94, short:"Krankenversicherung", title:"Krankenversicherung", raw:"We[nn] man i[n] Deutschland kr[ank] wird u[nd] einen Ar[zt] aufsuchen mu[ss], ist ei[ne] Krankenversicherung d[ie] Grundvoraussetzung f[ür] einen Arztter[min]. In Deutschla[nd] gibt e[s] ein Gesundheitssys[tem] mit zw[ei] Versicherungstypen: Angest[ellte] werden normale[rweise] von ih[rem] Arbeitgeber b[ei] einer s[o] genannten „gesetz[lichen] Krankenkasse“ versi[chert]. Selbstständige od[er] Beamte versi[chern] sich b[ei] einer priv[aten] Krankenversicherung."},
+{id:"b1-95", book:"b1", num:95, short:"Herzerkrankungen", title:"Herzerkrankungen", raw:"Konsequente Ernäh[rung], ein ausgew[ogenes] Maß a[n] Bewegung u[nd] die Reduz[ierung] von Str[ess]: Das si[nd] die wichti[gsten] Mittel, m[it] denen m[an] Herzerkrankungen vorbe[ugen] kann. E[in] großer Prozentsa[tz] der Bevöl[kerung] ist i[n] Gefahr, ei[nen] Herzinfarkt z[u] erleiden. D[ie] Ursachen da[für] sind Str[ess], falsche Ernä[hrung] und Bewegungsman[gel]. Dies fü[hrt] zur Versto[pfung] der Herzarte[rien]."},
+{id:"b1-96", book:"b1", num:96, short:"Fußgängerüberweg", title:"Fußgängerüberweg", raw:"D[er] Zebrastreifen i[st] eine Möglic[hkeit], wie Fußgä[nger] im Straßenver[kehr] ohne ei[ne] Ampel d[ie] Straße überq[ueren] können. Da[bei] gilt d[ie] Regel, da[ss] ein Fußgän[ger], der a[n] einen Zebrastre[ifen] herangeht, v[on] sich näher[nden] Autos beac[htet] werden mu[ss]. Das he[ißt], das Au[to] muss stop[pen], um d[en] Fußgänger ü[ber] den Zebrastre[ifen] gehen z[u] lassen."},
+{id:"b1-97", book:"b1", num:97, short:"Bankkonto", title:"Bankkonto", raw:"Wenn m[an] in Deutschla[nd] lebt u[nd] arbeitet, i[st] ein Giroko[nto] eine wich[tige] Voraussetzung f[ür] die Auszah[lung] des Geh[alts]. Bei ka[um] einer Beschäf[tigung] wird d[er] Lohn a[m] Ende d[er] Woche od[er] des Mon[ats] als Barge[ld] ausgezahlt. D[er] Arbeitnehmer bra[ucht] deswegen e[in] Konto, a[uf] das d[as] Entgelt f[ür] seine Arb[eit] überwiesen wer[den] kann."},
+{id:"b1-98", book:"b1", num:98, short:"Herbst", title:"Herbst", raw:"Der Her[bst] in Deutschla[nd] ist ei[ne] wundervolle Ze[it]: Die Temper[aturen] sinken lang[sam], das La[ub] an d[en] Bäumen verf[ärbt] sich u[nd] wird bu[nt]. Der We[in] in d[en] Weinbergen wi[rd] reif u[nd] wird v[on] den Win[zern] geerntet. D[ie] Menschen bere[iten] sich lang[sam] auf d[en] Winter v[or] und begi[nnen] allmählich m[it] den Weihnachtsvorbere[itungen]."},
+{id:"b1-99", book:"b1", num:99, short:"Prüfungsangst", title:"Verhinderung von Prüfungsangst", raw:"D[ie] Vermeidung v[on] Nervosität u[nd] Prüfungsangst i[st] eine d[er] wichtigsten Verhaltensreg[eln] zum Best[ehen] von Klaus[uren] und Prüfu[ngen]. Viele Mens[chen] machen ber[eits] in d[er] Vorbereitungszeit d[en] Fehler, e[in] großes Angstpoten[zial|tial] aufzubauen u[nd] dadurch ei[ne] entspannte Vorber[eitung] fast unmög[lich] zu mac[hen]. Aber w[ie] kann m[an] Angst verme[iden]? Gibt e[s] ein Rez[ept] gegen Nervo[sität]?"},
+{id:"b1-100", book:"b1", num:100, short:"Polizeibericht", title:"Polizeibericht", raw:"Gestern Nachmit[tag] wurde v[on] einer Polizeistr[eife] auf d[er] Rheinstraße e[in] roter B[MW] gestoppt, d[er] auf d[em] Weg i[n] die Innensta[dt] war. D[en] Polizisten w[ar] der Wa[gen] aufgefallen, we[il] er d[ie] gestattete Höchstgeschwin[digkeit] von 70 km/[h] um 30 Kilome[ter] pro Stu[nde] überschritten ha[tte]. Bei d[er] späteren Durchs[uchung] des Wag[ens] wurde vi[el] Rauschgift gefu[nden]."},
+{id:"b1-101", book:"b1", num:101, short:"Kindergeld", title:"Kindergeld in Deutschland", raw:"Mens[chen], die i[n] Deutschland Kin[der] haben, erha[lten] vom St[aat] eine Zahl[ung], die a[ls] „Kindergeld“ bezei[chnet] wird. D[ie] Zahlung i[st] sowohl v[on] der Anza[hl] der Kin[der] in d[er] Familie a[ls] auch v[om] Alter d[er] Kinder abhä[ngig]. Das Kinderge[ld] wird b[ei] der Familienka[sse] beantragt u[nd] mindestens b[is] zum 18. Lebensja[hr] des Kin[des] gezahlt."},
+{id:"b1-102", book:"b1", num:102, short:"Unfallbericht", title:"Unfallbericht", raw:"Gestern Mor[gen] um se[chs] Uhr fu[hr] ein bla[uer] Mercedes-Benz a[uf] der Hauptstr[aße] in Rich[tung] Innenstadt. A[ls] der Fah[rer] einen Mom[ent] unaufmerksam w[ar], weil e[r] nur se[hr] wenig gesch[lafen] hatte, k[am] er v[on] der Fahrba[hn] ab u[nd] fuhr i[n] einen Za[un], der si[ch] direkt a[n] der Str[aße] vor eini[gen] Wohnhäusern bef[and]."},
+{id:"b1-103", book:"b1", num:103, short:"Bankraub", title:"Bericht über einen Bankraub", raw:"Gestern verü[bten] vier unbek[annte] Männer ei[nen] Banküberfall a[uf] die Fili[ale] der Sparka[sse] in d[er] Bahnhofstraße. Ge[gen] 12 Uhr betr[aten] die Verbr[echer] mit Pist[olen] bewaffnet d[ie] Bank. Ih[re] Gesichter verste[ckten] sie hin[ter] Masken, sod[ass] sie unerk[annt] blieben. S[ie] bedrohten d[ie] verängstigten Angest[ellten] der Fili[ale] und erbeu[teten] nach Schätz[ungen] ungefähr 148.000 E[uro]."},
+{id:"b1-104", book:"b1", num:104, short:"Supermarktüberfall", title:"Bericht über einen Supermarktüberfall", raw:"In d[en] frühen Morgenstu[nden] wurde he[ute] der Superma[rkt] „Bergkauf“ v[on] drei bewaff[neten] Verbrechern überfa[llen]. Die Män[ner] drangen unbem[erkt] in d[as] Gebäude e[in], als e[in] gepanzerter Geldtransp[orter] gerade d[as] Wechselgeld f[ür] das Tagesgesc[häft] anlieferte. M[it] vorgehaltener Wa[ffe] zwangen d[ie] Räuber d[ie] Angestellten d[es] Sicherheitsunternehmens da[zu], das Ge[ld] aus d[em] Transporter sof[ort] auszuhändigen."},
+{id:"b1-105", book:"b1", num:105, short:"Berufsträume", title:"Berufsträume bei Kindern", raw:"Viele Ki[nder] äußern sc[hon] in frü[her] Jugend ei[nen] Berufswunsch. Mei[st] sind di[ese] Wünsche gepr[ägt] durch Ber[ufe], die d[ie] Kinder a[us] ihrer Fam[ilie] oder ih[rem] sozialen Umfe[ld] bereits ken[nen], manchmal ab[er] auch du[rch] eine Neig[ung], die d[as] Kind sp[ürt]. Die häufi[gsten] Berufswünsche v[on] Kindern si[nd] Berufe w[ie] Tierarzt, Feuerwehrm[ann] oder Pi[lot]."},
+{id:"b1-106", book:"b1", num:106, short:"Computerdaten", title:"Sicherung von Computerdaten", raw:"Wenn d[er] Computer e[in] wichtiger Bestandte[il] der tägli[chen] Arbeit i[st], sollte i[n] regelmäßigen Abstä[nden] eine Sicherungsko[pie] der a[uf] der Festpla[tte] enthaltenen Dat[eien] gemacht wer[den], um b[ei] einem Festplattenfeh[ler] oder i[m] Falle ei[nes] Computerabsturzes d[ie] Daten sch[nell] wiederherstellen z[u] können. Anson[sten] kann e[in] kapu[tter] Computer sch[nell] zum Verl[ust] hoher Geldsum[men] führen."},
+{id:"b1-107", book:"b1", num:107, short:"Dialekte", title:"Dialekte in Deutschland", raw:"I[n] Deutschland gi[bt] es untersch[iedliche] Dialekte. D[er] wohl bekann[teste] Dialekt, d[en] viele Mens[chen] mit Deutschla[nd] verbinden, i[st] Bayrisch. Die[ser] Dialekt wi[rd] in Bay[ern], im äuße[rsten] Süden d[er] Bundesrepublik gespr[ochen]. Anders a[ls] bei Akze[nten], bei de[nen] es pri[mär] um Ausspra[che] geht, gi[bt] es b[ei] Dialekten Unters[chiede] in Wortbild[ung] und au[ch] Grammatik."},
+{id:"b1-108", book:"b1", num:108, short:"Fahrrad und Gesundheit", title:"Das Fahrrad als Mittel zur Verbesserung der Gesundheit", raw:"Fahrr[ad] fahren wi[rd] von Mediz[inern] und Physiotherap[euten] als ide[ales] Mittel z[ur] Stärkung v[on] Herz u[nd] Lungenfunktion empf[ohlen]. Auch Mens[chen], die sc[hon] älter od[er] durch e[in] zu ho[hes] Gewicht ni[cht] gut bewe[glich] sind, kön[nen] mit d[em] Fahrrad ih[re] körperliche Fitn[ess] schnell stei[gern] und verbe[ssern] so au[ch] ihr Wohlbefi[nden] und i[hr] Immunsystem."},
+{id:"b1-109", book:"b1", num:109, short:"Kommunikation", title:"Kommunikation", raw:"Die Kommun[ikation] zwischen Arbeitskoll[egen] ist sc[hon] immer ei[nes] der zentr[alen] Themen d[er] Arbeitswelt gew[esen]. Mit d[er] Einführung ne[uer] elektronischer Med[ien] wird Kommun[ikation] aber no[ch] wichtiger. Mens[chen] müssen ler[nen], ihre kommuni[kativen] Fähigkeiten ni[cht] mehr n[ur] mündlich z[u] nutzen, son[dern] sie au[ch] in geschr[iebener] Form umzus[etzen]. Viele t[un] sich jed[och] schwer da[mit]."},
+{id:"b1-110", book:"b1", num:110, short:"Nachwirkungen eines Unfalls", title:"Nachwirkungen eines Unfalls", raw:"Überle[bende] von Unfä[llen] und Katast[rophen] haben häu[fig] Probleme b[ei] der Verar[beitung] ihrer traumat[ischen] Erlebnisse. D[ie] Betroffenen lei[den] unter posttraum[atischem] Stress, Schlafl[osigkeit], schlimmen Albträu[men] und Panikanfä[llen], die i[n] direktem Zusammenha[ng] mit d[en] erlebten Situat[ionen] stehen. Di[ese] Menschen brau[chen] unbedingt Hi[lfe] von Expe[rten] und d[as] Verständnis je[ner] Menschen, m[it] denen s[ie] leben."},
+{id:"b1-111", book:"b1", num:111, short:"Konjunktiv II", title:"Konjunktiv II", raw:"D[er] Konjunktiv II i[st] eines d[er] vielseitigsten gramma[tischen] Konstrukte d[er] deutschen Spr[ache]. Keine and[ere] Kombination v[on] Worten lä[sst] sich s[o] unterschiedlich verwe[nden] wie d[er] Konjunktiv II. D[as] Konstrukt eig[net] sich, u[m] die Höflic[hkeit] einer Situa[tion] zu verdeu[tlichen] oder u[m] ihre Irrea[lität] zu unterst[reichen]. Auch Wün[sche] oder Bit[ten] werden du[rch] den Konju[nktiv] II ausgedrückt."},
+{id:"b1-112", book:"b1", num:112, short:"Architektur", title:"Architektur", raw:"Die Konstru[ktionen] der zeitgenöss[ischen] Architektur si[nd] für vi[ele] Menschen d[ie] perfekte Verbi[ndung] moderner Philos[ophie] mit d[en] physikalischen Möglic[hkeiten] des 21. Jahrhund[erts]. Je grö[ßer] und ausgef[allener] ein Geb[äude] ist, de[sto] mehr wi[rd] es w[ie] ein Kunstwe[rk] von d[er] Öffentlichkeit disku[tiert]. Viele Mens[chen] denken ab[er] auch, da[ss] sehr gr[oße] Gebäude ni[cht] notwendig si[nd]."},
+{id:"b1-113", book:"b1", num:113, short:"Wasser und der Körper", title:"Wasser und der Körper", raw:"Neu[este|e] wissenschaftliche Erkenn[tnisse] bestätigen, d[ass] es f[ür] den mensch[lichen] Körper überlebenswic[htig] ist, täg[lich] genügend Flüssi[gkeit] zu erha[lten]. Werden d[em] Körper ni[cht] mindestens zw[ei] Liter Was[ser] pro T[ag] zugeführt, s[o] ist z[um] Beispiel d[as] Gehirn, un[ser] wichtigstes Or[gan], nicht me[hr] zu optim[alen] Leistungen fä[hig]. Es vertro[cknet] im wahr[sten] Sinne d[es] Wortes."},
+{id:"b1-114", book:"b1", num:114, short:"Verkehrskollaps", title:"Verkehrskollaps", raw:"Der Verk[ehr] auf Deutschla[nds] Straßen wi[rd] immer dic[hter], die St[aus] länger u[nd] nicht zul[etzt] leidet d[ie] Luft, d[ie] wir täg[lich] atmen, un[ter] dem Ausst[oß] von Kohlendio[xid], Schwefel u[nd] anderen Gif[ten]. In Deutschla[nd] wird se[it] etwa fünfz[ehn] Jahren ak[tiv] die Luftversch[mutzung] bekämpft. And[ere] Länder d[er] Erde boykot[tieren] jedoch o[ft] die Umweltschutzbemüh[ungen]."},
+{id:"b1-115", book:"b1", num:115, short:"Rente", title:"Rente", raw:"Wenn Mens[chen] während ih[res] Erwerbslebens rentenversicherungspflic[htig] beschäftigt wa[ren], erhalten s[ie] nach Abla[uf] der Regelarbeitsze[it], die mome[ntan] noch b[ei] 67 Jahren li[egt], eine Re[nte] vom St[aat]. Die Re[nte], die al[te] Menschen erha[lten], wird ü[ber] die Beit[räge] der Mens[chen] finanziert, d[ie] momentan erwerb[stätig] sind. Di[ese] Methode ne[nnt] man i[n] Deutschland au[ch] den „Generationenver[trag]“."},
+{id:"b1-116", book:"b1", num:116, short:"Wasserkonsum", title:"Wasserkonsum", raw:"In Deutschla[nd] wird, w[ie] in je[dem] anderen La[nd] der We[lt] auch, se[hr] viel Was[ser] getrunken. D[ie] Deutschen lie[ben] ihr Was[ser] jedoch meis[tens] mit Kohlensä[ure] versetzt. Die[ses] Wasser w[ird] dann „Spru[del]“ oder „Mineralwa[sser] mit Kohlensä[ure]“ genannt. Be[im] Öffnen ei[ner] Flasche Spru[del] entweicht d[ie] überflüssige Kohlensä[ure], der Re[st] bleibt i[m] Wasser zu[rück]."},
+{id:"b1-117", book:"b1", num:117, short:"Kohlendioxid", title:"Reduzierung von Kohlendioxid", raw:"Pol[itik] und Med[ien] fordern inzwi[schen] die Mens[chen] immer wie[der] auf, Ene[rgie] zu spa[ren], um d[ie] Menge v[on] Kohlendioxid i[n] der Atmos[phäre] der Er[de] zu verri[ngern]. Kohlendioxid i[st] einer d[er] Verursacher d[er] weltweiten Klimaveränd[erungen], mit de[ren] Auswirkungen w[ir] jeden T[ag] leben müs[sen]. Schon d[as] Ausschalten d[er] Stand-by-Taste a[m] Fernseher ka[nn] helfen."},
+{id:"b1-118", book:"b1", num:118, short:"Rückgrat", title:"Rückgrat", raw:"D[as] Verbindungsglied zwis[chen] Gehirn u[nd] Körper i[st] beim Mens[chen] die Wirbelsä[ule]. Über d[ie] Nervenbahnen, d[ie] durch d[ie] Wirbelkanäle d[er] Wirbelsäule verla[ufen], werden Körperte[ile] wie Ar[me] und Be[ine] aber au[ch] Organe w[ie] Herz, Lu[nge] und Verdauungsapp[arat] mit Inform[ationen] aus d[em] Gehirn vers[orgt]. Bei Verlet[zungen] der Wirbelsä[ule] ist d[er] ganze Kör[per] betroffen."}
+];
+BAND1.forEach(t => { t.seconds = 375; });
+const BOOKS = {
+  b1: {name: 'Mut zur Lücke 1', tab: 'Band 1', intro: '48 C-Tests aus Kapitel 6 (Texte 71–118), je etwa 25 Lücken. Ergänze jedes Wort, gib ab und lass dich vom Rotstift korrigieren.',
+       examInfo: 'Wie im Buch: 4 Texte, 100 Lücken, 25 Minuten. Keine Tipps.'},
+  b2: {name: 'Mut zur Lücke 2', tab: 'Band 2', intro: '20 C-Tests aus Kapitel 1, je 50 Lücken. Ergänze jedes Wort, gib ab und lass dich vom Rotstift korrigieren.',
+       examInfo: '5 Minuten pro Text, keine Tipps.'}
+};
+
 (function(){
 "use strict";
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const EXAM_SECONDS = 300;
+
 const KEY = 'lueckenheft:v1';
 const reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -301,10 +373,21 @@ function parse(raw){
   if (last < raw.length) out.push({type:'txt', v: raw.slice(last)});
   return out;
 }
-TEXTS.forEach(t => { t.tokens = parse(t.raw); t.gaps = t.tokens.filter(x => x.type === 'gap'); });
+TEXTS.concat(BAND1).forEach(t => { t.tokens = parse(t.raw); t.gaps = t.tokens.filter(x => x.type === 'gap'); });
+// Band 1 exams: four consecutive texts in one 25-minute test, as the book prescribes.
+const SETS = [];
+for (let k = 0; k < BAND1.length; k += 4) {
+  const parts = BAND1.slice(k, k + 4), nr = k / 4 + 1;
+  const tokens = [];
+  parts.forEach(t => { tokens.push({type:'head', v:`(${t.num}) ${t.title}`}); tokens.push(...t.tokens); });
+  SETS.push({id:'b1-p' + nr, book:'b1', set:true, num:'P' + nr, short:`Prüfung ${nr}`, title:`Prüfung ${nr}: Texte ${parts[0].num}–${parts[parts.length-1].num}`,
+    sub: parts.map(t => t.short).join(' · '), parts, tokens, gaps: tokens.filter(x => x.type === 'gap'), seconds: 1500});
+}
+const ALL = {}; TEXTS.concat(BAND1, SETS).forEach(t => { ALL[t.id] = t; });
+function currentList(){ return store.book === 'b1' ? (store.mode === 'pruefung' ? SETS : BAND1) : TEXTS; }
 
 function loadStore(){ try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; } }
-const blank = () => ({mode:'uebung', best:{}, drafts:{}, resetAt:0});
+const blank = () => ({mode:'uebung', book:'b2', best:{}, drafts:{}, resetAt:0});
 let store = Object.assign(blank(), loadStore());
 let cloud = {doc:null, ok:false, state:'pending'}, cloudT = null;
 
@@ -313,6 +396,7 @@ function mergeStores(a, b){
   const out = blank();
   out.resetAt = Math.max(a.resetAt || 0, b.resetAt || 0);
   out.mode = b.mode || a.mode || 'uebung';
+  out.book = b.book || a.book || 'b2';
   [a, b].forEach(src => {
     Object.entries(src.best || {}).forEach(([id, v]) => {
       if (!v || (v.date || 0) < out.resetAt) return;
@@ -384,7 +468,7 @@ function readBackup(code){
   return o;
 }
 
-const norm = s => s.trim().replace(/\s+/g,'').toLocaleLowerCase('de');
+const norm = s => s.trim().replace(/\s+/g,'').toLocaleLowerCase('de').replace(/ß/g,'ss');
 function isCorrect(g, v){
   const n = norm(v); if (!n) return false;
   return g.ans.some(a => n === norm(a) || n === norm(g.pre + a));
@@ -427,26 +511,33 @@ function show(id){
 function renderHome(){
   $('#modeU').setAttribute('aria-pressed', store.mode === 'uebung');
   $('#modeP').setAttribute('aria-pressed', store.mode === 'pruefung');
-  $('#list').innerHTML = TEXTS.map(t => {
-    const b = store.best[t.id], d = store.drafts[t.id];
+  const book = BOOKS[store.book] ? store.book : 'b2', list = currentList();
+  ['b1','b2'].forEach(k => $('#book' + k.toUpperCase()).setAttribute('aria-selected', k === book));
+  $('#intro').textContent = BOOKS[book].intro;
+  $('#examInfo').textContent = BOOKS[book].examInfo;
+  $('#list').innerHTML = list.map(t => {
+    const b = store.best[t.id], d = store.drafts[t.id], n = t.gaps.length;
     const parts = [];
+    if (t.set) parts.push(`${n} Lücken, 25 Minuten. ${t.sub}`);
     if (b) parts.push(`Bestes Ergebnis: ${b.pct} %`);
-    if (d) parts.push(`Übung angefangen: ${d.answers.filter(x => x && x.trim()).length} von 50`);
-    if (!parts.length) parts.push('50 Lücken');
+    if (d && !t.set) parts.push(`Übung angefangen: ${d.answers.filter(x => x && x.trim()).length} von ${n}`);
+    if (!parts.length) parts.push(`${n} Lücken`);
     const stamp = b ? `<span class="stamp" aria-label="Beste Note ${b.note}">${b.note}</span>` : `<span class="stamp new">neu</span>`;
-    return `<li><button data-id="${t.id}"><span class="num">${t.id}</span><span class="ttl">${esc(t.title)}<span class="sub">${parts.join('. ')}</span></span>${stamp}</button></li>`;
+    return `<li><button data-id="${t.id}"><span class="num">${t.num}</span><span class="ttl">${esc(t.title)}<span class="sub">${esc(parts.join('. '))}</span></span>${stamp}</button></li>`;
   }).join('');
-  const done = Object.keys(store.best).length;
+  const doneList = list.filter(t => store.best[t.id]), done = doneList.length;
+  const what = list === SETS ? 'Prüfungen' : 'Texten';
   if (done) {
-    const avg = Math.round(Object.values(store.best).reduce((a,b) => a + b.pct, 0) / done);
-    $('#totals').textContent = `${done} von ${TEXTS.length} Texten bearbeitet, im Schnitt ${avg} %`;
-  } else $('#totals').textContent = 'Noch kein Text bearbeitet';
-  $('#resetAll').hidden = !done && !Object.keys(store.drafts).length;
+    const avg = Math.round(doneList.reduce((a, t) => a + store.best[t.id].pct, 0) / done);
+    $('#totals').textContent = `${done} von ${list.length} ${what} bearbeitet, im Schnitt ${avg} %`;
+  } else $('#totals').textContent = list === SETS ? 'Noch keine Prüfung gemacht' : 'Noch kein Text bearbeitet';
+  $('#resetAll').hidden = !Object.keys(store.best).length && !Object.keys(store.drafts).length;
   renderSaveState();
 }
 $('#modeU').addEventListener('click', () => { store.mode = 'uebung'; saveStore(); renderHome(); });
 $('#modeP').addEventListener('click', () => { store.mode = 'pruefung'; saveStore(); renderHome(); });
-$('#list').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) start(+b.dataset.id); });
+$('#list').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) start(b.dataset.id); });
+document.querySelectorAll('.book').forEach(btn => btn.addEventListener('click', () => { store.book = btn.dataset.book; saveStore(); renderHome(); }));
 $('#resetAll').addEventListener('click', () => modal('Alle Noten und gespeicherten Übungen löschen?', 'Löschen', () => { store.best = {}; store.drafts = {}; store.resetAt = Date.now(); saveStore(); renderHome(); toast('Alles zurückgesetzt.'); }));
 
 function codeModal(title, value, okLabel, onOk){
@@ -472,7 +563,7 @@ $('#exportBtn').addEventListener('click', () => {
 $('#importBtn').addEventListener('click', () => {
   codeModal('Füge deinen Sicherungscode ein. Er wird mit dem aktuellen Stand zusammengeführt, die besseren Noten bleiben.', '', 'Laden', (ta, close) => {
     let o; try { o = readBackup(ta.value); } catch(e){ toast('Dieser Code ist ungültig.'); return; }
-    store = mergeStores(store, Object.assign(blank(), o, {mode: store.mode}));
+    store = mergeStores(store, Object.assign(blank(), o, {mode: store.mode, book: store.book}));
     saveStore(); close(); renderHome(); toast('Fortschritt wiederhergestellt.');
   });
 });
@@ -481,8 +572,9 @@ $('#importBtn').addEventListener('click', () => {
 let cur = null, lastInput = null, draftT;
 
 function start(id, retry){
-  const t = TEXTS.find(x => x.id === id), n = t.gaps.length;
-  cur = { t, mode: store.mode, retry: !!retry,
+  const t = ALL[id]; if (!t) { renderHome(); show('home'); return; }
+  const n = t.gaps.length;
+  cur = { t, mode: t.set ? 'pruefung' : (t.book === 'b1' ? store.mode : store.mode), retry: !!retry,
     answers: Array(n).fill(''), hints: Array(n).fill(false),
     locked: Array(n).fill(false), lockedStatus: Array(n).fill(null),
     start: Date.now(), before: 0, timer: null, done: false };
@@ -502,15 +594,16 @@ const isExam = () => cur.mode === 'pruefung' && !cur.retry;
 
 function renderPlay(){
   const t = cur.t;
-  $('#barTitle').textContent = `(${t.id}) ${t.short}`;
+  $('#barTitle').textContent = t.set ? t.short : `(${t.num}) ${t.short}`;
   $('#playTitle').textContent = t.title;
   $('#playMeta').textContent = cur.retry ? 'Verbesserung: Die richtigen Lücken sind schon ausgefüllt.'
-    : isExam() ? 'Prüfung: 5 Minuten. Bei 0:00 wird automatisch abgegeben.'
+    : isExam() ? `Prüfung: ${Math.round(t.seconds / 60)} Minuten für ${t.gaps.length} Lücken. Bei 0:00 wird automatisch abgegeben.`
     : 'Übung: Ergänze den fehlenden Teil jedes Wortes. Enter springt zur nächsten Lücke.';
   $('#tipBtn').hidden = isExam();
   const p = $('#passage'); p.textContent = ''; let gi = 0;
   t.tokens.forEach(tok => {
     if (tok.type === 'txt') { p.appendChild(document.createTextNode(tok.v)); return; }
+    if (tok.type === 'head') { const h = document.createElement('span'); h.className = 'part'; h.textContent = tok.v; p.appendChild(h); return; }
     const i = gi++;
     const span = document.createElement('span'); span.className = 'gap';
     const pre = document.createElement('span'); pre.textContent = tok.pre;
@@ -620,7 +713,7 @@ function stopClock(){ if (cur && cur.timer) { clearInterval(cur.timer); cur.time
 function tick(){
   const c = $('#clock');
   if (isExam()) {
-    const rem = EXAM_SECONDS - elapsed();
+    const rem = (cur.t.seconds || 300) - elapsed();
     c.textContent = fmt(Math.ceil(Math.max(0, rem)));
     c.classList.toggle('low', rem <= 60);
     if (rem <= 0 && !cur.done) { stopClock(); if (document.activeElement) document.activeElement.blur(); toast('Die Zeit ist abgelaufen.'); buzz([60,40,60]); finish(); }
@@ -674,7 +767,7 @@ function shownAnswer(g, v){
 }
 function renderResult(){
   const t = cur.t, R = cur.result, n = t.gaps.length;
-  $('#resTitle').textContent = `(${t.id}) ${t.short}`;
+  $('#resTitle').textContent = t.set ? t.short : `(${t.num}) ${t.short}`;
   const wrong = R.status.filter(s => s === 'wrong' || s === 'empty').length;
   const label = cur.retry ? 'Verbesserung' : isExam() ? 'Prüfung' : 'Übung';
   $('#report').innerHTML = `
@@ -692,6 +785,7 @@ function renderResult(){
   const out = []; let gi = 0;
   t.tokens.forEach(tok => {
     if (tok.type === 'txt') { out.push(esc(tok.v)); return; }
+    if (tok.type === 'head') { out.push(`<span class="part">${esc(tok.v)}</span>`); return; }
     const i = gi++, s = R.status[i], sol = tok.ans[0], v = R.answers[i];
     if (s === 'ok' || s === 'hint') { const alt = tok.ans.find(a => norm(a) === norm(shownAnswer(tok, v || ''))) || sol; out.push(`<span class="r ${s}">${esc(tok.pre)}<span class="u">${esc(alt)}</span></span>`); }
     else if (s === 'wrong') out.push(`<span class="r wrong">${esc(tok.pre)}<span class="bad">${esc(shownAnswer(tok, v))}</span><span class="fix">${esc(sol)}</span></span>`);
@@ -700,19 +794,19 @@ function renderResult(){
   $('#resPassage').innerHTML = out.join('');
   const miss = t.gaps.map((g, i) => ({g, i, s: R.status[i]})).filter(x => x.s === 'wrong' || x.s === 'empty');
   $('#mistakes').innerHTML = miss.length ? `<h3>${miss.length === 1 ? 'Ein Wort zum Merken' : miss.length + ' Wörter zum Merken'}</h3><ul>${miss.map(x =>
-    `<li><span class="right">${esc(x.g.pre + x.g.ans[0])}</span><span class="yours">${x.s === 'empty' ? 'leer gelassen' : 'du: <s>' + esc(x.g.pre + shownAnswer(x.g, R.answers[x.i])) + '</s>'}</span></li>`).join('')}</ul>` : '<h3>Alle 50 Lücken richtig. Stark!</h3>';
-  const next = TEXTS.find(x => x.id === t.id + 1);
+    `<li><span class="right">${esc(x.g.pre + x.g.ans[0])}</span><span class="yours">${x.s === 'empty' ? 'leer gelassen' : 'du: <s>' + esc(x.g.pre + shownAnswer(x.g, R.answers[x.i])) + '</s>'}</span></li>`).join('')}</ul>` : `<h3>Alle ${n} Lücken richtig. Stark!</h3>`;
+  const sib = t.set ? SETS : t.book === 'b1' ? BAND1 : TEXTS, next = sib[sib.indexOf(t) + 1];
   $('#actions').innerHTML =
     (wrong ? `<button class="btn red" data-act="retry">Fehler verbessern (${wrong})</button>` : '') +
-    (next ? `<button class="btn primary" data-act="next">Weiter mit Text ${next.id}</button>` : '') +
-    `<button class="btn" data-act="again">Text neu beginnen</button>` +
+    (next ? `<button class="btn primary" data-act="next">Weiter mit ${next.set ? next.short : 'Text ' + next.num}</button>` : '') +
+    `<button class="btn" data-act="again">${t.set ? 'Prüfung' : 'Text'} neu beginnen</button>` +
     `<button class="btn" data-act="home">Zur Übersicht</button>`;
 }
 $('#actions').addEventListener('click', e => {
   const b = e.target.closest('[data-act]'); if (!b) return;
   const a = b.dataset.act, id = cur.t.id;
   if (a === 'retry') start(id, {status: cur.result.status, answers: cur.result.answers});
-  else if (a === 'next') start(id + 1);
+  else if (a === 'next') { const sib = cur.t.set ? SETS : cur.t.book === 'b1' ? BAND1 : TEXTS; const nx = sib[sib.indexOf(cur.t) + 1]; if (nx) start(nx.id); }
   else if (a === 'again') { delete store.drafts[id]; saveStore(); start(id); }
   else { renderHome(); show('home'); }
 });
