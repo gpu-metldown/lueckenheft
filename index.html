@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FBFCF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171D" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Lückenheft">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Lückenheft – C-Tests Kapitel 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBFCF8; --surface:#FFFFFF; --grid:rgba(52,98,160,.11);
+  --ink:#1E3A9E; --ink-soft:rgba(30,58,158,.09); --on-ink:#FFFFFF;
+  --text:#1C2230; --muted:#5E6878; --line:#D5DCE5;
+  --red:#C4122F; --red-soft:rgba(196,18,47,.08); --green:#1F7A4A; --margin:rgba(196,18,47,.38);
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --hand:"Caveat", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171D; --surface:#1B1F27; --grid:rgba(140,170,220,.07);
+    --ink:#93ACFF; --ink-soft:rgba(147,172,255,.12); --on-ink:#14171D;
+    --text:#E6E8EE; --muted:#9AA3B2; --line:#2B313C;
+    --red:#FF6B7B; --red-soft:rgba(255,107,123,.10); --green:#5FD293; --margin:rgba(255,107,123,.32);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171D; --surface:#1B1F27; --grid:rgba(140,170,220,.07);
+  --ink:#93ACFF; --ink-soft:rgba(147,172,255,.12); --on-ink:#14171D;
+  --text:#E6E8EE; --muted:#9AA3B2; --line:#2B313C;
+  --red:#FF6B7B; --red-soft:rgba(255,107,123,.10); --green:#5FD293; --margin:rgba(255,107,123,.32);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  margin:0;min-height:100%;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:22px 22px;
+  color:var(--text);font-family:var(--serif);font-size:18px;line-height:1.55;
+  -webkit-tap-highlight-color:transparent;
+}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+[hidden]{display:none !important}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px}
+
+/* Home */
+.masthead{padding:34px 0 6px}
+.masthead h1{font-family:var(--hand);font-weight:700;color:var(--ink);font-size:clamp(54px,15vw,80px);line-height:.85;margin:0;letter-spacing:-.5px}
+.masthead svg{display:block;width:min(270px,70vw);height:16px;margin:2px 0 0 4px;color:var(--red)}
+.masthead p{margin:14px 0 0;color:var(--muted);font-size:16.5px;max-width:34em}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0 6px}
+.mode{display:flex;flex-direction:column;justify-content:flex-start;border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 14px;text-align:left}
+.mode strong{display:block;font-size:17px;font-weight:600}
+.mode span{display:block;font-size:14px;color:var(--muted);line-height:1.35;margin-top:2px}
+.mode[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);background:var(--ink-soft)}
+.mode[aria-pressed="true"] strong{color:var(--ink)}
+.list{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--line)}
+.list button{width:100%;display:grid;grid-template-columns:40px 1fr 52px;align-items:center;gap:12px;padding:15px 2px;background:none;border:0;border-bottom:1px solid var(--line);text-align:left}
+.list button:active{background:var(--ink-soft)}
+.num{font-family:var(--hand);font-size:32px;line-height:1;color:var(--ink);text-align:center}
+.ttl{font-size:17px;line-height:1.3}
+.sub{display:block;font-size:14px;color:var(--muted);margin-top:3px}
+.stamp{font-family:var(--hand);font-weight:700;color:var(--red);font-size:28px;line-height:1;border:2px solid currentColor;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;transform:rotate(-9deg)}
+.stamp.new{color:var(--muted);border-style:dashed;border-width:1.5px;font-size:18px;font-weight:500;transform:none}
+.save{margin:0 0 40px;padding:12px 14px;border:1px dashed var(--line);border-radius:12px;background:var(--surface)}
+.save p{margin:0 0 4px;font-size:14.5px;line-height:1.4;color:var(--muted)}
+.save p[data-state="cloud"]::before{content:"\2713  ";color:var(--green);font-weight:600}
+.save p[data-state="device"]::before{content:"\2713  ";color:var(--green);font-weight:600}
+.save p[data-state="local"]::before{content:"!  ";color:var(--red);font-weight:700}
+.save-row{display:flex;gap:18px;flex-wrap:wrap}
+.modal textarea{width:100%;min-height:110px;font:14px/1.4 ui-monospace,Menlo,monospace;color:var(--text);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px;margin:0 0 14px;resize:vertical;word-break:break-all}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:22px 0 14px;font-size:15px;color:var(--muted)}
+.link{background:none;border:0;padding:6px 0;color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-size:15px}
+
+/* Play */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:10px;height:54px}
+.back{background:none;border:0;padding:8px 8px 8px 0;font-size:16px;color:var(--ink);display:flex;align-items:center;gap:2px;flex:none}
+.back svg{width:20px;height:20px}
+.bartitle{flex:1;min-width:0;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.clock{flex:none;font-variant-numeric:tabular-nums;font-size:16px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.clock.low{color:var(--red);border-color:var(--red);background:var(--red-soft)}
+.progress{height:3px;background:transparent}
+.progress i{display:block;height:100%;width:0;background:var(--ink);transition:width .25s ease}
+.sheet{padding:22px 0 170px}
+.sheet h2{font-weight:400;font-style:italic;font-size:21px;line-height:1.3;margin:0 0 4px}
+.meta{font-size:15px;color:var(--muted);margin:0 0 18px}
+.passage{font-size:19px;line-height:2.25;padding-left:16px;border-left:2px solid var(--margin);hyphens:manual;overflow-wrap:break-word}
+.gap{white-space:nowrap}
+.gap input{
+  font-family:var(--hand);font-size:25px;font-weight:500;line-height:1.05;color:var(--ink);
+  background:transparent;border:0;border-bottom:2px solid var(--ink);border-radius:0;
+  padding:0 1px;margin:0 0 0 -1px;width:2.8em;outline:none;-webkit-appearance:none;appearance:none;
+  vertical-align:baseline;caret-color:var(--red);
+}
+.gap input:focus{background:var(--ink-soft);border-radius:5px 5px 0 0}
+.gap input:disabled{color:var(--green);-webkit-text-fill-color:var(--green);border-bottom-color:var(--green);opacity:1}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--surface);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));will-change:transform}
+.dock-inner{max-width:680px;margin:0 auto;display:flex;gap:6px;align-items:center}
+.key{flex:1 1 0;min-width:34px;max-width:50px;height:46px;border-radius:10px;border:1px solid var(--line);background:var(--paper);font-size:20px;padding:0;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.key.tip{max-width:none;flex:0 0 auto;padding:0 12px;font-size:16px;color:var(--ink)}
+.key.pressed{background:var(--ink-soft);border-color:var(--ink)}
+.submit{flex:none;margin-left:auto;height:46px;padding:0 18px;border-radius:999px;border:0;background:var(--ink);color:var(--on-ink);font-weight:600;font-size:16px;touch-action:manipulation}
+
+/* Result */
+.report{display:grid;grid-template-columns:auto 1fr;gap:16px 20px;align-items:center;padding:26px 0 8px}
+.grade{position:relative;width:118px;height:118px;display:grid;place-items:center;color:var(--red)}
+.grade .n{font-family:var(--hand);font-weight:700;font-size:72px;line-height:1;transform:rotate(-6deg);margin-top:4px}
+.grade svg{position:absolute;inset:-6px;width:calc(100% + 12px);height:calc(100% + 12px);overflow:visible}
+.grade path{fill:none;stroke:var(--red);stroke-width:3.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .9s .15s cubic-bezier(.5,0,.3,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.comment{font-family:var(--hand);color:var(--red);font-size:32px;line-height:1.05;margin:0}
+.word{margin:4px 0 0;color:var(--muted);font-size:15.5px}
+.facts{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:6px}
+.facts div{padding:10px 4px;text-align:center;font-size:14px;color:var(--muted);line-height:1.3}
+.facts div+div{border-left:1px solid var(--line)}
+.facts b{display:block;font-size:21px;color:var(--text);font-weight:600;font-variant-numeric:tabular-nums}
+.badge{grid-column:1/-1;justify-self:start;font-family:var(--hand);font-size:24px;color:var(--green);margin:-4px 0 0}
+.legend{font-size:14.5px;color:var(--muted);margin:22px 0 12px;line-height:1.5}
+.legend .fix{font-size:20px}
+.r{white-space:nowrap}
+.r .u{font-family:var(--hand);font-size:25px;color:var(--ink)}
+.r.ok .u::after,.r.hint .u::after{content:"\2713";font-family:var(--serif);font-size:13px;color:var(--green);margin-left:1px;vertical-align:super}
+.r.hint .u::after{content:"\2713\00BD"}
+.r .bad{font-family:var(--hand);font-size:25px;color:var(--ink);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px}
+.fix{font-family:var(--hand);font-size:25px;font-weight:700;color:var(--red);margin-left:3px}
+.r.empty .fix{margin-left:0;border-bottom:2px dashed var(--red)}
+.mistakes{margin:30px 0 0}
+.mistakes h3{font-size:19px;font-weight:600;margin:0 0 6px}
+.mistakes ul{list-style:none;margin:0;padding:0}
+.mistakes li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:17px}
+.mistakes .right{font-weight:600}
+.mistakes .yours{font-size:14.5px;color:var(--muted);text-align:right}
+.mistakes .yours s{text-decoration-color:var(--red)}
+.actions{display:grid;gap:10px;margin:28px 0 46px}
+.btn{height:50px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);font-size:16.5px;font-weight:600;padding:0 18px}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
+.btn.red{border-color:var(--red);color:var(--red);background:var(--red-soft)}
+
+/* Modal + toast */
+.scrim{position:fixed;inset:0;z-index:30;background:rgba(10,14,22,.42);display:flex;align-items:flex-end;justify-content:center;padding:12px 12px calc(12px + env(safe-area-inset-bottom,0px))}
+.modal{width:100%;max-width:440px;background:var(--surface);border-radius:20px;padding:22px 20px 16px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.modal p{margin:0 0 18px;font-size:18px}
+.modal .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.toast{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 66px);transform:translate(-50%,-8px);opacity:0;z-index:40;background:var(--text);color:var(--paper);padding:10px 16px;border-radius:12px;font-size:15.5px;transition:opacity .2s,transform .2s;pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+
+@media (max-width:370px){
+  .passage{font-size:18px;padding-left:12px}
+  .modes{grid-template-columns:1fr}
+  .submit{padding:0 14px}
+}
+@media (prefers-reduced-motion: reduce){
+  .grade path{animation:none;stroke-dashoffset:0}
+  .progress i,.toast{transition:none}
+}
+</style>
+</head>
+<body>
+<section id="home">
+  <div class="wrap">
+    <header class="masthead">
+      <h1>Lückenheft</h1>
+      <svg viewBox="0 0 270 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 10 C 60 4, 120 13, 180 7 S 250 6, 267 9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <p>20 C-Tests aus Kapitel 1, je 50 Lücken. Ergänze jedes Wort, gib ab und lass dich vom Rotstift korrigieren.</p>
+    </header>
+    <div class="modes" role="group" aria-label="Modus">
+      <button class="mode" id="modeU" aria-pressed="true"><strong>Übung</strong><span>Ohne Zeitlimit, mit Tipps. Fortschritt wird gespeichert.</span></button>
+      <button class="mode" id="modeP" aria-pressed="false"><strong>Prüfung</strong><span>5 Minuten pro Text, keine Tipps.</span></button>
+    </div>
+    <ul class="list" id="list"></ul>
+    <div class="foot"><span id="totals"></span><button class="link" id="resetAll">Alles zurücksetzen</button></div>
+    <div class="save">
+      <p id="saveState" data-state="pending"></p>
+      <div class="save-row"><button class="link" id="exportBtn">Sicherungscode kopieren</button><button class="link" id="importBtn">Sicherungscode laden</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="play" hidden>
+  <div class="topbar">
+    <div class="wrap">
+      <button class="back" id="backBtn" aria-label="Zur Übersicht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Übersicht</button>
+      <div class="bartitle" id="barTitle"></div>
+      <div class="clock" id="clock" aria-live="off">0:00</div>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="progFill"></i></div>
+  </div>
+  <div class="wrap sheet">
+    <h2 id="playTitle"></h2>
+    <p class="meta" id="playMeta"></p>
+    <div class="passage" id="passage"></div>
+  </div>
+</section>
+
+<div class="dock" id="dock" hidden>
+  <div class="dock-inner">
+    <button class="key" data-ch="ä" aria-label="ä einfügen">ä</button>
+    <button class="key" data-ch="ö" aria-label="ö einfügen">ö</button>
+    <button class="key" data-ch="ü" aria-label="ü einfügen">ü</button>
+    <button class="key" data-ch="ß" aria-label="ß einfügen">ß</button>
+    <button class="key tip" id="tipBtn">Tipp</button>
+    <button class="submit" id="submitBtn">Abgeben</button>
+  </div>
+</div>
+
+<section id="result" hidden>
+  <div class="topbar">
+    <div class="wrap">
+      <button class="back" id="backBtn2" aria-label="Zur Übersicht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Übersicht</button>
+      <div class="bartitle" id="resTitle"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="report" id="report"></div>
+    <p class="legend">Richtig in Blau mit <span style="color:var(--green)">✓</span>. Falsche Antworten sind durchgestrichen, die Korrektur steht in <span class="fix">Rot</span> daneben. ½ bedeutet: mit Tipp gelöst, halber Punkt.</p>
+    <div class="passage" id="resPassage"></div>
+    <div class="mistakes" id="mistakes"></div>
+    <div class="actions" id="actions"></div>
+  </div>
+</section>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<canvas id="confetti" hidden></canvas>
+<script>
+const TEXTS = [
+{id:1, short:'Pantoffelhelden', title:'„Pantoffelhelden“ – Straßenschuhe in der Wohnung',
+raw:`In Deutschla[nd] ist e[s], anders a[ls] z. B. i[m] asiatischen Kulturkr[eis], keine überli[eferte] und v[or] allem eingeh[altene] Tradition, Sch[uhe] vor Betr[eten] einer Wohn[ung] oder ein[es] Hauses unaufgef[ordert] auszuziehen. Men[sch] und Fam[ilie] legen i[n] den mei[sten] Fällen na[ch] individuellen Vorli[eben] Regeln z[um] Gebrauch d[er] Straßen- od[er] Hausschuhe fe[st]. Daher gi[lt] es a[ls] ausgenommen höf[lich], sich v[or] Betreten ei[ner] Wohnung, i[n] der m[an] sich vorauss[ichtlich] länger aufha[lten] wird, na[ch] den Reg[eln] des Hau[ses] zu erkun[digen] und gegeben[enfalls] auch eig[ene] Hausschuhe mitzub[ringen]. Wahlweise ka[nn] man ei[ne] Wohnung natü[rlich] nach d[er] Erkundigung na[ch] den Gepfloge[nheiten] auf Soc[ken] betreten od[er] um Panto[ffeln] oder Soc[ken] für Gä[ste] bitten.`},
+{id:2, short:'Arbeiten im Sitzen', title:'Arbeiten im Sitzen – ein Risiko für den Arbeitgeber?',
+raw:`In Zeiten vorwi[egend] sitzender Tätigk[eiten] hat si[ch] das Krankheitsbi[ld] der Arbeitneh[mer] in Industrienati[onen] deutlich i[n] Richtung Bewegungsapp[arat] und Herz-Kreislauf-Sys[tem] verschoben. Au[ch] Deutschland ste[llt] hinsichtlich die[ses] Trends ke[ine] Ausnahme d[ar]. Die Tats[ache], dass d[er] menschliche Kör[per] von sei[ner] Anatomie h[er] nicht a[uf] längeres Sit[zen] ausgelegt i[st], verursacht insbes[ondere] im Ber[eich] des Rückgr[ats] und d[er] Extremitäten Prob[leme], die zuneh[mend] nicht n[ur] eine Gef[ahr] für d[en] Arbeitnehmer darst[ellen], sondern au[ch] als wirtscha[ftlicher] Faktor f[ür] den Arbeitge[ber] nicht me[hr] zu vernach[lässigen|läßigen] sind. Ne[ben] einem sportl[ichen] Ausgleich f[ür] sitzende Tätigk[eiten] sind da[her] Arbeitsmittel unerlä[sslich|ßlich], die ei[ne] rückenfreundliche Sitzposi[tion] fördern u[nd] außerdem d[ie] Handgelenke wäh[rend] des Schreibens a[m] Computer entlasten.`},
+{id:3, short:'Günter Grass', title:'Günter Grass',
+raw:`Im Ap[ril] 2015 verstarb d[er] bekannte deut[sche] Schriftsteller u[nd] Bildhauer Gün[ter] Grass. W[ie] sehr wen[ige] andere h[at] er d[ie] deutsche Literaturgesch[ichte] der Gegenw[art] entscheidend mitgest[altet]. Für se[in] Werk erh[ielt] der i[m] heutigen Pol[en] geborene Au[tor] unter and[erem] 1999 den Nobelpre[is] für Lite[ratur]. Auch we[nn] Grass i[n] seiner Per[son] und Lebensgesch[ichte] durchaus polari[sierte], mussten i[hm] Fans w[ie] Kritiker im[mer] sein außerorde[ntliches] Talent besche[inigen]. Er verfa[sste|ßte] sowohl Pro[sa] als au[ch] Lyrik. Z[u] seinen wo[hl] bekanntesten Wer[ken] zählt „D[ie] Blechtrommel“, i[n] der Gra[ss] die Lebensgesch[ichte] des kleinwüc[hsigen] Oskar Matzerath a[uf] surreale We[ise] erzählt. Ne[ben] seiner künstle[rischen] Tätigkeit w[ar] Günter Gra[ss] aber au[ch] für se[ine] politische Aktiv[ität] bekannt.`},
+{id:4, short:'Schlangen in Deutschland', title:'Schlangen in Deutschland',
+raw:`Schla[ngen] gibt e[s] viele i[n] Deutschland, aller[dings] nur da[nn], wenn m[an] dabei d[ie] schlangenartigen Ansamm[lungen] von Mens[chen] an Kas[sen] oder b[ei] Behörden me[int]. Deutschland ste[ht] Schlange u[nd] das me[ist] mit gro[ßer] Geduld. We[nn] mit Schla[nge] aber d[as] sich vorwi[egend] am Bo[den] bewegende Rep[til] gemeint i[st], ist Deutschla[nd] kein ausgespr[ochenes] „Schlangenland“. Un[ter] den einhei[mischen] schlangenartigen Repti[lien] ist a[n] erster Ste[lle] wohl d[ie] Kreuzotter z[u] nennen, d[ie] leicht gif[tig] ist u[nd] ihrer Selte[nheit] wegen sch[on] vor ein[iger] Zeit un[ter] Naturschutz gest[ellt] wurde. D[ie] im Zusammenha[ng] mit einheim[ischen] Schlangen ebenf[alls] häufig erwä[hnte] Blindschleiche hing[egen] ist tr[otz] ihrer Lä[nge] keine Schl[ange], sondern geh[ört] zu den Würmern.`},
+{id:5, short:'Freilichtmuseen', title:'Museum im Freien – Freilichtmuseen in Deutschland',
+raw:`Deutschla[nd] ist e[in] Land reichha[ltiger] handwerklicher Tradit[ionen]. Im Zeital[ter] fortschreitender Industria[lisierung] jedoch dro[ht] die Vielf[alt] des traditi[onellen] Brauchtums zuneh[mend] in Vergess[enheit] zu ger[aten]. Eine Möglic[hkeit], den Verl[ust] dieses Wiss[ens] um d[ie] Herkunft v[on] Traditionen u[nd] handwerklicher Fertigk[eiten] zu verhi[ndern], ist e[in] Netzwerk v[on] Freilichtmuseen, d[as] deutschlandweit u[nd] meist i[n] Form v[on] Museumsdörfern d[ie] Aufgabe übern[immt], Interessierten traditi[onelles] Handwerk u[nd] die Lebenswe[ise] der früh[eren] Bevölkerung plast[isch] nahezubringen u[nd] zu vermi[tteln]. Mit sei[ner] Fülle v[on] Informationen u[nd] Attraktionen i[st] ein Freilichtmus[eum] ein f[ür] alle Altersklas[sen] geeigneter Tagesausf[lug] mit pädago[gischem] Hintergedanken f[ür] die ga[nze] Familie, d[er] sich z[um] Beispiel i[n] den Schulfer[ien] anbietet.`},
+{id:6, short:'Essstörungen', title:'Essstörungen – wenn Essen zum Problem wird',
+raw:`Die Aufnahme v[on] Nahrungsmitteln i[st] eine f[ür] das Überle[ben] von Lebewe[sen] entscheidende Hand[lung]. Aufgrund ei[nes] seelischen Ungleichgewi[chts] gibt e[s] jedoch heutz[utage] viele Mens[chen], die ex[akt] im Ber[eich] dieser lebensnot[wendigen] Handlung ei[ne] Störung entwi[ckeln]: Sie neh[men] entweder me[hr] Lebensmittel z[u] sich, a[ls] ihr Kör[per] zum Überle[ben] benötigt u[nd] verstoffwechseln ka[nn], oder entsc[heiden] sich, n[ur] noch se[hr] wenig od[er] keine Nahr[ung] mehr z[u] konsumieren. Wi[rd] dieses Verh[alten] über läng[ere] Zeit hin[weg] aufrechterhalten, s[o] kann d[ie] sogenannte Essstö[rung] zu signifi[kanten] gesundheitlichen Schä[den] führen, d[ie] teils lebensbedr[ohlich] sein kön[nen]. Patienten m[it] einer Essstö[rung] ist e[s] häufig ni[cht] möglich, d[en] Teufelskreis ih[rer] Erkrankung oh[ne] Hilfe z[u] durchbrechen.`},
+{id:7, short:'Desertifikation', title:'Desertifikation – ein von Menschen verursachtes Problem',
+raw:`Durch maßgeblich vom Mens[chen] eingeleitete Veränd[erungen] der weltw[eiten] Nutzflächen f[ür] den Ackerb[au] und d[en] zusätzlich einset[zenden] Klimawandel ko[mmt] es i[n] bestimmten Berei[chen] der Er[de] zunehmend z[ur] Bildung v[on] Steppen u[nd] Wüsten, d[a] der fruch[tbare] Boden du[rch] Wind über flac[hen], meist gero[deten] Landstrichen abgetr[agen] wird od[er] seine Eign[ung] als Wachstumsflä[che] für Pfla[nzen] durch fehle[nde] Niederschläge u[nd] durch ei[ne] Erhöhung d[es] Salzgehaltes i[m] Boden einb[üßt|üsst]. Diesen Proz[ess|eß], dem me[ist] die sogen[annte] Versteppung vorange[ht], nennt m[an] im fachsprachlichen Gebr[auch] auch Desertif[ikation]. Der Proz[ess|eß] wird me[ist] durch d[ie] Rodung ei[nes] vorhandenen Waldbesta[ndes] ausgelöst, wod[urch] der Bo[den] die Fähig[keit] verliert, n[eu] wachsenden Pfla[nzen] ausreichend Sch[utz] vor d[en] Elementen z[u] bieten.`},
+{id:8, short:'Bewerbungsschreiben', title:'Fiktives Bewerbungsschreiben',
+raw:`Hie[rmit] bewerbe i[ch] mich u[m] die v[on] Ihnen i[m] Juli b[ei] der Arbeitsage[ntur] Fulda ausgesch[riebene] Stelle a[ls] Altenpflegekraft i[m] Alten- u[nd] Pflegeheim St. Katha[rinen]. Ich arb[eite] bereits s[eit] dem Absch[luss|luß] meiner Ausbi[ldung] zum Altenpfle[ger] vor vi[er] Jahren erfolg[reich] in mei[nem] Beruf u[nd] interessiere mi[ch] sehr da[für], auf la[nge] Sicht mei[nen] Verantwortungsbereich a[uf] die Leit[ung] einer Sta[tion] auszudehnen, w[ie] es i[n] Ihrer Stellenbeschr[eibung] angedeutet wu[rde]. Anbei fin[den] Sie mei[nen] tabellarischen Lebensla[uf] sowie me[in] Abschlusszeugnis d[er] Altenpflegeschule u[nd] ein Arbeitszeu[gnis] meines bishe[rigen] Arbeitgebers. I[ch] würde Ih[nen] und Ihr[em] Team se[hr] gerne me[ine] Fähigkeiten z[ur] Verfügung stel[len] und fre[ue] mich a[uf] ein persön[liches] Gespräch.`},
+{id:9, short:'Wünsche zum Jahreswechsel', title:'Wünsche zum Jahreswechsel in Deutschland',
+raw:`„Rutsch gut“ od[er] „Ich wün[sche] dir ei[nen] guten Rut[sch]“, das si[nd] Redewendungen, d[ie] man i[n] Deutschland häu[fig] zum Jahresen[de] hört. Vi[ele] Menschen, d[ie] Deutsch ni[cht] als Mutterspr[ache] sprechen, kom[men] aufgrund die[ser] Wendung i[ns] Grübeln. Ruts[chen], das bede[utet] doch, a[uf] eisigem od[er] nassem Bo[den] den Ha[lt] zu verl[ieren] und even[tuell] auch hinzufal[len], oder? W[as] ist de[nn] dann e[in] Rutsch? Ei[ne] mögliche Erklä[rung] ist, da[ss|ß] das Subst[antiv] „Rutsch“ z[u] Zeiten d[er] Gebrüder Gri[mm] und He[rrn] von Goe[the] eher a[ls] Synonym f[ür] „Reise“ od[er] auch „Fa[hrt]“ verwendet wu[rde]. Und ei[ne] gute Re[ise] ins ne[ue] Jahr, al[so] ein gu[ter] Übergang, i[st] schon se[hr] viel einfa[cher] verständlich.`},
+{id:10, short:'Schwarzfahren', title:'Schwarzfahren',
+raw:`Wenn m[an] ein öffent[liches] Transportmittel w[ie] Bus, Straßenba[hn] oder S-Ba[hn] benutzt, oh[ne] eine Fahrka[rte] gekauft z[u] haben, ne[nnt] man d[as] „schwarzfahren“. D[a] es im[mer] Menschen gi[bt], die öffent[liche] Verkehrsmittel oh[ne] Ticket nut[zen], gibt e[s] in al[len] Städten Bea[mte], die d[ie] Fahrkarten d[er] Fahrgäste kontro[llieren]. Diese Mitar[beiter] der Verkehrsbetr[iebe] nennt m[an] auch Kontro[lleure]. Wenn e[in] Fahrgast kei[nen] gültigen Fahrausw[eis] vorweisen ka[nn], muss e[r] oder s[ie] sofort ei[ne] Strafe v[on] 60 Eu[ro] bezahlen. Zusät[zlich] werden d[ie] Personalien aufgen[ommen]. Wird m[an] öfter a[ls] einmal oh[ne] Fahrkarte angetr[offen], so wi[rd] auch d[ie] Polizei infor[miert]. Viele Mens[chen] nennen i[hr] Schwarzfahren ge[rn] „Protest ge[gen] die Fahrkartenpre[ise]“.`},
+{id:11, short:'Einfacher, weniger, besser!', title:'Einfacher, weniger, besser! Ein gesellschaftlicher Trend',
+raw:`Moderne Industriegesells[chaften] sind getri[eben] von ei[nem] „Zuviel“, d[as] die unterschied[lichsten] Facetten h[at]: ein Überm[aß] an Inform[ationen], ein z[u] großes Warenang[ebot], zu vi[el] Nahrung, u[m] nur ein[ige] zu nen[nen]. Angesichts d[er] Tatsache, da[ss|ß] ein Großte[il] der Weltbevölk[erung] dieses Zuv[iel] eben ni[cht] erlebt, sch[eint] es zunä[chst] paradox, da[ss|ß] genau i[n] den Gesells[chaften] der ers[ten] Welt im[mer] mehr Mens[chen] nicht n[ur] dem Tre[nd] zu me[hr] Nachhaltigkeit fol[gen], sondern s[ich] auch d[ie] Vereinfachung ih[res] Lebens z[um] Ziel ges[etzt] haben. D[ie] Anhänger die[ses] Trends stre[ben] danach, si[ch] nach u[nd] nach d[essen] zu entle[digen], was s[ie] in ih[rer] Existenz a[ls] Ballast empfi[nden], nämlich d[es] Zuviels a[n] Besitz und Wohnfläche.`},
+{id:12, short:'Unfallbericht', title:'Fiktiver Unfallbericht',
+raw:`Vor zw[ei] Stunden ereig[nete] sich la[ut] Angaben d[er] Autobahnpolizei e[in] schwerer Verkehrsunf[all] südlich d[es] Wiesbadener Kreu[zes], an d[em] zwei Gefahrenguttransp[orter] mit lei[cht] entzündlicher Lad[ung] beteiligt wa[ren]. Wie e[in] Polizeisprecher bestä[tigte], sei, d[a] beide Las[ter] hierbei Lad[ung] verloren hät[ten], der ges[amte] Streckenabschnitt i[n] Richtung Frankfurter Flugha[fen] gesperrt wor[den]. Sobald d[ie] Lage v[or] Ort e[s] ermögliche, we[rde] die vi[el] befahrene Autoba[hn] A3 jed[och] wieder f[ür] den norm[alen] Verkehr freigeg[eben]. Aktuell h[at] sich i[n] Richtung Frankf[urter] Flughafen e[in] 15 km lan[ger] Stau gebil[det], der si[ch] voraussichtlich au[ch] noch üb[er] den gesa[mten] Nachmittag hin[weg] nicht aufl[ösen] wird. Ortsku[ndige] Autofahrer wer[den] gebeten, d[as] Wiesbadener Kre[uz] weiträumig z[u] umfahren.`},
+{id:13, short:'Steigende Nebenkosten', title:'Steigende Nebenkosten – ein Faktor für Mieter und Hausbesitzer',
+raw:`Die Energieresso[urcen], aus de[nen] die Mensc[hheit] auf die[ser] Erde schö[pfen] kann, wer[den] immer kna[pper]. Daraus resul[tiert] eine gener[elle] Verteuerung v[on] Waren u[nd] Gütern weltw[eit]. Der sogen[annte] Normalbürger me[rkt] das ni[cht] zuletzt da[ran], dass d[ie] Nebenkosten z[um] Wohnen, d[ie] größtenteils du[rch] Gas u[nd] Rohöl verur[sacht] werden, ste[tig] steigen. Di[ese] Tatsache bere[itet] vielen Miet[ern] in Deutschla[nd] Kopfzerbrechen, de[nn] niemand we[iß] genau, w[ie] viel Ge[ld] man b[ei] der Nebenkostenabrec[hnung] noch beza[hlen] muss. D[ie] Nebenkostenabrechnung, m[it] der d[er] Mehrverbrauch a[n] Wasser, G[as] und Hei[zung] berechnet wi[rd], der ni[cht] durch d[ie] monatliche Mi[ete] abgedeckt i[st], wird ein[mal] pro Ja[hr] erstellt u[nd] auf d[ie] Mieter umgel[egt].`},
+{id:14, short:'Infrastruktur', title:'Verbesserung der Infrastruktur in Deutschland',
+raw:`D[ie] Instandsetzung d[er] nationalen Infrastru[ktur] ist ei[ne] der wichti[gsten] Aufgaben d[er] Länder u[nd] Kommunen i[n] Deutschland. D[a] der reibun[gslose] Transport v[on] Waren u[nd] Versorgungsgütern i[n] Deutschland na[ch] wie v[or] auf einwan[dfrei] funktionierende Stra[ßen] angewiesen i[st], müssen Bundesstra[ßen], Autobahnen u[nd] Brücken st[ets] repariert u[nd] für d[en] Schwerverkehr befah[rbar] sein. D[ie] aus die[sem] Grund regel[mäßig] notwendigen Instandsetzungsarbe[iten] für verkehrst[echnisch] wichtige Stra[ßen] können jed[och] über län[gere] Zeit z[u] Verkehrsbehinderungen füh[ren]. Eine sorgfä[ltige] Planung infrastruk[tureller] Verbesserungen i[st] daher abs[olut] unerlässlich. Do[ch] selbst we[nn] Bauarbeiten rechtz[eitig] angekündigt u[nd] jenseits d[er] Ferienzeiten anges[etzt] werden, ka[nn] es f[ür] den Straßenverk[ehr] durch Bauarbe[iten] immer wie[der] zu Behinde[rungen] kommen.`},
+{id:15, short:'Sitzende Tätigkeit', title:'Die gesundheitlichen Folgen einer sitzenden Tätigkeit',
+raw:`Die se[it] dem neunze[hnten] Jahrhundert einset[zende] Industrialisierung füh[rte] in Mitteleur[opa] schrittweise z[u] Tätigkeitsprofilen, d[ie] immer weni[ger] körperliche Arb[eit] und st[att] ihrer im[mer] mehr sitz[ende] Tätigkeiten erfor[dern]. Da d[ie] meisten Län[der] der E[U] heute ke[ine] Agrarländer me[hr] sind, nim[mt] dieser übe[rall] zu beobac[htende] Trend so[gar] noch a[n] Fahrt a[uf]. Eine Fo[lge] dieser Verschi[ebung] in d[er] A[rt] der Erwerbstäti[gkeit] sind sogen[annte] Wohlstandskrankheiten w[ie] Übergewicht, Diab[etes] und Erkran[kungen] des Herz-Kreislauf-Syst[ems]. Der einz[ige] Weg f[ür] den „Wohlstandsarbe[iter]“ ist e[s] daher, Bewe[gung] außerhalb sei[ner] Arbeit z[u] suchen, u[m] den Kör[per] durch Bewe[gung] zu stimul[ieren] und i[hn] nicht nachh[altig] zu gefäh[rden]. Sportliche Betät[igung] ist hi[er] unerlässlich.`},
+{id:16, short:'Essen ohne Fleisch', title:'Essen ohne Fleisch',
+raw:`Der Verz[ehr] von Fle[isch] und and[eren] tierischen Produ[kten] wird v[on] immer me[hr] Menschen i[n] Deutschland infr[age] gestellt. Grau[same] Zustände i[n] der Nutztierhal[tung] veranlassen d[ie] Menschen, i[hr] Konsumverhalten bezü[glich] tierischer Prod[ukte] zu überd[enken]. Dabei ste[llen] sich vi[ele] Deutsche d[ie] Frage, o[b] das Le[ben] eines Mens[chen] wirklich üb[er] das Le[ben] eines Tie[res] zu ste[llen] ist. Man[che] entscheiden si[ch] danach da[für], vegan z[u] essen u[nd] zu le[ben]. Auch we[nn] veganer Ernäh[rung] der R[uf] vorauseilt, ni[cht] alle lebensw[ichtigen] Mineralien u[nd] Vitamine z[u] liefern, spre[chen] Tausende v[on] Lebensgeschichten ei[ne] andere Spr[ache]. Und au[ch] angesichts d[er] Auswirkungen konventi[oneller] Tierhaltung a[uf] das Weltkli[ma] ist e[in] Umdenken sinnv[oll].`},
+{id:17, short:'Automobilclubs', title:'Automobilclubs in Deutschland – dafür sind sie gut',
+raw:`Wie viele andere Län[der] der Er[de] verfügt au[ch] Deutschland üb[er] ein Netzwe[rk] mehrerer Automobilcl[ubs], die Autofahr[ern] durch ei[ne] Mitgliedschaft Hi[lfe] in fahrzeugbedi[ngten] Notfällen bie[ten]. Bleibt d[as] Auto al[so] durch ei[nen] technischen Feh[ler] oder au[ch] eine Reifenpan[ne] liegen od[er] ist e[s] aufgrund ei[nes] Unfalls fahruntüc[htig] geworden, s[o] stellen d[ie] Automobilclubs ei[nen] Abschleppwagen z[ur] Verfügung. I[n] manchen Fäl[len] wird so[gar] der Rücktrans[port] der Fahrzeuginsa[ssen] sichergestellt, s[ei] es du[rch] die Anmie[tung] eines Leihfahrz[euges|eugs] am O[rt] der Pan[ne] oder du[rch] die Ermögl[ichung] eines Rückflu[ges|gs] vom Urlaubso[rt]. Die gen[auen] Konditionen d[er] Automobilclubs kön[nen] sich teilw[eise] unterscheiden u[nd] sollten da[her] vor Absch[luss|luß] einer Mitglie[dschaft] genau v[om] Antragsteller gepr[üft] werden.`},
+{id:18, short:'Virtuelles Leben', title:'Die gesellschaftlichen Folgen des virtuellen Lebens',
+raw:`D[ie] Vereinzelung d[es] Individuums sch[eint] sich i[n] Zeiten d[er] virtuellen Verne[tzung] über soz[iale] Plattformen i[m] Internet expone[ntiell] zu beschle[unigen]. Die soz[iale] Schnittstelle i[m] Internet wi[rd] für vi[ele] Menschen z[um] einzigen Begegnungspu[nkt] mit and[eren] Menschen, d[a] sie erfolg[reich] eine Illu[sion] der Intim[ität] und Gemeins[amkeit] schafft. S[o] entsteht ei[ne] Gesellschaft, d[ie] es me[hr] und me[hr] verlernt, mitein[ander] umzugehen, we[nn] man si[ch] im ech[ten] Leben gegenüb[ersteht]. Der Schutzsch[ild], den d[as] weltweite Ne[tz] vielen Mens[chen] bietet, exist[iert] bei ei[ner] Begegnung näm[lich] nicht me[hr] und fü[hrt] zu Situat[ionen], in de[nen] man si[ch] gelege[ntlich] fragt, o[b] man d[ie] Person, d[ie] da v[or] einem st[eht], überhaupt kennt.`},
+{id:19, short:'Nachhaltigkeit', title:'Nachhaltigkeit',
+raw:`Der Begriff d[er] Nachhal[tigkeit] ist i[n] Zeiten d[es] Klimawandels u[nd] der endl[ichen] Rohstoffe e[in] viel zitie[rtes] und even[tuell] sogar überstrap[aziertes] Schlagwort, d[as] den umsich[tigen] Umgang m[it] Ressourcen sow[ie] ihre mögl[ichst] vollständige Wiederverwe[rtung] nach En[de] eines besti[mmten] Nutzungszyklus beschr[eibt]. Dabei gi[lt] ein beson[deres] Augenmerk d[er] Regenerationsfähigkeit d[es] jeweiligen Rohst[offs], um d[as] System Er[de] so sta[bil] wie mög[lich] zu erha[lten] und au[ch] zukünftigen Genera[tionen] ein Le[ben] im Einkl[ang] mit d[er] uns umgeb[enden] Natur z[u] ermöglichen. U[m] die nachha[ltige] Nutzung v[on] Materialien i[n] der Industrie f[ür] Verbraucher sicht[bar] zu mac[hen], wurden Zertifizierungssyst[eme] und Sie[gel] entwickelt, d[ie] Kunden hinsic[htlich] Nachhaltigkeit ei[ne] gut inform[ierte] Kaufentscheidung ermögl[ichen] sollen.`},
+{id:20, short:'Atomausstieg nach Fukushima', title:'Ausstieg aus der Atomenergie nach Fukushima',
+raw:`Na[ch] einem Erdbe[ben] in d[er] japanischen Reg[ion] Tōhoku u[nd] dem dar[aus] entstandenen Tsunami ereig[nete] sich a[m] 11. Mä[rz] 2011 d[er] größte GAU (grö[ßter] anzunehmender Unf[all]) eines Atomkraftwer[kes|ks] seit d[er] Reaktorkatastrophe v[on] Tschernobyl i[m] Jahr 1986. D[as] Atomkraftwerk Fukus[hima] I havarierte u[nd] verlor du[rch] Kernschmelzen u[nd] Beschädigungen v[ier] seiner se[chs] Reaktorblöcke. D[as] katastrophale Austr[eten] von Radioaktiv[ität] in d[ie] Umwelt i[st] in sei[nen] Folgen f[ür] den pazifi[schen] Raum na[ch] wie v[or] nicht abzuse[hen]. Auch i[m] weit entfe[rnten] Deutschland zo[gen] die Ereig[nisse] große Kre[ise]. Nach vielzä[hligen] Demonstrationen ge[gen] die Nutz[ung] von Kernener[gie] durch d[ie] neu ersta[rkte] Anti-Atomkraft-Bewegung gin[gen] zum Beis[piel] mehrere hoffnu[ngslos] veraltete Kernkraftwer[ke] in Deutschla[nd] vom Netz.`}
+];
+(function(){
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const EXAM_SECONDS = 300;
+const KEY = 'lueckenheft:v1';
+const reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function parse(raw){
+  const out = []; const re = /([A-Za-zÄÖÜäöüß]*)\[([^\]]+)\]/g; let last = 0, m;
+  while ((m = re.exec(raw))) {
+    if (m.index > last) out.push({type:'txt', v: raw.slice(last, m.index)});
+    out.push({type:'gap', pre: m[1], ans: m[2].split('|')});
+    last = re.lastIndex;
+  }
+  if (last < raw.length) out.push({type:'txt', v: raw.slice(last)});
+  return out;
+}
+TEXTS.forEach(t => { t.tokens = parse(t.raw); t.gaps = t.tokens.filter(x => x.type === 'gap'); });
+
+function loadStore(){ try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; } }
+const blank = () => ({mode:'uebung', best:{}, drafts:{}, resetAt:0});
+let store = Object.assign(blank(), loadStore());
+let cloud = {doc:null, ok:false, state:'pending'}, cloudT = null;
+
+// Combine two saved states: best grade per text wins, newest draft wins, a reset wipes everything older.
+function mergeStores(a, b){
+  const out = blank();
+  out.resetAt = Math.max(a.resetAt || 0, b.resetAt || 0);
+  out.mode = b.mode || a.mode || 'uebung';
+  [a, b].forEach(src => {
+    Object.entries(src.best || {}).forEach(([id, v]) => {
+      if (!v || (v.date || 0) < out.resetAt) return;
+      const cur = out.best[id];
+      if (!cur || v.pct > cur.pct || (v.pct === cur.pct && (v.date || 0) < (cur.date || 0))) out.best[id] = v;
+    });
+    Object.entries(src.drafts || {}).forEach(([id, v]) => {
+      if (!v || (v.savedAt || 0) < out.resetAt) return;
+      const cur = out.drafts[id];
+      if (!cur || (v.savedAt || 0) > (cur.savedAt || 0)) out.drafts[id] = v;
+    });
+  });
+  Object.keys(out.drafts).forEach(id => { const b = out.best[id], d = out.drafts[id]; if (b && (b.date || 0) > (d.savedAt || 0)) delete out.drafts[id]; });
+  return out;
+}
+function saveStore(){
+  try { localStorage.setItem(KEY, JSON.stringify(store)); } catch(e){}
+  if (cloud.ok) { clearTimeout(cloudT); cloudT = setTimeout(pushCloud, 800); }
+}
+function pushCloud(){
+  if (!cloud.ok) return;
+  cloud.doc.set({v:1, data: JSON.stringify(store), savedAt: Date.now()}).then(() => setCloudState('cloud')).catch(err => {
+    const code = err && err.code;
+    if (code === 'unavailable') setTimeout(pushCloud, 1500 + Math.random() * 1500);
+    else { cloud.ok = false; setCloudState('local'); }
+  });
+}
+function setCloudState(st){ cloud.state = st; const el = $('#saveState'); if (el) renderSaveState(); }
+function renderSaveState(){
+  const el = $('#saveState');
+  el.textContent = cloud.state === 'cloud' ? 'Fortschritt wird in deinem Claude-Konto gespeichert und ist auf jedem Gerät da.'
+    : cloud.state === 'pending' ? 'Speicherort wird geprüft …'
+    : cloud.state === 'device' ? 'Fortschritt wird auf diesem Gerät gespeichert. Tipp: Seite zum Home-Bildschirm hinzufügen, dann bleibt er sicher erhalten.'
+    : 'Fortschritt wird nur in diesem Browser gespeichert. Sichere ihn mit einem Sicherungscode.';
+  el.dataset.state = cloud.state;
+}
+async function initCloud(){
+  try {
+    if (!window.claude || typeof window.claude.use !== 'function') { setCloudState('device'); askPersist(); return; }
+    const [db, user] = await Promise.all([claude.use('db'), claude.use('user')]);
+    const uid = user ? await user.id() : null;
+    if (!db || !uid) throw 0;
+    const doc = db.doc('data/users/' + uid + '/progress');
+    const snap = await doc.get();
+    let remote = null;
+    if (snap.exists) { try { remote = JSON.parse(snap.data().data); } catch(e){} }
+    const merged = remote ? mergeStores(store, remote) : store;
+    const changed = JSON.stringify(merged) !== JSON.stringify(remote);
+    store = merged;
+    try { localStorage.setItem(KEY, JSON.stringify(store)); } catch(e){}
+    cloud = {doc, ok:true, state:'cloud'};
+    if (!$('#home').hidden) renderHome(); else renderSaveState();
+    if (changed && (Object.keys(store.best).length || Object.keys(store.drafts).length || store.resetAt)) pushCloud();
+  } catch(e) { cloud.ok = false; setCloudState('local'); askPersist(); }
+}
+// Ask the browser not to clear this site's storage (honoured mainly on Android/Chrome).
+function askPersist(){ try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); } catch(e){} }
+
+// Backup code: the whole progress as one copyable text, for viewers without account storage.
+function backupCode(){
+  const json = JSON.stringify({best: store.best, drafts: store.drafts, resetAt: store.resetAt});
+  return 'LH1-' + btoa(unescape(encodeURIComponent(json)));
+}
+function readBackup(code){
+  code = String(code || '').trim().replace(/\s+/g, '');
+  if (!code.startsWith('LH1-')) throw new Error('bad');
+  const o = JSON.parse(decodeURIComponent(escape(atob(code.slice(4)))));
+  if (!o || typeof o.best !== 'object') throw new Error('bad');
+  return o;
+}
+
+const norm = s => s.trim().replace(/\s+/g,'').toLocaleLowerCase('de');
+function isCorrect(g, v){
+  const n = norm(v); if (!n) return false;
+  return g.ans.some(a => n === norm(a) || n === norm(g.pre + a));
+}
+function grade(p){
+  if (p >= 92) return {n:1, w:'sehr gut', c:'Ausgezeichnet!'};
+  if (p >= 81) return {n:2, w:'gut', c:'Sehr ordentlich!'};
+  if (p >= 67) return {n:3, w:'befriedigend', c:'Solide, weiter so.'};
+  if (p >= 50) return {n:4, w:'ausreichend', c:'Bestanden. Dranbleiben!'};
+  if (p >= 30) return {n:5, w:'mangelhaft', c:'Noch einmal ran!'};
+  return {n:6, w:'ungenügend', c:'Kopf hoch, nächster Versuch!'};
+}
+const fmt = s => { s = Math.max(0, Math.floor(s)); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
+const fmtPts = p => String(p).replace('.', ',');
+const buzz = p => { try { navigator.vibrate && navigator.vibrate(p); } catch(e){} };
+
+let toastT;
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2200); }
+
+function modal(text, okLabel, onOk, cancelLabel='Zurück'){
+  const scrim = document.createElement('div'); scrim.className = 'scrim';
+  scrim.innerHTML = `<div class="modal" role="dialog" aria-modal="true"><p>${esc(text)}</p><div class="row"><button class="btn" data-a="no">${esc(cancelLabel)}</button><button class="btn primary" data-a="ok">${esc(okLabel)}</button></div></div>`;
+  const close = () => scrim.remove();
+  scrim.addEventListener('click', e => {
+    const a = e.target.closest('[data-a]');
+    if (e.target === scrim || (a && a.dataset.a === 'no')) close();
+    else if (a && a.dataset.a === 'ok') { close(); onOk(); }
+  });
+  document.body.appendChild(scrim);
+  scrim.querySelector('[data-a="ok"]').focus();
+}
+
+function show(id){
+  ['home','play','result'].forEach(s => { $('#'+s).hidden = s !== id; });
+  $('#dock').hidden = id !== 'play';
+  window.scrollTo(0,0);
+}
+
+/* ---------- Home ---------- */
+function renderHome(){
+  $('#modeU').setAttribute('aria-pressed', store.mode === 'uebung');
+  $('#modeP').setAttribute('aria-pressed', store.mode === 'pruefung');
+  $('#list').innerHTML = TEXTS.map(t => {
+    const b = store.best[t.id], d = store.drafts[t.id];
+    const parts = [];
+    if (b) parts.push(`Bestes Ergebnis: ${b.pct} %`);
+    if (d) parts.push(`Übung angefangen: ${d.answers.filter(x => x && x.trim()).length} von 50`);
+    if (!parts.length) parts.push('50 Lücken');
+    const stamp = b ? `<span class="stamp" aria-label="Beste Note ${b.note}">${b.note}</span>` : `<span class="stamp new">neu</span>`;
+    return `<li><button data-id="${t.id}"><span class="num">${t.id}</span><span class="ttl">${esc(t.title)}<span class="sub">${parts.join('. ')}</span></span>${stamp}</button></li>`;
+  }).join('');
+  const done = Object.keys(store.best).length;
+  if (done) {
+    const avg = Math.round(Object.values(store.best).reduce((a,b) => a + b.pct, 0) / done);
+    $('#totals').textContent = `${done} von ${TEXTS.length} Texten bearbeitet, im Schnitt ${avg} %`;
+  } else $('#totals').textContent = 'Noch kein Text bearbeitet';
+  $('#resetAll').hidden = !done && !Object.keys(store.drafts).length;
+  renderSaveState();
+}
+$('#modeU').addEventListener('click', () => { store.mode = 'uebung'; saveStore(); renderHome(); });
+$('#modeP').addEventListener('click', () => { store.mode = 'pruefung'; saveStore(); renderHome(); });
+$('#list').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (b) start(+b.dataset.id); });
+$('#resetAll').addEventListener('click', () => modal('Alle Noten und gespeicherten Übungen löschen?', 'Löschen', () => { store.best = {}; store.drafts = {}; store.resetAt = Date.now(); saveStore(); renderHome(); toast('Alles zurückgesetzt.'); }));
+
+function codeModal(title, value, okLabel, onOk){
+  const scrim = document.createElement('div'); scrim.className = 'scrim';
+  scrim.innerHTML = `<div class="modal" role="dialog" aria-modal="true"><p>${esc(title)}</p><textarea spellcheck="false" autocapitalize="none" autocomplete="off"></textarea><div class="row"><button class="btn" data-a="no">Schließen</button><button class="btn primary" data-a="ok">${esc(okLabel)}</button></div></div>`;
+  const ta = scrim.querySelector('textarea'); ta.value = value || '';
+  if (value) ta.readOnly = true;
+  scrim.addEventListener('click', e => {
+    const a = e.target.closest('[data-a]');
+    if (e.target === scrim || (a && a.dataset.a === 'no')) scrim.remove();
+    else if (a && a.dataset.a === 'ok') onOk(ta, () => scrim.remove());
+  });
+  document.body.appendChild(scrim);
+  if (value) { ta.focus(); ta.select(); } else ta.focus();
+}
+$('#exportBtn').addEventListener('click', () => {
+  codeModal('Dein Sicherungscode. Kopiere ihn und bewahre ihn auf, z. B. in einer Notiz oder per Nachricht an dich selbst.', backupCode(), 'Kopieren', (ta, close) => {
+    const done = () => { close(); toast('Sicherungscode kopiert.'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(done, () => { ta.select(); try { document.execCommand('copy'); done(); } catch(e){ toast('Bitte den Code markieren und kopieren.'); } });
+    else { ta.select(); try { document.execCommand('copy'); done(); } catch(e){ toast('Bitte den Code markieren und kopieren.'); } }
+  });
+});
+$('#importBtn').addEventListener('click', () => {
+  codeModal('Füge deinen Sicherungscode ein. Er wird mit dem aktuellen Stand zusammengeführt, die besseren Noten bleiben.', '', 'Laden', (ta, close) => {
+    let o; try { o = readBackup(ta.value); } catch(e){ toast('Dieser Code ist ungültig.'); return; }
+    store = mergeStores(store, Object.assign(blank(), o, {mode: store.mode}));
+    saveStore(); close(); renderHome(); toast('Fortschritt wiederhergestellt.');
+  });
+});
+
+/* ---------- Play ---------- */
+let cur = null, lastInput = null, draftT;
+
+function start(id, retry){
+  const t = TEXTS.find(x => x.id === id), n = t.gaps.length;
+  cur = { t, mode: store.mode, retry: !!retry,
+    answers: Array(n).fill(''), hints: Array(n).fill(false),
+    locked: Array(n).fill(false), lockedStatus: Array(n).fill(null),
+    start: Date.now(), before: 0, timer: null, done: false };
+  if (retry) {
+    retry.status.forEach((s, i) => { if (s === 'ok' || s === 'hint') { cur.locked[i] = true; cur.lockedStatus[i] = s; cur.answers[i] = retry.answers[i]; cur.hints[i] = s === 'hint'; } });
+  } else if (cur.mode === 'uebung' && store.drafts[id]) {
+    const d = store.drafts[id];
+    d.answers.slice(0, n).forEach((v, i) => cur.answers[i] = v || '');
+    (d.hints || []).slice(0, n).forEach((v, i) => cur.hints[i] = !!v);
+    cur.before = d.elapsed || 0;
+  }
+  renderPlay(); show('play'); startClock();
+  if (!retry && cur.mode === 'uebung' && store.drafts[id]) toast('Weiter, wo du aufgehört hast.');
+  if (retry) toast(`${cur.locked.filter(x => !x).length} Lücken zum Verbessern.`);
+}
+const isExam = () => cur.mode === 'pruefung' && !cur.retry;
+
+function renderPlay(){
+  const t = cur.t;
+  $('#barTitle').textContent = `(${t.id}) ${t.short}`;
+  $('#playTitle').textContent = t.title;
+  $('#playMeta').textContent = cur.retry ? 'Verbesserung: Die richtigen Lücken sind schon ausgefüllt.'
+    : isExam() ? 'Prüfung: 5 Minuten. Bei 0:00 wird automatisch abgegeben.'
+    : 'Übung: Ergänze den fehlenden Teil jedes Wortes. Enter springt zur nächsten Lücke.';
+  $('#tipBtn').hidden = isExam();
+  const p = $('#passage'); p.textContent = ''; let gi = 0;
+  t.tokens.forEach(tok => {
+    if (tok.type === 'txt') { p.appendChild(document.createTextNode(tok.v)); return; }
+    const i = gi++;
+    const span = document.createElement('span'); span.className = 'gap';
+    const pre = document.createElement('span'); pre.textContent = tok.pre;
+    const inp = document.createElement('input');
+    inp.type = 'text'; inp.dataset.i = i; inp.value = cur.answers[i];
+    inp.setAttribute('autocomplete','off'); inp.setAttribute('autocorrect','off');
+    inp.setAttribute('autocapitalize','none'); inp.setAttribute('spellcheck','false');
+    inp.setAttribute('enterkeyhint', 'next');
+    inp.setAttribute('aria-label', `Lücke ${i+1}: ${tok.pre} …`);
+    if (cur.locked[i]) inp.disabled = true;
+    span.append(pre, inp); p.appendChild(span); size(inp);
+  });
+  lastInput = null; updateCount();
+}
+function size(inp){ inp.style.width = Math.max(2.8, inp.value.length * 0.5 + 1.1) + 'em'; }
+function updateCount(){
+  const n = cur.answers.length, filled = cur.answers.filter(v => v.trim()).length;
+  $('#progFill').style.width = (filled / n * 100) + '%';
+  $('#submitBtn').textContent = `Abgeben ${filled}/${n}`;
+}
+function saveDraftSoon(){
+  if (cur.mode !== 'uebung' || cur.retry || cur.done) return;
+  clearTimeout(draftT); draftT = setTimeout(saveDraftNow, 300);
+}
+function saveDraftNow(){
+  if (!cur || cur.mode !== 'uebung' || cur.retry || cur.done) return;
+  if (cur.answers.some(v => v.trim())) store.drafts[cur.t.id] = { answers: cur.answers.slice(), hints: cur.hints.slice(), elapsed: elapsed(), savedAt: Date.now() };
+  saveStore();
+}
+document.addEventListener('visibilitychange', () => { if (document.hidden && cur && !$('#play').hidden) saveDraftNow(); });
+
+const passage = $('#passage');
+passage.addEventListener('input', e => {
+  const inp = e.target; if (inp.tagName !== 'INPUT') return;
+  cur.answers[+inp.dataset.i] = inp.value; size(inp); updateCount(); saveDraftSoon();
+});
+passage.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.tagName === 'INPUT') { e.preventDefault(); focusNext(+e.target.dataset.i); }
+});
+passage.addEventListener('focusin', e => {
+  if (e.target.tagName !== 'INPUT') return;
+  lastInput = e.target;
+  setTimeout(() => { if (document.activeElement === e.target) ensureVisible(e.target); }, 320);
+});
+function focusNext(i){
+  const next = [...passage.querySelectorAll('input:not(:disabled)')].find(x => +x.dataset.i > i);
+  if (next) next.focus({preventScroll:true}), ensureVisible(next);
+  else { document.activeElement.blur(); toast('Letzte Lücke erreicht. Bereit zum Abgeben?'); }
+}
+function ensureVisible(el){
+  const r = el.getBoundingClientRect();
+  const vv = window.visualViewport;
+  const vh = vv ? vv.height : window.innerHeight;
+  const top = 80, bottom = vh - 90;
+  if (r.top < top || r.bottom > bottom) window.scrollBy({top: r.top - vh * 0.38, behavior: reduceMotion ? 'auto' : 'smooth'});
+}
+
+// Dock keys keep the keyboard open: act on touchstart / mousedown and cancel the focus change.
+function bindKey(btn, fn){
+  btn.addEventListener('touchstart', e => { e.preventDefault(); press(btn); fn(); }, {passive:false});
+  btn.addEventListener('mousedown', e => { e.preventDefault(); press(btn); fn(); });
+  btn.addEventListener('click', e => { if (e.detail === 0) fn(); });
+}
+function press(btn){ btn.classList.add('pressed'); setTimeout(() => btn.classList.remove('pressed'), 140); }
+function target(){
+  const a = document.activeElement;
+  if (a && a.tagName === 'INPUT' && passage.contains(a) && !a.disabled) return a;
+  if (lastInput && document.body.contains(lastInput) && !lastInput.disabled) return lastInput;
+  return null;
+}
+document.querySelectorAll('.key[data-ch]').forEach(btn => bindKey(btn, () => {
+  const el = target(); if (!el) { toast('Tippe zuerst in eine Lücke.'); return; }
+  const ch = btn.dataset.ch;
+  let s = el.selectionStart, en = el.selectionEnd;
+  if (s == null) s = en = el.value.length;
+  el.value = el.value.slice(0, s) + ch + el.value.slice(en);
+  if (document.activeElement !== el) el.focus({preventScroll:true});
+  try { el.setSelectionRange(s + 1, s + 1); } catch(e){}
+  el.dispatchEvent(new Event('input', {bubbles:true}));
+}));
+bindKey($('#tipBtn'), () => {
+  const el = target(); if (!el) { toast('Tippe zuerst in eine Lücke, dann auf Tipp.'); return; }
+  const i = +el.dataset.i, g = cur.t.gaps[i], sol = g.ans[0];
+  let v = norm(el.value); if (v.startsWith(norm(g.pre)) && norm(g.pre).length && v.length > sol.length) v = v.slice(g.pre.length);
+  let k = 0; while (k < v.length && k < sol.length && v[k] === sol[k].toLocaleLowerCase('de')) k++;
+  if (k >= sol.length) { toast('Diese Lücke stimmt schon.'); return; }
+  el.value = sol.slice(0, k + 1);
+  cur.hints[i] = true;
+  if (document.activeElement !== el) el.focus({preventScroll:true});
+  try { el.setSelectionRange(el.value.length, el.value.length); } catch(e){}
+  el.dispatchEvent(new Event('input', {bubbles:true}));
+  buzz(10);
+  if (k + 1 >= sol.length) toast('Fertig. Mit Tipp zählt die Lücke einen halben Punkt.');
+});
+
+// Keep the dock above the iOS on-screen keyboard.
+function placeDock(){
+  const vv = window.visualViewport; if (!vv) return;
+  const off = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+  $('#dock').style.transform = off > 1 ? `translateY(${-off}px)` : '';
+}
+if (window.visualViewport) { visualViewport.addEventListener('resize', placeDock); visualViewport.addEventListener('scroll', placeDock); }
+
+function elapsed(){ return cur.before + (Date.now() - cur.start) / 1000; }
+function startClock(){ stopClock(); tick(); cur.timer = setInterval(tick, 250); }
+function stopClock(){ if (cur && cur.timer) { clearInterval(cur.timer); cur.timer = null; } }
+function tick(){
+  const c = $('#clock');
+  if (isExam()) {
+    const rem = EXAM_SECONDS - elapsed();
+    c.textContent = fmt(Math.ceil(Math.max(0, rem)));
+    c.classList.toggle('low', rem <= 60);
+    if (rem <= 0 && !cur.done) { stopClock(); if (document.activeElement) document.activeElement.blur(); toast('Die Zeit ist abgelaufen.'); buzz([60,40,60]); finish(); }
+  } else { c.classList.remove('low'); c.textContent = fmt(elapsed()); }
+}
+
+$('#submitBtn').addEventListener('click', () => {
+  const empty = cur.answers.filter(v => !v.trim()).length;
+  if (empty) modal(empty === 1 ? 'Eine Lücke ist noch leer. Trotzdem abgeben?' : `${empty} Lücken sind noch leer. Trotzdem abgeben?`, 'Abgeben', finish, 'Weiterschreiben');
+  else finish();
+});
+$('#backBtn').addEventListener('click', () => {
+  if (isExam() && cur.answers.some(v => v.trim())) {
+    modal('Prüfung abbrechen? Deine Antworten gehen verloren.', 'Abbrechen', () => { stopClock(); cur.done = true; renderHome(); show('home'); }, 'Weiterschreiben');
+  } else { saveDraftNow(); stopClock(); cur.done = true; renderHome(); show('home'); }
+});
+
+/* ---------- Result ---------- */
+function finish(){
+  if (cur.done) return;
+  cur.done = true; stopClock(); clearTimeout(draftT);
+  const t = cur.t, n = t.gaps.length;
+  const status = t.gaps.map((g, i) => {
+    if (cur.locked[i]) return cur.lockedStatus[i];
+    const v = cur.answers[i];
+    if (!v.trim()) return 'empty';
+    if (isCorrect(g, v)) return cur.hints[i] ? 'hint' : 'ok';
+    return 'wrong';
+  });
+  const points = status.reduce((a, s) => a + (s === 'ok' ? 1 : s === 'hint' ? 0.5 : 0), 0);
+  const pct = Math.round(points / n * 100);
+  let streak = 0, run = 0;
+  status.forEach(s => { run = (s === 'ok' || s === 'hint') ? run + 1 : 0; streak = Math.max(streak, run); });
+  const g = grade(pct), time = elapsed();
+  const prev = store.best[t.id];
+  let record = false;
+  if (!cur.retry) {
+    if (!prev || pct > prev.pct) { store.best[t.id] = {pct, note: g.n, date: Date.now()}; record = !!prev; }
+    if (cur.mode === 'uebung') delete store.drafts[t.id];
+  }
+  saveStore();
+  cur.result = {status, points, pct, g, time, streak, record, answers: cur.answers.slice()};
+  renderResult(); show('result');
+  if (g.n <= 2) { confetti(); buzz([20,40,20]); } else buzz(30);
+}
+
+function shownAnswer(g, v){
+  v = v.trim();
+  if (norm(v).startsWith(norm(g.pre)) && g.pre && norm(v).length > norm(g.ans[0]).length) return v.slice(g.pre.length);
+  return v;
+}
+function renderResult(){
+  const t = cur.t, R = cur.result, n = t.gaps.length;
+  $('#resTitle').textContent = `(${t.id}) ${t.short}`;
+  const wrong = R.status.filter(s => s === 'wrong' || s === 'empty').length;
+  const label = cur.retry ? 'Verbesserung' : isExam() ? 'Prüfung' : 'Übung';
+  $('#report').innerHTML = `
+    <div class="grade" aria-label="Note ${R.g.n}">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M66 9 C 98 10, 115 38, 111 66 C 107 96, 80 113, 54 110 C 25 107, 7 84, 10 55 C 13 28, 37 9, 63 11 C 74 12, 83 16, 90 22"/></svg>
+      <span class="n">${R.g.n}</span>
+    </div>
+    <div><p class="comment">${esc(R.g.c)}</p><p class="word">Note ${R.g.n}, ${R.g.w}. ${label}.</p></div>
+    ${R.record ? '<p class="badge">Neuer Bestwert!</p>' : ''}
+    <div class="facts">
+      <div><b>${fmtPts(R.points)}/${n}</b>Punkte</div>
+      <div><b>${R.pct} %</b>richtig</div>
+      <div><b>${fmt(R.time)}</b>Zeit</div>
+    </div>`;
+  const out = []; let gi = 0;
+  t.tokens.forEach(tok => {
+    if (tok.type === 'txt') { out.push(esc(tok.v)); return; }
+    const i = gi++, s = R.status[i], sol = tok.ans[0], v = R.answers[i];
+    if (s === 'ok' || s === 'hint') { const alt = tok.ans.find(a => norm(a) === norm(shownAnswer(tok, v || ''))) || sol; out.push(`<span class="r ${s}">${esc(tok.pre)}<span class="u">${esc(alt)}</span></span>`); }
+    else if (s === 'wrong') out.push(`<span class="r wrong">${esc(tok.pre)}<span class="bad">${esc(shownAnswer(tok, v))}</span><span class="fix">${esc(sol)}</span></span>`);
+    else out.push(`<span class="r empty">${esc(tok.pre)}<span class="fix">${esc(sol)}</span></span>`);
+  });
+  $('#resPassage').innerHTML = out.join('');
+  const miss = t.gaps.map((g, i) => ({g, i, s: R.status[i]})).filter(x => x.s === 'wrong' || x.s === 'empty');
+  $('#mistakes').innerHTML = miss.length ? `<h3>${miss.length === 1 ? 'Ein Wort zum Merken' : miss.length + ' Wörter zum Merken'}</h3><ul>${miss.map(x =>
+    `<li><span class="right">${esc(x.g.pre + x.g.ans[0])}</span><span class="yours">${x.s === 'empty' ? 'leer gelassen' : 'du: <s>' + esc(x.g.pre + shownAnswer(x.g, R.answers[x.i])) + '</s>'}</span></li>`).join('')}</ul>` : '<h3>Alle 50 Lücken richtig. Stark!</h3>';
+  const next = TEXTS.find(x => x.id === t.id + 1);
+  $('#actions').innerHTML =
+    (wrong ? `<button class="btn red" data-act="retry">Fehler verbessern (${wrong})</button>` : '') +
+    (next ? `<button class="btn primary" data-act="next">Weiter mit Text ${next.id}</button>` : '') +
+    `<button class="btn" data-act="again">Text neu beginnen</button>` +
+    `<button class="btn" data-act="home">Zur Übersicht</button>`;
+}
+$('#actions').addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  const a = b.dataset.act, id = cur.t.id;
+  if (a === 'retry') start(id, {status: cur.result.status, answers: cur.result.answers});
+  else if (a === 'next') start(id + 1);
+  else if (a === 'again') { delete store.drafts[id]; saveStore(); start(id); }
+  else { renderHome(); show('home'); }
+});
+$('#backBtn2').addEventListener('click', () => { renderHome(); show('home'); });
+
+/* ---------- Confetti ---------- */
+function confetti(){
+  if (reduceMotion) return;
+  const c = $('#confetti'); c.hidden = false;
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  const W = window.innerWidth, H = window.innerHeight;
+  c.width = W * dpr; c.height = H * dpr;
+  const ctx = c.getContext('2d'); ctx.scale(dpr, dpr);
+  const cs = getComputedStyle(document.documentElement);
+  const cols = [cs.getPropertyValue('--ink'), cs.getPropertyValue('--red'), cs.getPropertyValue('--green'), '#F2B705'].map(x => x.trim());
+  const P = Array.from({length: 140}, () => ({
+    x: W / 2 + (Math.random() - .5) * 60, y: H * 0.28,
+    vx: (Math.random() - .5) * 13, vy: -Math.random() * 12 - 4,
+    w: 5 + Math.random() * 6, h: 8 + Math.random() * 8, r: Math.random() * 6, vr: (Math.random() - .5) * .35,
+    c: cols[Math.floor(Math.random() * cols.length)]
+  }));
+  const t0 = performance.now();
+  (function frame(now){
+    const t = now - t0; ctx.clearRect(0, 0, W, H);
+    P.forEach(p => { p.vy += .32; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.globalAlpha = Math.max(0, 1 - t / 2600);
+      ctx.fillStyle = p.c; ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h * Math.abs(Math.cos(p.r * 2))); ctx.restore(); });
+    if (t < 2600) requestAnimationFrame(frame); else { ctx.clearRect(0, 0, W, H); c.hidden = true; }
+  })(t0);
+}
+
+renderHome();
+initCloud();
+})();
+</script>
+</body></html>
