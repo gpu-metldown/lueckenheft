@@ -83,6 +83,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset
 .ttl{font-size:17px;line-height:1.3}
 .sub{display:block;font-size:14px;color:var(--muted);margin-top:3px}
 .stamp{font-family:var(--hand);font-weight:700;color:var(--red);font-size:28px;line-height:1;border:2px solid currentColor;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;transform:rotate(-9deg)}
+.stamp small{font-size:.5em;font-weight:500;margin-left:1px}
+.stamp{font-size:22px !important}
+.stamp.low{color:var(--muted)}
 .stamp.new{color:var(--muted);border-style:dashed;border-width:1.5px;font-size:18px;font-weight:500;transform:none}
 .save{margin:0 0 40px;padding:12px 14px;border:1px dashed var(--line);border-radius:12px;background:var(--surface)}
 .save p{margin:0 0 4px;font-size:14.5px;line-height:1.4;color:var(--muted)}
@@ -128,10 +131,17 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset
 /* Result */
 .report{display:grid;grid-template-columns:auto 1fr;gap:16px 20px;align-items:center;padding:26px 0 8px}
 .grade{position:relative;width:118px;height:118px;display:grid;place-items:center;color:var(--red)}
-.grade .n{font-family:var(--hand);font-weight:700;font-size:72px;line-height:1;transform:rotate(-6deg);margin-top:4px}
+.grade .n small{font-size:.42em;font-weight:500;margin-left:1px}
+.grade .n{font-family:var(--hand);font-weight:700;font-size:58px;line-height:1;transform:rotate(-6deg);margin-top:4px}
 .grade svg{position:absolute;inset:-6px;width:calc(100% + 12px);height:calc(100% + 12px);overflow:visible}
 .grade path{fill:none;stroke:var(--red);stroke-width:3.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .9s .15s cubic-bezier(.5,0,.3,1) forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
+.scale{grid-column:1/-1;position:relative;height:34px;margin:6px 0 0}
+.scale .track{position:absolute;left:0;right:0;top:9px;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--red-soft) 0 60%,var(--ink-soft) 60% 100%);border:1px solid var(--line)}
+.scale .tick{position:absolute;top:3px;height:20px;border-left:1.5px dashed var(--muted)}
+.scale .tick i{position:absolute;top:21px;left:-9px;font-style:normal;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.scale .me{position:absolute;top:5px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--red);border:2.5px solid var(--surface);box-shadow:0 0 0 1px var(--red)}
+.scalenote{grid-column:1/-1;margin:4px 0 0;font-size:14px;line-height:1.4;color:var(--muted)}
 .comment{font-family:var(--hand);color:var(--red);font-size:32px;line-height:1.05;margin:0}
 .word{margin:4px 0 0;color:var(--muted);font-size:15.5px}
 .facts{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:6px}
@@ -473,13 +483,13 @@ function isCorrect(g, v){
   const n = norm(v); if (!n) return false;
   return g.ans.some(a => n === norm(a) || n === norm(g.pre + a));
 }
+// Studienkollegs give no school grades: 1 point per fully correct gap, pass from 60 %,
+// popular Studienkollegs rank applicants and usually need about 75–85 % for a place.
 function grade(p){
-  if (p >= 92) return {n:1, w:'sehr gut', c:'Ausgezeichnet!'};
-  if (p >= 81) return {n:2, w:'gut', c:'Sehr ordentlich!'};
-  if (p >= 67) return {n:3, w:'befriedigend', c:'Solide, weiter so.'};
-  if (p >= 50) return {n:4, w:'ausreichend', c:'Bestanden. Dranbleiben!'};
-  if (p >= 30) return {n:5, w:'mangelhaft', c:'Noch einmal ran!'};
-  return {n:6, w:'ungenügend', c:'Kopf hoch, nächster Versuch!'};
+  if (p >= 85) return {lvl:3, c:'Hervorragend!', w:'Das reicht auch für begehrte Studienkollegs.'};
+  if (p >= 75) return {lvl:2, c:'Stark!', w:'Konkurrenzfähig: gute Chancen auf einen Platz.'};
+  if (p >= 60) return {lvl:1, c:'Bestanden!', w:'Über der 60-%-Grenze. Für begehrte Plätze noch etwas zulegen.'};
+  return {lvl:0, c:'Noch nicht bestanden', w:'Unter der 60-%-Grenze. Weiter üben, das wird!'};
 }
 const fmt = s => { s = Math.max(0, Math.floor(s)); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
 const fmtPts = p => String(p).replace('.', ',');
@@ -522,7 +532,7 @@ function renderHome(){
     if (b) parts.push(`Bestes Ergebnis: ${b.pct} %`);
     if (d && !t.set) parts.push(`Übung angefangen: ${d.answers.filter(x => x && x.trim()).length} von ${n}`);
     if (!parts.length) parts.push(`${n} Lücken`);
-    const stamp = b ? `<span class="stamp" aria-label="Beste Note ${b.note}">${b.note}</span>` : `<span class="stamp new">neu</span>`;
+    const stamp = b ? `<span class="stamp${b.pct >= 60 ? '' : ' low'}" aria-label="Bestes Ergebnis ${b.pct} Prozent">${b.pct}</span>` : `<span class="stamp new">neu</span>`;
     return `<li><button data-id="${t.id}"><span class="num">${t.num}</span><span class="ttl">${esc(t.title)}<span class="sub">${esc(parts.join('. '))}</span></span>${stamp}</button></li>`;
   }).join('');
   const doneList = list.filter(t => store.best[t.id]), done = doneList.length;
@@ -751,13 +761,13 @@ function finish(){
   const prev = store.best[t.id];
   let record = false;
   if (!cur.retry) {
-    if (!prev || pct > prev.pct) { store.best[t.id] = {pct, note: g.n, date: Date.now()}; record = !!prev; }
+    if (!prev || pct > prev.pct) { store.best[t.id] = {pct, date: Date.now()}; record = !!prev; }
     if (cur.mode === 'uebung') delete store.drafts[t.id];
   }
   saveStore();
   cur.result = {status, points, pct, g, time, streak, record, answers: cur.answers.slice()};
   renderResult(); show('result');
-  if (g.n <= 2) { confetti(); buzz([20,40,20]); } else buzz(30);
+  if (g.lvl >= 2) { confetti(); buzz([20,40,20]); } else buzz(30);
 }
 
 function shownAnswer(g, v){
@@ -771,17 +781,23 @@ function renderResult(){
   const wrong = R.status.filter(s => s === 'wrong' || s === 'empty').length;
   const label = cur.retry ? 'Verbesserung' : isExam() ? 'Prüfung' : 'Übung';
   $('#report').innerHTML = `
-    <div class="grade" aria-label="Note ${R.g.n}">
+    <div class="grade" aria-label="${R.pct} Prozent">
       <svg viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M66 9 C 98 10, 115 38, 111 66 C 107 96, 80 113, 54 110 C 25 107, 7 84, 10 55 C 13 28, 37 9, 63 11 C 74 12, 83 16, 90 22"/></svg>
-      <span class="n">${R.g.n}</span>
+      <span class="n">${R.pct}<small>%</small></span>
     </div>
-    <div><p class="comment">${esc(R.g.c)}</p><p class="word">Note ${R.g.n}, ${R.g.w}. ${label}.</p></div>
+    <div><p class="comment">${esc(R.g.c)}</p><p class="word">${esc(R.g.w)} ${label}.</p></div>
     ${R.record ? '<p class="badge">Neuer Bestwert!</p>' : ''}
     <div class="facts">
       <div><b>${fmtPts(R.points)}/${n}</b>Punkte</div>
       <div><b>${R.pct} %</b>richtig</div>
       <div><b>${fmt(R.time)}</b>Zeit</div>
-    </div>`;
+    </div>
+    <div class="scale" aria-hidden="true">
+      <div class="track"></div>
+      <span class="tick" style="left:60%"><i>60</i></span><span class="tick" style="left:75%"><i>75</i></span><span class="tick" style="left:85%"><i>85</i></span>
+      <span class="me" style="left:${Math.min(100, Math.max(0, R.pct))}%"></span>
+    </div>
+    <p class="scalenote">So werten Studienkollegs: 1 Punkt pro richtiger Lücke, keine Noten. Bestanden ab 60 %, begehrte Studienkollegs brauchen meist 75–85 %.</p>`;
   const out = []; let gi = 0;
   t.tokens.forEach(tok => {
     if (tok.type === 'txt') { out.push(esc(tok.v)); return; }
