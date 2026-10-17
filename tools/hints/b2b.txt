@@ -1,0 +1,207 @@
+## 5
+1|EN Nom (Land)|Land in Mitteleuropa, Hauptstadt Berlin
+2|uA Nom Sg n|@Land
+3|Adj Gen Pl|vielfältig, mit großer Auswahl
+4|N Gen Pl f|Bräuche, die man lange pflegt
+5|N Dat Sg n|Epoche, lange Zeit
+6|N Gen Sg f|Entwicklung hin zu Fabriken und Maschinen
+7|V Präs 3Sg|es besteht die Gefahr, dass …
+8|N Nom Sg f|große Auswahl, Verschiedenheit
+9|Adj Gen Sg n|überliefert, wie früher üblich
+10|Adv|immer mehr
+11|N Akk Sg f|„in ___ geraten“ = vergessen werden
+12|Inf|kommen, in einen Zustand gelangen
+13|N Nom Sg f|eine Chance, eine Option
+14|N Akk Sg m|wenn man etwas nicht mehr hat
+15|N Gen Sg n|Kenntnisse
+16|bA Akk Sg f|@Herkunft
+17|Prp +Dat|Herkunft ___ etwas
+18|Kj|verbindet zwei Satzteile
+19|N Gen Pl f|praktische Fähigkeiten
+20|Inf|stoppen, nicht passieren lassen
+21|uA Nom Sg n|@Netzwerk
+22|Prp +Dat|ein Netzwerk ___ Museen
+23|Rel Nom Sg n|bezieht sich auf „Netzwerk“
+24|Kj|verbindet zwei Angaben
+25|Prp +Dat|„___ Form von …“
+26|Prp +Dat|„in Form ___ …“
+27|bA Akk Sg f|@Aufgabe
+28|V Präs 3Sg (trennbar)|macht zu seiner eigenen Aufgabe
+29|Adj Akk Sg n|wie es früher üblich war
+30|Kj|verbindet zwei Satzteile
+31|N Akk Sg f|wie man lebt
+32|Adj Gen Sg f|vergangen, damalig
+33|Adj|anschaulich, gut vorstellbar
+34|Kj|verbindet zwei Infinitive
+35|Inf|weitergeben, lehren
+36|Pos Dat Sg f|@Fülle
+37|Prp +Dat|Fülle ___ etwas
+38|Kj|verbindet zwei Nomen
+39|V Präs 3Sg|Form von „sein“
+40|N Nom Sg n|Museum unter freiem Himmel
+41|Prp +Akk|geeignet ___ wen?
+42|N Akk Pl f|Gruppen nach dem Alter
+43|N Nom Sg m|Reise, die nur einen Tag dauert
+44|Adj Dat Sg m|mit Erziehung und Lernen verbunden
+45|Prp +Akk|___ wen?
+46|Adj Akk Sg f|vollständig, komplett
+47|Rel Nom Sg m|bezieht sich auf „Tagesausflug“
+48|Prp+bA Dat Sg n (zu + dem)|„___ Beispiel“
+49|Prp +Dat|wann? zeitlich
+50|N Dat Pl f|freie Zeit ohne Schule
+
+## 6
+1|Prp +Dat|Aufnahme ___ etwas
+2|V Präs 3Sg|Form von „sein“
+3|Prp +Akk|entscheidend ___ etwas
+4|N Akk Sg n (nominalisiertes Verb)|am Leben bleiben
+5|N Dat Pl n|alles, was lebt
+6|N Nom Sg f|Aktion, Tat
+7|uA Gen Sg n|@Ungleichgewichts
+8|N Gen Sg n|fehlende Balance
+9|PPr Akk Sg n|„___ gibt“
+10|Adv|heute, in unserer Zeit
+11|N Akk Pl m|Personen
+12|Adv|genau
+13|N Dat Sg m|Gebiet
+14|Adj Gen Sg f|zum Leben unbedingt nötig
+15|uA Akk Sg f|@Störung
+16|V Präs 3Pl|bekommen nach und nach
+17|V Präs 3Pl|„zu sich ___“ = essen
+18|Idf|Komparativ von „viel“
+19|Prp|„etwas ___ sich nehmen“
+20|Vgl|Komparativ: mehr ___ …
+21|N Nom Sg m|Kopf, Rumpf, Arme und Beine
+22|N Akk Sg n (nominalisiertes Verb)|am Leben bleiben
+23|Kj|verbindet zwei Verben
+24|MV Präs 3Sg|Fähigkeit: ist in der Lage
+25|V Präs 3Pl|wählen, beschließen
+26|Ptk|„___ noch“ = bloß noch
+27|Adv|verstärkt „wenig“
+28|Kj|Alternative: A ___ B
+29|N Akk Sg f|Essen
+30|Ptk|vor dem Infinitiv „konsumieren“
+31|HV Präs 3Sg|Passiv: ___ … aufrechterhalten
+32|N Nom Sg n|wie man sich benimmt
+33|Adj Komp Akk Sg f|Komparativ von „lang“
+34|Adv|„über … ___“ = während
+35|Adv|dann, in diesem Fall
+36|bA Nom Sg f|@Essstörung
+37|N Nom Sg f|Krankheit beim Essverhalten
+38|Adj Dat Pl|deutlich, bedeutend
+39|N Dat Pl m|Verletzungen, Beschädigungen
+40|Rel Nom Pl|bezieht sich auf „Schäden“
+41|Adj|kann das Leben gefährden
+42|MV Präs 3Pl|Möglichkeit
+43|Prp +Dat|Patienten ___ einer Krankheit
+44|N Dat Sg f|Krankheit beim Essverhalten
+45|PPr Nom Sg n|„ist ___ möglich“
+46|NegP|verneint ein Verb oder Adjektiv
+47|bA Akk Sg m|@Teufelskreis
+48|Pos Gen Sg f|@Erkrankung
+49|Prp +Akk|Gegenteil von „mit“
+50|Ptk|vor dem Infinitiv „durchbrechen“
+
+## 7
+1|N Dat Sg m|Person
+2|N Dat Pl f|Wechsel, Umgestaltungen
+3|Adj Gen Pl|auf der ganzen Welt
+4|Prp +Akk|Nutzflächen ___ etwas
+5|N Akk Sg m|Landwirtschaft mit Feldern
+6|bA Akk Sg m|@Klimawandel
+7|Adj Akk Sg m (Partizip I)|beginnend
+8|V Präs 3Sg|„es ___ zu etwas“ = es passiert
+9|Prp +Dat|wo?
+10|N Dat Pl m|Gebiete
+11|N Gen Sg f|unser Planet
+12|Prp+bA Dat Sg f (zu + der)|„es kommt ___ …“
+13|Prp +Dat|Bildung ___ etwas
+14|Kj|verbindet zwei Nomen
+15|Sj|Grund: weil
+16|Adj Nom Sg m|wo viel wächst, ertragreich
+17|Prp +Akk|Ursache: wodurch?
+18|Adj Dat Pl|ohne Berge, eben
+19|Adj Dat Pl (Partizip II)|ohne Bäume, abgeholzt
+20|P2 (trennbares Verb)|Passiv: weggenommen, entfernt
+21|Kj|Alternative
+22|N Akk Sg f|Tauglichkeit
+23|N Nom Sg f|Fläche, auf der etwas wächst
+24|N Akk Pl f|Bäume, Blumen, Gras
+25|Adj Akk Pl (Partizip I)|nicht vorhanden
+26|Kj|verbindet zwei Ursachen
+27|uA Akk Sg f|@Erhöhung
+28|bA Gen Sg m|@Salzgehaltes
+29|Prp+bA Dat Sg m (in + dem)|wo?
+30|V Präs 3Sg (trennbar)|verliert
+31|N Akk Sg m|Ablauf, Entwicklung
+32|Adv|meistens
+33|Adj Nom Sg f|so genannt
+34|V Präs 3Sg (trennbar)|kommt davor
+35|Idf Nom|unbestimmte Person
+36|N Dat Sg m|Verwendung
+37|N Akk Sg f (Fachwort)|Entstehung von Wüsten
+38|N Nom Sg m|Ablauf, Entwicklung
+39|Adv|meistens
+40|bA Akk Sg f|@Rodung
+41|uA Gen Sg m|@Waldbestandes
+42|N Gen Sg m|alle Bäume eines Gebiets
+43|Pab|leitet einen Relativsatz ein: durch das
+44|N Nom Sg m|Erde unter unseren Füßen
+45|N Akk Sg f|Können, Möglichkeit
+46|Adv|frisch, zum ersten Mal
+47|N Dat Pl f|Bäume, Blumen, Gras
+48|N Akk Sg m|Sicherheit vor Gefahr
+49|bA Dat Pl|@Elementen
+50|Ptk|vor dem Infinitiv „bieten“
+
+## 8
+1|Adv|mit diesem Brief
+2|PPr Nom 1Sg|der Schreiber selbst
+3|Prp +Akk|„sich bewerben ___ etwas“
+4|Prp +Dat|Passiv: Wer hat es gemacht?
+5|Prp+bA Dat Sg m (in + dem)|wann? Monat
+6|Prp +Dat|wo? an einer Institution
+7|N Dat Sg f|Amt, das Arbeitsplätze vermittelt
+8|Adj Akk Sg f (Partizip II)|öffentlich angeboten
+9|Vgl|„Stelle ___ …“ = in der Rolle
+10|Prp+bA Dat Sg n (in + dem)|wo?
+11|Kj|verbindet zwei Wortteile
+12|EN|Name des Heims (heilige Katharina)
+13|V Präs 1Sg|bin beschäftigt
+14|Prp +Dat|zeitlich: von damals bis jetzt
+15|N Dat Sg m|Ende einer Ausbildung mit Prüfung
+16|N Gen Sg f|Lehre für einen Beruf
+17|N Dat Sg m|Pfleger für alte Menschen
+18|Num|Zahl nach drei
+19|Adv|mit Erfolg
+20|Pos Dat Sg m|@Beruf
+21|Kj|verbindet zwei Aussagen
+22|Rfl Akk 1Sg|„ich interessiere ___“
+23|Pab|„sich interessieren ___, …“ = für das
+24|Adj Akk Sg f|„auf ___ Sicht“ = langfristig
+25|Pos Akk Sg m|@Verantwortungsbereich
+26|Prp +Akk|„ausdehnen ___ etwas“
+27|N Akk Sg f|Führung, Chefposition
+28|N Gen Sg f|Abteilung im Heim oder Krankenhaus
+29|Vgl|so, auf die Art
+30|Prp +Dat|wo?
+31|N Dat Sg f|Text über eine freie Stelle
+32|HV Prät 3Sg|Passiv Vergangenheit
+33|V Präs 3Pl (Höflichkeitsform)|sehen, bekommen
+34|Pos Akk Sg m|@Lebenslauf
+35|N Akk Sg m|Übersicht über Ausbildung und Arbeit
+36|Pos Akk Sg n|@Abschlusszeugnis
+37|bA Gen Sg f|@Altenpflegeschule
+38|Kj|verbindet zwei Dokumente
+39|N Akk Sg n|Bewertung vom Chef
+40|Adj Gen Sg m|bis jetzt, aktuell
+41|PPr Nom 1Sg|der Schreiber selbst
+42|PPr Dat (Höflichkeitsform)|der Empfänger, höflich
+43|Pos Dat Sg n (Höflichkeitsform)|@Team
+44|Adv|verstärkt „gerne“
+45|Pos Akk Pl|@Fähigkeiten
+46|Prp+bA Dat Sg f (zu + der)|„___ Verfügung stellen“
+47|Inf|„zur Verfügung ___“ = anbieten
+48|V Präs 1Sg|„sich ___ auf“ = Vorfreude haben
+49|Prp +Akk|„sich freuen ___ etwas“ (Zukunft)
+50|Adj Akk Sg n|direkt, von Person zu Person

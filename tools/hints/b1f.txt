@@ -1,0 +1,215 @@
+## b1-111
+1|bA Nom Sg m|@Konjunktiv II
+2|V Präs 3Sg|Form von „sein“
+3|bA Gen Pl|@vielseitigsten grammatischen Konstrukte
+4|Adj Gen Pl|die Grammatik betreffend
+5|bA Gen Sg f|@deutschen Sprache
+6|N Gen Sg f|Deutsch, Englisch, Arabisch …
+7|Idf Nom Sg f|„keine ___ …“ = keine weitere
+8|Prp +Dat|Kombination ___ etwas
+9|V Präs 3Sg|„___ sich verwenden“ = kann man verwenden
+10|Adv|„___ unterschiedlich wie“
+11|Inf|benutzen
+12|bA Nom Sg m|@Konjunktiv II
+13|bA Nom Sg n|@Konstrukt
+14|V Präs 3Sg|„sich ___“ = passt gut
+15|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+16|N Akk Sg f|gute Manieren, Respekt
+17|N Gen Sg f|Lage, Moment
+18|Inf|klarmachen, zeigen
+19|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+20|N Akk Sg f|etwas ist nicht wirklich
+21|Inf (untrennbar)|betonen
+22|N Nom Pl m|was man sich erhofft
+23|N Nom Pl f|höfliche Aufforderungen
+24|Prp +Akk|Mittel: wodurch?
+25|N Akk Sg m|Modus: ___ II
+
+## b1-112
+1|N Nom Pl f|Bauwerke
+2|Adj Gen Sg f|modern, von heute
+3|V Präs 3Pl|Form von „sein“
+4|Idf Akk Pl|eine große Zahl
+5|bA Nom Sg f|@perfekte Verbindung
+6|N Nom Sg f|Kombination
+7|N Gen Sg f|Wissenschaft vom Denken
+8|bA Dat Pl|@physikalischen Möglichkeiten
+9|N Dat Pl f|Chancen, Optionen
+10|N Gen Sg n|100 Jahre
+11|Adj Komp|Komparativ von „groß“
+12|Adj Komp|Komparativ: ungewöhnlicher
+13|N Nom Sg n|Bauwerk, Haus
+14|Kj|„je … ___ …“
+15|HV Präs 3Sg|Passiv: ___ … diskutiert
+16|Vgl|„___ ein Kunstwerk“ = so als ob
+17|N Nom Sg n|Werk eines Künstlers
+18|bA Dat Sg f|@Öffentlichkeit
+19|P2|Passiv: besprochen
+20|N Nom Pl m|Personen
+21|Kj|jedoch
+22|Sj|leitet einen Inhaltssatz ein
+23|Adj Nom Pl|Gegenteil von „klein“
+24|NegP|verneint ein Verb oder Adjektiv
+25|V Präs 3Pl|Form von „sein“
+
+## b1-113
+1|Adj Sup Nom Pl|die allerneuesten (auch: neue)
+2|N Nom Pl f|Wissen, Ergebnisse
+3|Sj|leitet einen Inhaltssatz ein
+4|Prp +Akk|wichtig ___ wen?
+5|Adj Akk Sg m|des Menschen
+6|Adj|zum Leben notwendig
+7|Adv|jeden Tag
+8|N Akk Sg f|Wasser, Getränke
+9|Inf|bekommen
+10|bA Dat Sg m|@Körper
+11|NegP|verneint ein Verb oder Adjektiv
+12|Num|Zahl nach eins
+13|N Akk Sg n|klares Getränk aus dem Hahn
+14|N Akk Sg m|24 Stunden
+15|Adv|dann, in diesem Fall
+16|Prp+bA Dat Sg n (zu + dem)|„___ Beispiel“
+17|bA Nom Sg n|@Gehirn
+18|Pos Nom Sg n|@wichtigstes Organ
+19|N Nom Sg n|Körperteil mit Funktion (Herz, Leber …)
+20|Adv|„nicht ___“ = nicht länger
+21|Adj Dat Pl|bestmöglich
+22|Adj|„zu etwas ___ sein“ = können
+23|V Präs 3Sg|wird ganz trocken
+24|Adj Sup Dat Sg m|„im ___ Sinne“ = wirklich
+25|bA Gen Sg n|@Wortes
+
+## b1-114
+1|N Nom Sg m|Autos und LKW auf den Straßen
+2|EN Gen (Land)|Land in Mitteleuropa (Genitiv)
+3|HV Präs 3Sg|„___ immer dichter“ = verändert sich
+4|Adj Komp|Komparativ von „dicht“
+5|N Nom Pl m|lange Autoschlangen
+6|Kj|verbindet zwei Sätze
+7|Adv|„nicht ___“ = auch, besonders
+8|bA Nom Sg f|@Luft
+9|Rel Akk Sg f|bezieht sich auf „Luft“
+10|Adv|jeden Tag
+11|Prp +Dat|„leiden ___ etwas“
+12|N Dat Sg m|Emission, was herauskommt
+13|N Dat Sg n|CO₂
+14|Kj|verbindet Nomen in einer Aufzählung
+15|N Dat Pl n|giftige Stoffe
+16|EN Dat (Land)|Land in Mitteleuropa
+17|Prp +Dat|zeitlich: von damals bis heute
+18|Num|15
+19|Adv|tatkräftig
+20|N Nom Sg f|schmutzige Luft
+21|Idf Nom Pl|nicht dieselben, weitere
+22|bA Gen Sg f|@Erde
+23|V Präs 3Pl|lehnen ab, machen nicht mit
+24|Adv|häufig
+25|N Akk Pl f|Anstrengungen für die Natur
+
+## b1-115
+1|N Nom Pl m|Personen
+2|Pos Gen Sg n|@Erwerbslebens
+3|Adv|mit Pflicht zur Rentenversicherung
+4|HV Prät 3Pl|Zustandspassiv: beschäftigt ___
+5|PPr Nom 3Pl|die Menschen
+6|N Dat Sg m|Ende
+7|N Gen Sg f|normale Arbeitsjahre bis zur Rente
+8|Adv|im Moment
+9|Prp +Dat|„liegt ___ 67 Jahren“
+10|V Präs 3Sg|„___ bei …“ = beträgt
+11|N Akk Sg f|Geld im Alter
+12|N Dat Sg m|Regierung, öffentliche Hand
+13|N Nom Sg f|Geld im Alter
+14|Adj Nom Pl|Gegenteil von „jung“
+15|V Präs 3Pl|bekommen
+16|Prp +Akk|Mittel: durch
+17|N Akk Pl m|Zahlungen in eine Kasse
+18|N Gen Pl m|Personen
+19|Rel Nom Pl|bezieht sich auf „Menschen“
+20|Adj|arbeiten für Geld
+21|Dem Akk Sg f|@Methode
+22|V Präs 3Sg|bezeichnet
+23|Prp +Dat|wo?
+24|Ptk|ebenfalls
+25|N Akk Sg m|Junge zahlen für Alte: ___
+
+## b1-116
+1|EN Dat (Land)|Land in Mitteleuropa
+2|Vgl|„___ in jedem anderen Land“ = genauso
+3|Idf Dat Sg n|@anderen Land
+4|N Dat Sg n|Staat
+5|N Gen Sg f|die ganze Erde
+6|Adv|verstärkt „viel“
+7|N Nom Sg n|klares Getränk aus dem Hahn
+8|bA Nom Pl|@Deutschen
+9|V Präs 3Pl|mögen sehr
+10|N Akk Sg n|klares Getränk aus dem Hahn
+11|Adv|in der Regel
+12|N Dat Sg f|macht Blasen im Wasser
+13|Dem Nom Sg n|@Wasser
+14|HV Präs 3Sg|Passiv: ___ … genannt
+15|N Nom Sg m|Wasser mit Blasen
+16|N Nom Sg n|Wasser aus der Flasche
+17|N Dat Sg f|macht Blasen im Wasser
+18|Prp+bA Dat Sg n (bei + dem)|zeitlich: während
+19|uA Gen Sg f|@Flasche
+20|N Gen Sg m|Wasser mit Blasen
+21|bA Nom Sg f|@überflüssige Kohlensäure
+22|N Nom Sg f|macht Blasen im Wasser
+23|N Nom Sg m|was übrig bleibt
+24|Prp+bA Dat Sg n (in + dem)|wo?
+25|VPt|trennbarer Verbteil: „bleibt … ___“
+
+## b1-117
+1|N Nom Sg f|Regierung, Parteien
+2|N Nom Pl n|Zeitung, Fernsehen, Internet
+3|Adv|mittlerweile
+4|N Akk Pl m|Personen
+5|Adv|„immer ___“ = oft
+6|N Akk Sg f|Strom, Wärme
+7|Inf|weniger verbrauchen
+8|bA Akk Sg f|@Menge
+9|Prp +Dat|Menge ___ etwas
+10|Prp +Dat|wo?
+11|N Dat Sg f|Lufthülle der Erde
+12|N Gen Sg f|unser Planet
+13|Inf|kleiner machen
+14|V Präs 3Sg|Form von „sein“
+15|bA Gen Pl|@Verursacher
+16|bA Gen Pl|@weltweiten Klimaveränderungen
+17|N Gen Pl f|Wandel des Klimas
+18|Rel Gen Pl|„mit ___ Auswirkungen“ (Genitiv)
+19|PPr Nom 1Pl|alle Menschen, auch der Schreiber
+20|N Akk Sg m|24 Stunden
+21|MV Präs 1Pl|Pflicht, Notwendigkeit
+22|bA Nom Sg n|@Ausschalten
+23|bA Gen Sg f|@Stand-by-Taste
+24|Prp+bA Dat Sg m (an + dem)|wo? direkt daran
+25|MV Präs 3Sg|Möglichkeit
+
+## b1-118
+1|bA Nom Sg n|@Verbindungsglied
+2|Prp +Dat|in der Mitte von zwei Dingen
+3|Kj|verbindet zwei Nomen
+4|V Präs 3Sg|Form von „sein“
+5|N Dat Sg m|Person
+6|N Nom Sg f|Rückgrat
+7|bA Akk Pl|@Nervenbahnen
+8|Rel Nom Pl|bezieht sich auf „Nervenbahnen“
+9|bA Akk Pl|@Wirbelkanäle
+10|bA Gen Sg f|@Wirbelsäule
+11|V Präs 3Pl|gehen, führen
+12|N Nom Pl m|Teile des Körpers
+13|N Nom Pl m|von der Schulter bis zur Hand
+14|N Nom Pl n|vom Knie bis zum Fuß
+15|Ptk|ebenfalls
+16|Vgl|zum Beispiel
+17|N Nom Sg f|Organ zum Atmen
+18|N Nom Sg m|Magen, Darm usw.
+19|N Dat Pl f|Nachrichten, Signale
+20|bA Dat Sg n|@Gehirn
+21|P2|Passiv: beliefert
+22|N Dat Pl f|Wunden, Schäden
+23|N Gen Sg f|Rückgrat
+24|bA Nom Sg m|@ganze Körper
+25|N Nom Sg m|Kopf, Rumpf, Arme und Beine

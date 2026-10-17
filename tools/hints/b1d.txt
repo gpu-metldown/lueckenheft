@@ -1,0 +1,216 @@
+## b1-95
+1|N Akk Sg f|was und wie man isst
+2|Adj Akk Sg n|in Balance, richtig dosiert
+3|Prp +Dat|„Maß ___ etwas“
+4|Kj|verbindet Nomen in einer Aufzählung
+5|N Akk Sg f|Verringerung
+6|N Dat Sg m|Druck, Hektik
+7|V Präs 3Pl|Form von „sein“
+8|Adj Sup Nom Pl|Superlativ von „wichtig“
+9|Prp +Dat|Relativsatz: „___ denen“ = womit
+10|Idf Nom|unbestimmte Person
+11|Inf (trennbar)|verhindern, bevor es passiert
+12|uA Nom Sg m|@großer Prozentsatz
+13|N Nom Sg m|Anteil in Prozent
+14|N Gen Sg f|alle Menschen eines Landes
+15|Prp +Dat|„___ Gefahr sein“
+16|uA Akk Sg m|@Herzinfarkt
+17|Ptk|vor dem Infinitiv „erleiden“
+18|bA Nom Pl|@Ursachen
+19|Pab|für das (eben Genannte)
+20|N Nom Sg m|Druck, Hektik
+21|N Nom Sg f|was und wie man isst
+22|N Nom Sg m|zu wenig Bewegung
+23|V Präs 3Sg|„___ zu“ = hat als Folge
+24|N Dat Sg f|Blockade
+25|N Gen Pl f|Blutgefäße am Herzen
+
+## b1-96
+1|bA Nom Sg m|@Zebrastreifen
+2|V Präs 3Sg|Form von „sein“
+3|N Nom Sg f|Option, Chance
+4|N Nom Pl m|Personen, die zu Fuß gehen
+5|N Dat Sg m|Autos, Busse und Fußgänger auf der Straße
+6|uA Akk Sg f|@Ampel
+7|bA Akk Sg f|@Straße
+8|Inf (untrennbar)|auf die andere Seite gehen
+9|Pab|in diesem Fall
+10|bA Nom Sg f|@Regel
+11|Sj|leitet einen Inhaltssatz ein
+12|N Nom Sg m|Person, die zu Fuß geht
+13|Prp +Akk|„___ … herangehen“ = Richtung: wohin?
+14|N Akk Sg m|weiß-schwarzer Übergang
+15|Prp +Dat|Passiv: Wer beachtet?
+16|Adj Dat Pl (Partizip I)|die näher kommen
+17|P2|Passiv: wahrgenommen, respektiert
+18|MV Präs 3Sg|Pflicht
+19|V Präs 3Sg|„das ___“ = mit anderen Worten
+20|N Nom Sg n|Fahrzeug mit vier Rädern
+21|Inf|anhalten
+22|bA Akk Sg m|@Fußgänger
+23|Prp +Akk|auf die andere Seite: ___ die Straße
+24|N Akk Sg m|weiß-schwarzer Übergang
+25|Ptk|„gehen ___ lassen“
+
+## b1-97
+1|Idf Nom|unbestimmte Person
+2|EN Dat (Land)|Land in Mitteleuropa
+3|Kj|verbindet zwei Verben
+4|V Präs 3Sg|Form von „sein“
+5|N Nom Sg n|normales Bankkonto
+6|Adj Nom Sg f|bedeutend
+7|Prp +Akk|Voraussetzung ___ etwas
+8|N Akk Sg f|Bezahlung
+9|N Gen Sg n|monatlicher Lohn
+10|Adv|fast nicht
+11|N Dat Sg f|Job, Arbeit
+12|bA Nom Sg m|@Lohn
+13|Prp+bA Dat Sg n (an + dem)|„___ Ende“
+14|bA Gen Sg f|@Woche
+15|Kj|Alternative
+16|N Gen Sg m|ca. 30 Tage
+17|N Nom Sg n|Münzen und Scheine
+18|bA Nom Sg m|@Arbeitnehmer
+19|V Präs 3Sg|benötigt
+20|uA Akk Sg n|@Konto
+21|Prp +Akk|„überweisen ___ ein Konto“
+22|bA Nom Sg n|@Entgelt
+23|Prp +Akk|Bezahlung ___ etwas
+24|N Akk Sg f|Job, Tätigkeit
+25|HV Inf|Passiv: überwiesen ___ kann
+
+## b1-98
+1|N Nom Sg m|Jahreszeit nach dem Sommer
+2|EN Dat (Land)|Land in Mitteleuropa
+3|uA Nom Sg f|@wundervolle Zeit
+4|N Nom Sg f|Periode
+5|N Nom Pl f|Grad Celsius
+6|Adv|Gegenteil von „schnell“
+7|N Nom Sg n|Blätter der Bäume
+8|bA Dat Pl|@Bäumen
+9|V Präs 3Sg|wechselt die Farbe
+10|Kj|verbindet zwei Verben
+11|Adj|vielfarbig
+12|N Nom Sg m|Getränk aus Trauben
+13|bA Dat Pl|@Weinbergen
+14|HV Präs 3Sg|„___ reif“ = verändert sich
+15|Kj|verbindet zwei Aussagen
+16|Prp +Dat|Passiv: Wer erntet?
+17|N Dat Pl m|Bauern, die Wein machen
+18|bA Nom Pl|@Menschen
+19|V Präs 3Pl (trennbar: ___ … vor)|„sich ___ … vor“ = sich fertig machen
+20|Adv|Gegenteil von „schnell“
+21|bA Akk Sg m|@Winter
+22|VPt|trennbarer Verbteil: „bereiten … ___“
+23|V Präs 3Pl|fangen an
+24|Prp +Dat|„beginnen ___ etwas“
+25|N Dat Pl f|Planungen für das Fest im Dezember
+
+## b1-99
+1|bA Nom Sg f|@Vermeidung
+2|Prp +Dat|Vermeidung ___ etwas
+3|Kj|verbindet zwei Nomen
+4|V Präs 3Sg|Form von „sein“
+5|bA Gen Pl|@wichtigsten Verhaltensregeln
+6|N Gen Pl f|Ratschläge, wie man sich verhält
+7|N Dat Sg n (nominalisiertes Verb)|Erfolg in einer Prüfung
+8|N Dat Pl f|schriftliche Prüfungen an der Uni
+9|N Dat Pl f|Tests, Examen
+10|N Nom Pl m|Personen
+11|Adv|schon
+12|bA Dat Sg f|@Vorbereitungszeit
+13|bA Akk Sg m|@Fehler
+14|uA Akk Sg n|@großes Angstpotenzial
+15|N Akk Sg n|mögliche Menge an Angst
+16|Kj|verbindet zwei Infinitive
+17|uA Akk Sg f|@entspannte Vorbereitung
+18|N Akk Sg f|Lernen vor einem Test
+19|Adj|nicht machbar
+20|Inf|„unmöglich ___“ = verhindern
+21|Frg|Frage nach der Art und Weise
+22|Idf Nom|unbestimmte Person
+23|Inf|verhindern
+24|PPr Nom Sg n|„gibt ___“
+25|N Akk Sg n|Anleitung, Mittel
+26|N Akk Sg f|Unruhe, Nervenanspannung
+
+## b1-100
+1|N Akk Sg m|Zeit nach dem Mittag
+2|Prp +Dat|Passiv: Wer stoppt?
+3|N Dat Sg f|Polizisten auf Patrouille
+4|bA Dat Sg f|@Rheinstraße
+5|uA Nom Sg m|@roter BMW
+6|EN (Automarke)|bayerische Automarke mit drei Buchstaben
+7|Rel Nom Sg m|bezieht sich auf den Wagen
+8|bA Dat Sg m|@Weg
+9|Prp +Akk|Richtung: wohin?
+10|N Akk Sg f|Zentrum der Stadt
+11|bA Dat Pl|@Polizisten
+12|HV Prät 3Sg|Plusquamperfekt: ___ … aufgefallen
+13|N Nom Sg m|Auto
+14|Sj|Grund
+15|bA Akk Sg f|@gestattete Höchstgeschwindigkeit
+16|N Akk Sg f|schnellstes erlaubtes Tempo
+17|Abk|„Stunde“ in km/_
+18|N Akk Pl m|1000 Meter
+19|N Akk Sg f|60 Minuten
+20|HV Prät 3Sg|Plusquamperfekt: überschritten ___
+21|bA Dat Sg f|@späteren Durchsuchung
+22|N Dat Sg f|genaue Kontrolle
+23|N Gen Sg m|Auto
+24|Idf|große Menge
+25|P2|Passiv: entdeckt
+
+## b1-101
+1|N Nom Pl m|Personen
+2|Prp +Dat|wo?
+3|N Akk Pl n|Söhne und Töchter
+4|V Präs 3Pl|bekommen
+5|N Dat Sg m|Regierung, öffentliche Hand
+6|N Akk Sg f|Geld, das gezahlt wird
+7|Vgl|„___ … bezeichnet“
+8|P2|Passiv: genannt
+9|bA Nom Sg f|@Zahlung
+10|V Präs 3Sg|Form von „sein“
+11|Prp +Dat|„abhängig ___ etwas“
+12|N Dat Sg f|Zahl
+13|N Gen Pl n|Söhne und Töchter
+14|bA Dat Sg f|@Familie
+15|Vgl|„sowohl … ___ auch“
+16|Prp+bA Dat Sg n (von + dem)|„abhängig ___ Alter“
+17|bA Gen Pl|@Kinder
+18|Adj|bedingt durch
+19|N Nom Sg n|Geld vom Staat für Eltern
+20|Prp +Dat|wo? an welchem Amt
+21|N Dat Sg f|Amt, das Kindergeld zahlt
+22|Kj|verbindet zwei Partizipien
+23|Prp|zeitlich: Endpunkt
+24|N Dat Sg n|Jahr des Lebens
+25|N Gen Sg n|Sohn oder Tochter
+
+## b1-102
+1|N Akk Sg m|früh am Tag
+2|Num|Zahl nach fünf
+3|V Prät 3Sg|bewegte sich mit dem Auto
+4|Adj Nom Sg m|Farbe des Himmels
+5|Prp +Dat|wo? oben
+6|N Dat Sg f|wichtigste Straße im Ort
+7|N Dat Sg f|„in ___ …“ = auf dem Weg nach
+8|Sj|zeitlich (Vergangenheit, einmalig)
+9|N Nom Sg m|Person am Steuer
+10|N Akk Sg m|kurze Zeit, Augenblick
+11|V Prät 3Sg|Vergangenheit von „sein“
+12|PPr Nom 3Sg m|der Fahrer
+13|Adv|verstärkt „wenig“
+14|P2|Plusquamperfekt: Schlaf gehabt
+15|V Prät 3Sg (trennbar: ___ … ab)|„von der Fahrbahn ___ … ab“
+16|Prp +Dat|„___ der Fahrbahn abkommen“
+17|N Dat Sg f|Teil der Straße für Autos
+18|Kj|verbindet zwei Verben
+19|Prp +Akk|Richtung: wohin? hinein
+20|N Akk Sg m|Abgrenzung um ein Grundstück
+21|Rfl Akk 3Sg|„___ befinden“
+22|Prp +Dat|wo? direkt neben
+23|N Dat Sg f|Weg für Autos
+24|Idf Dat Pl|ein paar
+25|V Prät 3Sg|lag, stand

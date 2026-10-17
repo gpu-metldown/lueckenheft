@@ -1,0 +1,214 @@
+## b1-103
+1|V Prät 3Pl|begingen (eine Straftat)
+2|Adj Nom Pl|nicht bekannt, fremd
+3|uA Akk Sg m|@Banküberfall
+4|Prp +Akk|„Überfall ___ etwas“
+5|N Akk Sg f|Zweigstelle einer Bank
+6|N Gen Sg f|Bank-Name: ___ (Sparbank)
+7|bA Dat Sg f|@Bahnhofstraße
+8|Prp +Akk|Uhrzeit: ungefähr um
+9|V Prät 3Pl|gingen hinein
+10|N Nom Pl m|Kriminelle
+11|N Dat Pl f|kleine Schusswaffen
+12|bA Akk Sg f|@Bank
+13|Pos Akk Pl|@Gesichter
+14|V Prät 3Pl|verbargen
+15|Prp +Dat|wo? dahinter
+16|Sj|Folge: so dass
+17|Adj|ohne erkannt zu werden
+18|PPr Nom 3Pl|die Verbrecher
+19|bA Akk Pl|@verängstigten Angestellten
+20|N Akk Pl|Mitarbeiter
+21|N Gen Sg f|Zweigstelle einer Bank
+22|V Prät 3Pl|raubten
+23|N Dat Pl f|ungefähre Berechnungen
+24|N (Währung)|Geld in Deutschland
+
+## b1-104
+1|bA Dat Pl|@frühen Morgenstunden
+2|N Dat Pl f|früh am Tag
+3|Adv|an diesem Tag
+4|N Nom Sg m|großer Laden für Lebensmittel
+5|Prp +Dat|Passiv: Wer hat überfallen?
+6|Adj Dat Pl (Partizip II)|mit Waffen
+7|P2 (untrennbar)|Passiv: angegriffen und ausgeraubt
+8|N Nom Pl m|Personen (Plural von „Mann“)
+9|Adv|ohne gesehen zu werden
+10|bA Akk Sg n|@Gebäude
+11|VPt|trennbarer Verbteil: „drangen … ___“
+12|uA Nom Sg m|@gepanzerter Geldtransporter
+13|N Nom Sg m|Fahrzeug für Geld
+14|bA Akk Sg n|@Wechselgeld
+15|Prp +Akk|Zweck: wofür?
+16|N Akk Sg n|Verkauf eines Tages
+17|Prp +Dat|Mittel: womit?
+18|N Dat Sg f|Pistole, Gewehr
+19|bA Nom Pl|@Räuber
+20|bA Akk Pl|@Angestellten
+21|bA Gen Sg n|@Sicherheitsunternehmens
+22|Pab|„zwingen ___, …“
+23|N Akk Sg n|Euro, Münzen und Scheine
+24|bA Dat Sg m|@Transporter
+25|Adv|ohne zu warten
+
+## b1-105
+1|N Nom Pl n|Jungen und Mädchen
+2|Adv|bereits
+3|Adj Dat Sg f|früh, jung
+4|uA Akk Sg m|@Berufswunsch
+5|Adv|meistens
+6|Dem Nom Pl|@Wünsche
+7|P2|beeinflusst
+8|N Akk Pl m|Arbeiten, Jobs
+9|bA Nom Pl|@Kinder
+10|Prp +Dat|Herkunft: woher?
+11|N Dat Sg f|Eltern, Geschwister
+12|Pos Dat Sg n|@sozialen Umfeld
+13|N Dat Sg n|Menschen um einen herum
+14|V Präs 3Pl|wissen von
+15|Kj|jedoch
+16|Prp +Akk|Ursache: wodurch?
+17|N Akk Sg f|Interesse, Talent
+18|bA Nom Sg n|@Kind
+19|V Präs 3Sg|fühlt
+20|Adj Sup Nom Pl|am meisten genannt
+21|Prp +Dat|Wünsche ___ jemandem
+22|V Präs 3Pl|Form von „sein“
+23|Vgl|zum Beispiel
+24|N Nom Sg m|Person, die Brände löscht
+25|N Nom Sg m|fliegt ein Flugzeug
+
+## b1-106
+1|bA Nom Sg m|@Computer
+2|uA Nom Sg m|@wichtiger Bestandteil
+3|N Nom Sg m|Teil
+4|Adj Gen Sg f|jeden Tag
+5|V Präs 3Sg|Form von „sein“
+6|Prp +Dat|„___ regelmäßigen Abständen“
+7|N Dat Pl m|Zeit zwischen zwei Terminen
+8|N Nom Sg f|Backup
+9|Prp +Dat|wo? darauf
+10|N Dat Sg f|Speicher im Computer
+11|N Gen Pl f|Daten, Dokumente
+12|HV Inf|Passiv: gemacht ___
+13|Prp +Dat|„___ einem Fehler“ = im Fall von
+14|N Dat Sg m|Defekt des Speichers
+15|Prp+bA Dat Sg m (in + dem)|„___ Falle“
+16|uA Gen Sg m|@Computerabsturzes
+17|bA Akk Pl|@Daten
+18|Adv|Gegenteil von „langsam“
+19|Ptk|vor dem Infinitiv „können“
+20|Adv|sonst
+21|uA Nom Sg m|@kaputter Computer
+22|Adj Nom Sg m|defekt
+23|Adv|Gegenteil von „langsam“
+24|N Dat Sg m|wenn man etwas nicht mehr hat
+25|N Gen Pl f|Geldbeträge
+
+## b1-107
+1|Prp +Dat|wo?
+2|V Präs 3Sg|„es ___“ = existiert
+3|Adj Akk Pl|verschieden
+4|bA Nom Sg m|@bekannteste Dialekt
+5|Adj Sup Nom Sg m|am meisten bekannt
+6|Rel Akk Sg m|bezieht sich auf „Dialekt“
+7|N Nom Pl m|Personen
+8|EN Dat (Land)|Land in Mitteleuropa
+9|V Präs 3Sg|Form von „sein“
+10|Dem Nom Sg m|@Dialekt
+11|HV Präs 3Sg|Passiv: ___ … gesprochen
+12|EN Dat (Bundesland)|Bundesland mit Hauptstadt München
+13|Adj Sup Dat Sg m|ganz am Rand
+14|bA Gen Sg f|@Bundesrepublik
+15|P2|Passiv: geredet
+16|Vgl|„anders ___“
+17|N Dat Pl m|Art, wie man Laute spricht
+18|Rel Dat Pl|„bei ___“ – bezieht sich auf „Akzenten“
+19|Adv|vor allem
+20|N Akk Sg f|wie man Wörter spricht
+21|V Präs 3Sg|„es ___“ = existiert
+22|Prp +Dat|„___ Dialekten“ = in Bezug auf
+23|N Akk Pl m|Differenzen
+24|N Dat Sg f|wie Wörter entstehen
+25|Ptk|ebenfalls
+
+## b1-108
+1|N Akk Sg n|Zweirad, mit dem man fährt
+2|HV Präs 3Sg|Passiv: ___ … empfohlen
+3|N Dat Pl m|Ärzte
+4|N Dat Pl m|Therapeuten für Bewegung
+5|Adj Akk Sg n|perfekt
+6|Prp+bA Dat Sg f (zu + der)|Zweck: wofür?
+7|Prp +Dat|Stärkung ___ etwas
+8|Kj|verbindet zwei Nomen
+9|P2|Passiv: geraten
+10|N Nom Pl m|Personen
+11|Adv|bereits
+12|Kj|Alternative
+13|uA Akk Sg n|@zu hohes Gewicht
+14|Adj Akk Sg n|groß (bei Gewicht)
+15|NegP|verneint ein Verb oder Adjektiv
+16|Adj|flexibel, mobil
+17|MV Präs 3Pl|Möglichkeit
+18|bA Dat Sg n|@Fahrrad
+19|Pos Akk Sg f|@körperliche Fitness
+20|N Akk Sg f|körperliche Form
+21|Inf|erhöhen
+22|V Präs 3Pl|machen besser
+23|Ptk|ebenfalls
+24|N Akk Sg n|gutes Gefühl
+25|Pos Akk Sg n|@Immunsystem
+
+## b1-109
+1|N Nom Sg f|Austausch von Informationen
+2|N Dat Pl m|Kollegen bei der Arbeit
+3|Adv|bereits
+4|Idf Nom Sg n|zählt eins aus einer Gruppe
+5|Adj Gen Pl|sehr wichtig, im Mittelpunkt
+6|bA Gen Sg f|@Arbeitswelt
+7|P2|Perfekt von „sein“
+8|bA Dat Sg f|@Einführung
+9|Adj Gen Pl|Gegenteil von „alt“
+10|N Gen Pl n|Kommunikationsmittel
+11|N Nom Sg f|Austausch von Informationen
+12|Adv|„___ wichtiger“ = sogar wichtiger
+13|N Nom Pl m|Personen
+14|Inf|Wissen erwerben
+15|Adj Akk Pl|die Kommunikation betreffend
+16|NegP|„___ mehr nur …“ = ab jetzt anders
+17|Ptk|„___ mündlich“ = bloß
+18|Ptk|vor dem Infinitiv „nutzen“
+19|Kj|„nicht …, ___“ = im Gegenteil
+20|Ptk|ebenfalls
+21|Adj Dat Sg f (Partizip II)|schriftlich
+22|Zu (trennbares Verb)|anwenden
+23|V Präs 3Pl|„sich schwer ___“ = Probleme haben
+24|Adv|aber
+25|Pab|mit dieser Sache
+
+## b1-110
+1|N Nom Pl|Personen, die etwas überlebt haben
+2|N Dat Pl m|Unglücke
+3|N Dat Pl f|große Unglücke
+4|Adv|oft
+5|Prp +Dat|„Probleme ___ etwas“
+6|N Dat Sg f|Bewältigung
+7|Adj Gen Pl|seelisch sehr belastend
+8|bA Nom Pl|@Betroffenen
+9|V Präs 3Pl|„___ unter“ = haben Probleme durch
+10|Adj Dat Sg m|nach einem Trauma
+11|N Dat Sg f|nicht schlafen können
+12|N Dat Pl m|böse Träume
+13|N Dat Pl m|plötzliche starke Angst
+14|Prp +Dat|„___ Zusammenhang stehen“
+15|N Dat Sg m|Verbindung
+16|bA Dat Pl|@erlebten Situationen
+17|N Dat Pl f|Momente, Lagen
+18|Dem Nom Pl|@Menschen
+19|V Präs 3Pl|benötigen
+20|N Akk Sg f|Unterstützung
+21|N Dat Pl m|Fachleute
+22|bA Akk Sg n|@Verständnis
+23|Dem Gen Pl|@Menschen
+24|Prp +Dat|Relativsatz: „leben ___ jemandem“
+25|PPr Nom 3Pl|die Betroffenen

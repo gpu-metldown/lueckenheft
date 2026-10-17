@@ -1,0 +1,214 @@
+## b1-79
+1|bA Akk Sg f|@Computerisierung
+2|Adv|„immer ___“ = mehr und mehr
+3|Rfl Akk 3Sg|„um ___ greifen“ = größer werden, wachsen
+4|N Akk Sg f|Verbreitung von Computern
+5|N Gen Sg f|alle Menschen zusammen
+6|Rfl Akk 3Sg|„hat ___ … verändert“
+7|N Nom Sg f|Weise, Methode
+8|N Nom Pl m|Personen
+9|Adv|mittlerweile
+10|P2|anders geworden
+11|Adv|in der Vergangenheit
+12|P2|gemacht, durchgeführt
+13|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+14|Prp +Dat|Austausch ___ jemandem
+15|Zu (trennbares Verb)|gegenseitig geben
+16|Adv|in unserer Zeit
+17|N|elektronische Post: E-___
+18|N (englisch)|„sofort“: ___ Messenger
+19|P2|Passiv: benutzt
+20|Prp +Dat|in Kontakt ___ jemandem
+21|Prp +Akk|„___ Kontakt treten“
+22|Ptk|vor dem Infinitiv „treten“
+23|Adv|jeden Tag
+24|Adj Nom Pl|Gegenteil von „alt“
+25|P2|Passiv: erfunden, gemacht
+
+## b1-80
+1|bA Dat Pl|@letzten Jahren
+2|N Dat Pl n|Zeiträume von zwölf Monaten
+3|Prp +Dat|wo? im Bereich
+4|N Dat Sg f|Heilkunde
+5|N Nom Sg m|Entwicklung, Mode
+6|Zu|„ist … ___“ = kann man feststellen
+7|Adv|„___ von …“ = fort von
+8|bA Dat Sg f|@Schulmedizin
+9|Kj|verbindet zwei Richtungen
+10|Prp +Dat|„hin ___ …“
+11|N Dat Pl f|Arten zu heilen
+12|Idf Nom Pl|eine große Zahl
+13|HV Präs 3Pl|Zustand: ___ enttäuscht
+14|Adj Dat Sg f|klassisch, üblich
+15|Kj|verbindet zwei Nomen
+16|N Dat Pl f|Arten der Therapie
+17|Kj|verbindet zwei Verben
+18|N Akk Sg f|gesund werden
+19|N Akk Pl f|Verfahren
+20|N Nom Sg f|Behandlung mit Nadeln
+21|Prp +Akk|Mittel: wodurch?
+22|N Akk Sg f|Heilkunde
+23|Ptk|ebenfalls
+24|HV Präs 3Sg|„___ immer beliebter“ = verändert sich
+25|Adj Komp|Komparativ: mehr gemocht
+
+## b1-81
+1|V Präs 3Sg|Form von „sein“
+2|N Nom Sg f|Periode
+3|N Gen Sg n|zwölf Monate
+4|Rel Dat Sg f|„in ___“ – bezieht sich auf „Zeit“
+5|Prp +Akk|schicken ___ jemanden
+6|N Akk Pl m|gute Bekannte, die man mag
+7|N Akk Pl m|Personen, die man kennt
+8|HV Präs 3Pl|Passiv: verschickt ___
+9|V Präs 3Sg|„sich etwas ___“ = hoffen
+10|Pab|bei dieser Gelegenheit
+11|uA Akk Sg n|@Weihnachtsfest
+12|N Akk Sg n|Feier am 24./25. Dezember
+13|uA Akk Sg m|@Start
+14|N Akk Sg m|Beginn
+15|Adj Akk Sg n|das folgende
+16|Sj|zeitlich: seit dem Zeitpunkt, als
+17|N Nom Sg n|weltweites Computernetz
+18|Prp +Akk|___ wen?
+19|uA Akk Sg f|@Rolle
+20|N Akk Sg f|„eine ___ spielen“ = wichtig sein
+21|HV Präs 3Pl|Passiv: ___ … verschickt
+22|Kj|jedoch
+23|Adv|„___ häufiger“ = zunehmend
+24|Prp|Mittel: mit, durch (E-Mail)
+25|P2|Passiv: gesendet
+
+## b1-82
+1|N Nom Pl m|Personen
+2|Prp +Dat|wo?
+3|Prp +Dat|leben ___ etwas
+4|N Dat Sg f|körperliche oder geistige Einschränkung
+5|V Präs 3Pl|„sich konfrontiert ___“ = erleben
+6|Prp +Akk|Ursache: wodurch?
+7|N Akk Pl f|Bedingungen, Umstände
+8|Adj Akk Pl|die Technik betreffend
+9|Adv|„___ wieder“ = oft
+10|Prp +Dat|„konfrontiert ___ etwas“
+11|N Dat Pl f|Grenzen, Begrenzungen
+12|N Gen Sg f|frei sein, sich zu bewegen
+13|Prp +Dat|zeitlich: von damals bis heute
+14|N Dat Pl n|Zeiträume von zwölf Monaten
+15|V Präs 3Sg|„___ … zusammen“ = kooperiert
+16|N Nom Sg f|Gruppe, die für ein Ziel kämpft
+17|N Gen Pl m|Personen
+18|Prp +Dat|zusammenarbeiten ___ jemandem
+19|N Dat Sg f|die Minister in Berlin
+20|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+21|N Akk Pl f|Grenzen, Begrenzungen
+22|Kj|verbindet zwei Angaben
+23|bA Akk Pl|@Betroffenen
+24|Adj|„___ stellend“ = so, dass alle glücklich sind
+25|Ptk|vor dem Infinitiv „beseitigen“
+
+## b1-83
+1|bA Akk Sg f|@Beleuchtung
+2|N Akk Sg f|Licht durch Lampen
+3|N Gen Sg f|Umfeld, was um uns herum ist
+4|N Dat Sg f|Gegenteil von „Tag“
+5|Rfl Akk 3Pl|„___ ergeben“ = entstehen
+6|N Nom Pl n|Schwierigkeiten
+7|bA Akk Sg f|@Umwelt
+8|Adj Nom Pl|hilfreich
+9|Prp+bA Dat Sg n (zu + dem)|„___ Beispiel“
+10|Rel Nom Pl|bezieht sich auf „Insekten“
+11|Adv|in der Vergangenheit
+12|bA Dat Sg f|@gesamten Natur
+13|N Dat Sg f|Pflanzen, Tiere, Landschaft
+14|HV Präs 3Pl|Passiv: ___ … angezogen
+15|Adj Dat Sg f|in der Nacht
+16|Adv|„___ sehr …, dass“
+17|P2 (trennbares Verb)|Passiv: hingelockt
+18|PPr Nom 3Pl|die Insekten
+19|N Nom Sg f|Opfer, das gefressen wird
+20|Pos Akk Pl|@natürlichen Feinde
+21|N Akk Pl m|Gegenteil von „Freunde“
+22|DemP Nom Sg n|das (vorher Gesagte)
+23|Prp +Dat|„führen ___ etwas“
+24|N Dat Sg m|Abnahme, Sinken
+25|N Gen Pl m|Zahl der Tiere und Pflanzen einer Art
+
+## b1-84
+1|bA Nom Sg n|@Kopieren
+2|Kj|verbindet zwei Nomen
+3|Adv|nach dem Recht der Autoren
+4|N Gen Pl f|Scheiben mit Filmen
+5|Kj|verbindet Nomen
+6|N Gen Pl m|Medien, die Daten speichern
+7|bA Gen Sg m|@Computers
+8|V Präs 3Sg|Form von „sein“
+9|Idf Gen Sg f|ein bisschen, etwas
+10|Prp +Dat|wo?
+11|Kj|„___ auch“ = sondern auch
+12|Prp +Dat|wo?
+13|Adj Sup Dat Pl|Superlativ von „viel“
+14|N Dat Pl n|Staaten
+15|N Gen Sg f|unser Planet
+16|Ptk|ebenfalls
+17|N Nom Sg n (nominalisiertes Verb)|Download
+18|N Gen Pl f|Daten auf dem Computer
+19|bA Dat Sg n|@Internet
+20|HV Präs 3Sg|Zustand: ___ betroffen
+21|Dem Dat Sg n|@Verbot
+22|P2|berührt, gemeint
+23|N Nom Pl f|Bestrafungen
+24|Dem Akk Pl|@Handlungen
+25|V Präs 3Pl|Form von „sein“
+
+## b1-85
+1|V Präs 3Sg|Form von „sein“
+2|Idf Akk Pl|eine große Zahl
+3|Prp +Dat|„___ der heutigen Zeit“
+4|Adj Dat Sg f|von heute
+5|uA Nom Sg f|@Alternative
+6|Kj|verbindet zwei Adjektive
+7|Idf Dat|„vor ___“ = besonders
+8|N Nom Sg f|andere Möglichkeit
+9|N Dat Sg n (nominalisiertes Verb)|Essen zubereiten
+10|Prp +Akk|Ursache: wodurch?
+11|Adj Komp Nom Pl|Komparativ von „eng“
+12|Adj Nom Sg f (Partizip I)|steigend
+13|Kj|verbindet Nomen in einer Aufzählung
+14|Adv|überall, generell
+15|N Akk Sg f|schneller werden
+16|N Dat Pl m|Prozesse
+17|Pos Dat Sg f|@Gesellschaft
+18|V Präs 3Pl|„sich Zeit ___“
+19|Adv|„___ weniger“ = zunehmend weniger
+20|N Nom Pl m|Personen
+21|N Akk Sg f|Stunden und Minuten
+22|Ptk|vor dem Infinitiv „kochen“
+23|Kj|Alternative
+24|Ptk|vor dem Infinitiv „lassen“
+
+## b1-86
+1|bA Nom Sg n|@Parken
+2|Prp +Dat|Parken ___ etwas
+3|Prp +Dat|wo?
+4|HV Präs 3Sg|„___ immer teurer“ = verändert sich
+5|Adj Komp|Komparativ von „teuer“
+6|bA Nom Pl|@Stadtverwaltungen
+7|Adj Komp Gen Pl|Komparativ von „groß“
+8|HV Präs 3Pl|Perfekt: ___ … angehoben
+9|N Akk Pl m|Kosten
+10|N Akk Pl m|Stellen, wo man Autos abstellt
+11|N Akk Pl n|Gebäude zum Parken
+12|P2 (trennbares Verb)|erhöht
+13|V Präs 3Sg|„es ___“ = existiert
+14|Idf Akk Pl|einige
+15|Adv|auf der einen Seite
+16|DemP Nom Sg n|das hier
+17|N Nom Sg m|ein Probieren
+18|Prp +Dat|heraus von
+19|Adj Dat Pl (Partizip II)|zu voll
+20|Zu (trennbares Verb)|weg halten, nicht hereinlassen
+21|V Präs 3Pl|Form von „sein“
+22|N Nom Pl f|Kosten fürs Parken
+23|uA Nom Sg n|@gutes Geschäft
+24|N Nom Sg n|Handel, der Geld bringt
+25|bA Akk Pl|@Städte

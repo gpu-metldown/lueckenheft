@@ -1,0 +1,207 @@
+## 13
+1|N Nom Pl f|Quellen für Strom und Wärme (Öl, Gas …)
+2|Rel Dat Pl|„aus ___“ – bezieht sich auf die Energieressourcen
+3|N Nom Sg f|alle Menschen zusammen
+4|Dem Dat Sg f|@Erde
+5|Inf|nehmen, herausholen
+6|HV Präs 3Pl|„___ immer knapper“ = verändern sich
+7|Adj Komp|Komparativ: weniger vorhanden
+8|V Präs 3Sg|folgt, ergibt sich
+9|Adj Nom Sg f|allgemein
+10|Prp +Dat|Verteuerung ___ etwas
+11|Kj|verbindet zwei Nomen
+12|Adv|auf der ganzen Welt
+13|Adj Nom Sg m|so genannt
+14|V Präs 3Sg|bemerkt, spürt
+15|NegP|„___ zuletzt“ = auch, besonders
+16|Pab|„merken ___, dass …“
+17|bA Nom Pl|@Nebenkosten
+18|Prp+bA Dat Sg n (zu + dem)|Kosten ___ Wohnen
+19|Rel Nom Pl|bezieht sich auf „Nebenkosten“
+20|Prp +Akk|Passiv: verursacht ___ etwas
+21|Kj|verbindet zwei Nomen
+22|P2|Passiv: hervorgerufen
+23|Adv|ständig, ohne Pause
+24|Dem Nom Sg f|@Tatsache
+25|V Präs 3Sg|macht, verursacht
+26|N Dat Pl m|Leute, die eine Wohnung mieten
+27|EN Dat (Land)|Land in Mitteleuropa
+28|Kj|Grund (Hauptsatz folgt)
+29|V Präs 3Sg|kennt, ist informiert
+30|Frg|„___ viel“ = welche Menge
+31|N Akk Sg n|Euro, Münzen und Scheine
+32|Prp +Dat|„___ der Abrechnung“ = im Rahmen von
+33|N Dat Sg f|jährliche Rechnung für Wasser, Heizung …
+34|Inf|Geld geben für etwas
+35|bA Nom Sg f|@Nebenkostenabrechnung
+36|Prp +Dat|Relativsatz: „___ der“ = durch die
+37|bA Nom Sg m|@Mehrverbrauch
+38|Prp +Dat|Mehrverbrauch ___ etwas
+39|N Dat Sg n|Energie für Herd und Heizung
+40|N Dat Sg f|macht die Wohnung warm
+41|HV Präs 3Sg|Passiv: berechnet ___
+42|NegP|verneint ein Verb oder Adjektiv
+43|bA Akk Sg f|@Miete
+44|N Akk Sg f|Geld, das man jeden Monat für die Wohnung zahlt
+45|HV Präs 3Sg|Zustandspassiv: abgedeckt ___
+46|Adv|ein Mal
+47|N Akk Sg n|zwölf Monate
+48|Kj|verbindet zwei Verben
+49|bA Akk Pl|@Mieter
+50|P2 (trennbares Verb)|Passiv: verteilt
+
+## 14
+1|bA Nom Sg f|@Instandsetzung
+2|bA Gen Sg f|@Infrastruktur
+3|N Gen Sg f|Straßen, Brücken, Leitungen eines Landes
+4|Idf Nom Sg f|zählt eins aus einer Gruppe: „___ der wichtigsten Aufgaben“
+5|Adj Sup Gen Pl|Superlativ von „wichtig“
+6|bA Gen Pl|@Länder
+7|Kj|verbindet zwei Nomen
+8|Prp +Dat|wo?
+9|Sj|Grund: weil
+10|Adj Nom Sg m|ohne Probleme
+11|Prp +Dat|Transport ___ etwas
+12|Kj|verbindet zwei Nomen
+13|Prp +Dat|wo?
+14|Prp|„___ wie vor“ = immer noch
+15|Adv|„nach wie ___“ = weiterhin
+16|Adv|perfekt, ohne Fehler
+17|N Akk Pl f|Wege für Autos
+18|HV Präs 3Sg|„angewiesen ___“
+19|N Nom Pl f|wichtige Straßen des Bundes
+20|Kj|verbindet zwei Nomen
+21|Adv|immer
+22|Kj|verbindet zwei Adjektive
+23|bA Akk Sg m|@Schwerverkehr
+24|Adj|man kann darauf fahren
+25|bA Nom Pl|@Instandsetzungsarbeiten
+26|Dem Dat Sg m|@Grund
+27|Adv|in festen Abständen
+28|N Nom Pl f|Reparaturen
+29|Adv|für den Verkehr betrachtet
+30|N Akk Pl f|Wege für Autos
+31|Adv|aber
+32|Adj Komp Akk Sg f|Komparativ von „lang“
+33|Prp +Dat|„führen ___ etwas“
+34|Inf|„zu etwas ___“ = verursachen
+35|Adj Nom Sg f|genau, gewissenhaft
+36|Adj Gen Pl|die Infrastruktur betreffend
+37|V Präs 3Sg|Form von „sein“
+38|Adv|völlig, ganz
+39|Kj|aber
+40|Sj|„selbst ___“ = auch falls
+41|Adv|früh genug
+42|Kj|verbindet zwei Partizipien
+43|bA Gen Pl|@Ferienzeiten
+44|P2 (trennbares Verb)|Passiv: geplant, terminiert
+45|MV Präs 3Sg|Möglichkeit
+46|Prp +Akk|___ wen/was?
+47|N Akk Sg m|Autos, LKW und Busse auf Straßen
+48|N Akk Pl f|Arbeiten auf Baustellen
+49|Adv|„immer ___“ = oft, mehrmals
+50|N Dat Pl f|Störungen, Hindernisse
+
+## 15
+1|Prp +Dat|zeitlich: ab, von damals bis heute
+2|Adj Dat Sg n (Ordnungszahl)|19.
+3|Adj Nom Sg f (Partizip I)|beginnend
+4|V Prät 3Sg|„___ zu“ = hatte als Folge
+5|EN Dat|Mitte des Kontinents
+6|Prp +Dat|„führen ___ etwas“
+7|Rel Nom Pl|bezieht sich auf „Tätigkeitsprofilen“
+8|Idf Komp|Komparativ von „wenig“
+9|N Akk Sg f|Tätigkeit, Job
+10|Prp +Gen|„___ ihrer“ = anstelle davon
+11|Adv|„___ mehr“ = zunehmend
+12|Adj Akk Pl (Partizip I)|auf einem Stuhl
+13|V Präs 3Pl|verlangen, brauchen
+14|bA Nom Pl|@Länder
+15|N Nom Pl n|Staaten
+16|Abk|Europäische Union
+17|Neg Nom Pl|@Agrarländer
+18|Adv|„keine … ___“ = nicht länger
+19|V Präs 3Sg (trennbar: ___ … auf)|„Fahrt ___ … auf“ = wird schneller
+20|Adv|an allen Orten
+21|Adj Nom Sg m (Partizip I)|sehen, wahrnehmen: „zu ___“
+22|Adv|verstärkt: noch dazu
+23|Prp +Akk|„___ Fahrt aufnehmen“
+24|VPt|trennbarer Verbteil: „nimmt … ___“
+25|N Nom Sg f|Konsequenz, Ergebnis
+26|N Gen Sg f|Veränderung, Verlagerung
+27|bA Dat Sg f|@Art
+28|N Dat Sg f|Weise, Form
+29|N Gen Sg f|berufliche Arbeit für Geld
+30|Adj Nom Pl|so genannt
+31|Vgl|zum Beispiel
+32|N Nom Sg m|Zuckerkrankheit
+33|N Nom Pl f|Krankheiten
+34|N Gen Sg n|Herz und Blutgefäße: Herz-Kreislauf-___
+35|Adj Nom Sg m|nur einer, kein anderer
+36|Prp +Akk|___ wen?
+37|N Akk Sg m|Arbeiter in einem reichen Land
+38|PPr Nom Sg n|Platzhalter-Subjekt
+39|N Akk Sg f|Sport, Aktivität
+40|Pos Gen Sg f|@Arbeit
+41|Ptk|vor dem Infinitiv „suchen“
+42|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+43|N Akk Sg m|Kopf, Rumpf, Arme und Beine
+44|N Akk Sg f|Sport, Aktivität
+45|Inf|anregen, aktivieren
+46|PPr Akk 3Sg m|steht für „den Körper“
+47|Adv|dauerhaft, langfristig
+48|Inf|in Gefahr bringen
+49|N Nom Sg f|Aktivität
+50|Adv|an dieser Stelle
+
+## 16
+1|N Nom Sg m|das Essen
+2|N Dat Sg n|Essen von Tieren, z. B. Rind
+3|Idf Dat Pl|weitere, sonstige
+4|N Dat Pl n|Waren, Erzeugnisse
+5|Prp +Dat|Passiv: Wer stellt infrage?
+6|Idf Komp|Komparativ von „viel“
+7|Prp +Dat|wo?
+8|Adv|„___ stellen“ = bezweifeln
+9|Adj Nom Pl|sehr brutal
+10|Prp +Dat|wo? im Bereich
+11|N Dat Sg f|Haltung von Tieren für Lebensmittel
+12|bA Akk Pl|@Menschen
+13|Pos Akk Sg n|@Konsumverhalten
+14|Prp +Gen|in Bezug auf
+15|N Gen Pl n|Waren, Erzeugnisse
+16|Inf (untrennbar)|noch einmal nachdenken über
+17|V Präs 3Pl|„sich eine Frage ___“
+18|Idf Nom Pl|eine große Zahl
+19|bA Akk Sg f|@Frage
+20|Sj|leitet eine indirekte Ja/Nein-Frage ein
+21|N Akk Sg n|Existenz, Dasein
+22|N Gen Sg m|Person
+23|Prp +Akk|höher als: „___ etwas stellen“
+24|N Akk Sg n|Existenz, Dasein
+25|N Gen Sg n|Lebewesen wie Hund oder Kuh
+26|Inf|„über etwas ___“ = höher bewerten
+27|Idf Nom Pl|einige
+28|Rfl Akk 3Pl|„___ entscheiden“
+29|Pab|„sich ___ entscheiden, …“
+30|Ptk|vor dem Infinitiv „essen“
+31|Kj|verbindet zwei Infinitive
+32|Inf|existieren, wohnen
+33|Sj|„auch ___“ = obwohl
+34|N Dat Sg f|was man isst
+35|N Nom Sg m|Ansehen, Image
+36|NegP|verneint ein Verb oder Adjektiv
+37|Adj Akk Pl|zum Leben notwendig
+38|Kj|verbindet zwei Nomen
+39|Ptk|vor dem Infinitiv „liefern“
+40|V Präs 3Pl|„eine andere Sprache ___“ = zeigen etwas anderes
+41|Prp +Dat|Tausende ___ etwas
+42|uA Akk Sg f|@Sprache
+43|N Akk Sg f|Deutsch, Englisch, Arabisch …
+44|Ptk|ebenfalls
+45|bA Gen Pl|@Auswirkungen
+46|Adj Gen Sg f|traditionell, üblich
+47|Prp +Akk|Auswirkungen ___ etwas
+48|N Akk Sg n|Klima der ganzen Erde
+49|uA Nom Sg n|@Umdenken
+50|Adj|vernünftig, nützlich

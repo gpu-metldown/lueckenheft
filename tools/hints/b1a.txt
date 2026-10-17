@@ -1,0 +1,215 @@
+## b1-71
+1|N Nom Pl f|große Überschriften in der Zeitung
+2|bA Nom Pl|@Überschriften
+3|Rel Nom Pl|bezieht sich auf „Überschriften“
+4|N Dat Pl f|tägliche Blätter mit Nachrichten
+5|bA Dat Sg f|@Titelseite
+6|V Präs 3Pl|sind gedruckt, befinden sich
+7|N Nom Sg f|große Überschrift in der Zeitung
+8|Adv|jedes Mal, stets
+9|Adj Komp Dat Pl|Komparativ von „groß“
+10|P2|Passiv: auf Papier gebracht
+11|bA Nom Sg m|@Rest
+12|bA Gen Sg m|@Textes
+13|bA Nom Sg m|@Text
+14|uA Gen Sg f|@Schlagzeile
+15|V Präs 3Sg|fasst kurz zusammen
+16|N Akk Pl f|Nachrichten, Daten
+17|Adj Gen Sg m (Partizip I)|der danach kommt
+18|Prp +Akk|„komprimieren ___ wenige Worte“ = verkürzen
+19|N Akk Pl n|Wörter (in einem Ausdruck)
+20|Idf Nom|unbestimmte Person
+21|bA Akk Sg m|@ersten Blick
+22|N Akk Sg m|„auf den ersten ___“ = sofort
+23|N Akk Sg n|Inhalt, worum es geht
+24|N Gen Sg m|Text in der Zeitung
+25|Inf|begreifen
+
+## b1-72
+1|bA Nom Pl|@Bundesländer
+2|bA Gen Sg f|@Bundesrepublik
+3|HV Präs 3Pl|Perfekt: ___ sich … geeinigt
+4|Prp +Akk|„sich einigen ___ etwas“
+5|Adj Akk Sg n|vollständig, weitgehend
+6|P2|eine gemeinsame Entscheidung getroffen
+7|Prp +Dat|wo?
+8|Kj|verbindet zwei Nomen
+9|Adj Dat Pl|für alle zugänglich
+10|V Präs 3Sg|ist gültig
+11|HV Präs 3Pl|Passiv: ___ … geprüft
+12|bA Dat Pl|@Bundesländern
+13|Prp +Dat|zeitlich: ab damals bis heute
+14|N Dat Sg f|Beginn, Start einer Regel
+15|N Gen Sg n|etwas ist nicht erlaubt
+16|bA Dat Pl|@Jahren
+17|Kj|verbindet zwei Zahlen
+18|Adv|„immer ___“ = weiterhin
+19|Prp +Dat|Ausnahmen ___ einer Regel
+20|N Dat Sg f|Vorschrift
+21|Kj|aber (nach „zwar“)
+22|N Nom Sg f|was wir atmen
+23|Prp +Akk|___ wen?
+24|Prp +Dat|„___ Zukunft“ = später
+25|Adj Komp|„die Luft wird ___“ = es wird schwieriger
+
+## b1-73
+1|N Nom Sg f|Produktion
+2|N Dat Sg f|Fett aus Milch, aufs Brot
+3|Prp|zeitlich: „___ ins 19. Jahrhundert“
+4|N Akk Sg n|100 Jahre
+5|N Nom Sg f|Arbeit ohne Maschinen
+6|N Nom Sg m|fetter oberer Teil der Milch, Sahne
+7|Rfl Akk 3Sg|„___ bilden“
+8|bA Dat Sg f|@Milch
+9|N Dat Sg f|weißes Getränk von der Kuh
+10|HV Prät 3Sg|Passiv Vergangenheit
+11|Kj|verbindet zwei Verben
+12|Adv|„___ lange …, bis“
+13|Prp +Dat|wo? drinnen
+14|N Dat Sg n|Gefäß zur Herstellung von Butter
+15|Sj|zeitlich: Endpunkt („so lange …, ___ …“)
+16|bA Nom Sg f|@Butter
+17|V Prät 3Sg|entstand
+18|Prp +Akk|Ursache: wodurch?
+19|N Akk Sg f|Entwicklung hin zu Fabriken
+20|Prp +Dat|Mittel: womit?
+21|N Dat Sg f|Maschine, die schnell dreht und trennt
+22|Adj Komp Nom Sg f|Komparativ von „schnell“
+23|Adj Komp Nom Sg f|Komparativ: billiger
+24|Prp +Dat|Gewinnung ___ etwas
+25|Adj|machbar
+
+## b1-74
+1|Prp +Dat|wo?
+2|V Präs 3Sg|„es ___“ = existiert
+3|Adj Akk Pl|vom Staat
+4|Adj Akk Pl|nicht vom Staat, von Firmen
+5|Dem Nom Sg f|@Tatsache
+6|V Präs 3Sg|macht lebendiger
+7|N Akk Sg f|alle Zeitungen, Sender usw. zusammen
+8|Kj|jedoch
+9|Prp +Akk|„sorgen ___ etwas“
+10|Sj|Gegensatz: wohingegen
+11|Adj Nom Pl|nicht vom Staat
+12|Rfl Akk 3Pl|„___ finanzieren“
+13|Prp +Akk|Mittel: durch
+14|Kj|verbindet zwei Nomen
+15|Pab|„___ verbunden“ = mit der Werbung verbunden
+16|N Dat Pl f|Geld, das man bekommt
+17|V Präs 3Pl|„zur Verfügung ___“ = sind da
+18|Adj Dat Pl|vom Staat
+19|Prp+bA Dat Sg f (zu + der)|Zweck: wofür?
+20|N Nom Pl f|Beiträge, die man zahlen muss
+21|N Dat Sg f|„zur ___ stehen“ = verfügbar sein
+22|Prp +Dat|Passiv: Wer zieht sie ein?
+23|N Dat Sg m|wer Radio und Fernsehen nutzt
+24|bA Akk Sg f|@Gebühreneinzugszentrale
+25|P2 (trennbares Verb)|Passiv: kassiert
+
+## b1-75
+1|bA Dat Sg n|@Jahr
+2|HV Präs 3Sg|„___ … zu verzeichnen“ = kann man feststellen
+3|Idf Dat Pl|ein paar
+4|bA Gen Sg f|@Wirtschaftskrise
+5|Prp +Dat|wo?
+6|N Dat Sg f|Staat: ___ Deutschland
+7|Adv|erneut
+8|Adj Nom Sg m|klein, gering
+9|Prp +Dat|wo? im Bereich
+10|N Dat Sg f|Produktion, Handel, Arbeit eines Landes
+11|Zu|feststellen, registrieren
+12|N Nom Sg f|Interesse der Kunden zu kaufen
+13|PPr Nom Sg n|Platzhalter-Subjekt im Passiv
+14|Adv|erneut
+15|N Nom Pl m|Jobs, Stellen
+16|Kj|verbindet zwei Sätze
+17|bA Akk Sg f|@Zukunft
+18|V Präs 3Sg|Form von „sein“
+19|N Nom Sg n (nominalisiertes Verb)|Sinken, Zurückgehen
+20|N Gen Pl f|Anzahl der Menschen ohne Arbeit
+21|Adj|sehr wohl möglich
+22|V Präs 3Pl|wünschen und erwarten
+23|Dem Nom Sg m|@Trend
+24|N Nom Sg m|Entwicklung
+25|V Präs 3Sg (trennbar)|bleibt bestehen
+
+## b1-76
+1|bA Nom Sg m|@Jahreswechsel
+2|Prp +Dat|wo?
+3|HV Präs 3Sg|Passiv: ___ … genannt
+4|EN|Name des letzten Tages im Jahr
+5|Prp +Dat|Datum: ___ diesem Tag
+6|N Dat Sg m|24 Stunden
+7|N Dat Sg m (Monat)|letzter Monat
+8|N Gen Sg n|zwölf Monate
+9|Prp +Akk|Uhrzeit: ___ Mitternacht
+10|bA Akk Sg n|@neue Jahr
+11|N Akk Sg n|zwölf Monate
+12|bA Nom Pl|@Deutschen
+13|V Präs 3Pl|machen
+14|Adv|nach alter Gewohnheit
+15|N Dat Pl m|Raketen und Böller
+16|Idf Akk Pl|nicht viele
+17|Prp +Dat|zeitlich: früher als
+18|Prp +Dat|wo?
+19|Kj|verbindet zwei Nomen
+20|Adj|man kann es kaufen
+21|Ptk|ausschließlich, bloß
+22|EN|31. Dezember
+23|N Nom Pl f|Leute, keine Firmen
+24|EN Dat (Land)|Land in Mitteleuropa
+25|N Akk Sg n|Raketen am Himmel
+
+## b1-77
+1|N Nom Sg n|Behörde des Bundes: Kraftfahrt-___
+2|Prp +Dat|Mittel: womit?
+3|N Dat Sg n|Datenbank über Verkehrssünder
+4|EN Dat (Stadt)|Stadt in Norddeutschland, bekannt für „Punkte“
+5|N Akk Sg n|Liste
+6|Prp +Dat|wo?
+7|Adj|negativ bemerkt
+8|N Gen Pl m|alle, die am Straßenverkehr teilnehmen
+9|N Akk Pl m|Regelbrüche
+10|bA Akk Sg n|@Straßenverkehrsgesetz
+11|HV Präs 3Pl|Passiv: ___ … vergeben
+12|uA Dat Sg f|@Bußgeldhöhe
+13|Prp +Dat|Höhe ___ 40 Euro
+14|Num|40
+15|Kj|verbindet zwei Bedingungen
+16|Prp +Dat|„je ___“ = abhängig von
+17|bA Gen Sg n|@Delikts
+18|N Nom Pl m|Zählwerte, Minuspunkte
+19|V Präs 3Sg (Satzanfang = Bedingung)|kommt an, schafft
+20|N Nom Sg m|wer am Straßenverkehr teilnimmt
+21|N Akk Sg m|Anzahl der Punkte
+22|N Dat Pl m|Zählwerte
+23|HV Präs 3Sg|Passiv: ___ … entzogen
+24|bA Nom Sg f|@Fahrerlaubnis
+25|P2|Passiv: weggenommen
+
+## b1-78
+1|Adv|„___ neue“ = ständig neue
+2|N Nom Pl n|Webseiten mit vielen Angeboten
+3|Adv|jeden Tag
+4|Prp +Dat|Relativsatz: „___ denen“ = wo
+5|N Nom Pl m|Personen
+6|N Akk Pl m|Geschriebenes
+7|Kj|verbindet Nomen in einer Aufzählung
+8|N Akk Pl f|Arten
+9|N Gen Sg f|Darstellung, Vorstellung
+10|Adj Dat Sg n|auf der ganzen Welt
+11|Adj|erreichbar, offen
+12|MV Präs 3Pl|Möglichkeit
+13|MV Präs 1Pl|Möglichkeit
+14|Frg|Art und Weise: auf welche Art
+15|N Nom Pl n|Hund, Katze, Pferd …
+16|N Gen Pl m|Personen
+17|Kj|Gegensatz
+18|N Akk Pl m|Reportagen
+19|Adj Akk Pl|die Politik betreffend
+20|Inf (trennbar)|anschauen
+21|V Präs 3Pl|Form von „sein“
+22|N Nom Pl n|Webseiten mit vielen Angeboten
+23|Adj|nützlich
+24|bA Akk Sg f|@Information
+25|bA Gen Pl|@Menschen

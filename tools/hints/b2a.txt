@@ -1,0 +1,207 @@
+## 1
+1|EN Dat (Land)|Land in Mitteleuropa, Hauptstadt Berlin
+2|PPr Nom Sg n|Platzhalter-Subjekt: weist auf den Infinitivsatz am Ende voraus
+3|Vgl|Vergleich: anders ___ …
+4|Prp+bA Dat Sg m (in + dem)|wo? Ort oder Bereich
+5|N Dat Sg m|Gruppe von Ländern mit ähnlicher Kultur
+6|Adj Nom Sg f (Partizip II)|von früheren Generationen weitergegeben
+7|Prp|feste Wendung „___ allem“ = besonders
+8|Adj Nom Sg f (Partizip II)|befolgt, respektiert
+9|N Akk Pl m|trägt man an den Füßen
+10|N Dat Sg n (nominalisiertes Verb)|das Hineingehen in einen Raum
+11|N Gen Sg f|Räume, in denen man lebt
+12|uA Gen Sg n|@Hauses
+13|Adv|ohne dass jemand darum bittet
+14|N Nom Sg m|eine Person
+15|N Nom Sg f|Eltern und ihre Kinder
+16|Prp +Dat|„___ den meisten Fällen“ = meistens
+17|Adj Sup Dat Pl|Superlativ von „viel“
+18|Prp +Dat|gemäß, entsprechend
+19|N Dat Pl f|Dinge, die man besonders gern mag
+20|Prp+bA Dat Sg m (zu + dem)|Regeln ___ Gebrauch: wofür?
+21|bA Gen Pl|@Straßen- oder Hausschuhe
+22|Kj|Alternative: A ___ B
+23|VPt|trennbarer Verbteil: „legen … ___“ = bestimmen
+24|V Präs 3Sg|„es ___ als höflich“ = man sieht es als höflich an
+25|Vgl|„gelten ___ …“
+26|Adj|freundlich, mit guten Manieren
+27|Prp +Dat|zeitlich: früher als
+28|uA Gen Sg f|@Wohnung
+29|Prp +Dat|Relativsatz: ___ der (= wo)
+30|Idf Nom|unbestimmte Person, jeder
+31|Adv|wie man erwartet, wahrscheinlich
+32|Inf (reflexiv: sich ___)|an einem Ort bleiben
+33|Prp +Dat|„sich erkundigen ___ etwas“
+34|N Dat Pl f|Vorschriften für das Verhalten
+35|N Gen Sg n|Gebäude, in dem man wohnt
+36|Inf (reflexiv: sich ___)|nachfragen, sich informieren
+37|Adv|falls nötig (Abkürzung: ggf.)
+38|Adj Akk Pl|die einem selbst gehören
+39|Zu (trennbares Verb)|zu jemandem dazubringen
+40|MV Präs 3Sg|Möglichkeit: es ist möglich
+41|uA Akk Sg f|@Wohnung
+42|Adv|selbstverständlich
+43|bA Dat Sg f|@Erkundigung
+44|Prp +Dat|„Erkundigung ___ etwas“
+45|N Dat Pl f|Gewohnheiten, Bräuche
+46|N Dat Pl f|trägt man unter den Schuhen
+47|Kj|Alternative: A ___ B
+48|N Akk Pl m|bequeme Schuhe für zu Hause
+49|N Akk Pl f|trägt man unter den Schuhen
+50|N Akk Pl m|Besucher
+
+## 2
+1|Adv|hauptsächlich, überwiegend
+2|N Gen Pl f|Arbeiten, Aufgaben
+3|Rfl Akk 3Sg|„___ verschieben“
+4|N Akk Sg n|typische Krankheiten einer Gruppe
+5|N Gen Pl m|Angestellte, die für eine Firma arbeiten
+6|N Dat Pl f|hoch entwickelte Länder mit viel Industrie
+7|Prp|„___ Richtung …“
+8|N Akk Sg m|Knochen, Muskeln und Gelenke
+9|N Akk Sg n|Herz und Blutgefäße: Herz-Kreislauf-___
+10|Ptk|ebenfalls
+11|V Präs 3Sg (trennbar: ___ … dar)|„eine Ausnahme ___ … dar“ = ist eine Ausnahme
+12|Dem Gen Sg m|@Trends
+13|Neg Akk Sg f|@Ausnahme
+14|VPt|trennbarer Verbteil: „stellt … ___“
+15|N Nom Sg f|ein Fakt, etwas Wahres
+16|bA Nom Sg m|@Körper
+17|N Nom Sg m|Kopf, Rumpf, Arme und Beine
+18|Pos Dat Sg f|@Anatomie
+19|Adv|„von … ___“ = von … aus gesehen
+20|Prp +Akk|„ausgelegt ___ etwas“
+21|N Akk Sg n (nominalisiertes Verb)|auf einem Stuhl sein
+22|HV Präs 3Sg|Zustandspassiv: ausgelegt ___
+23|Adv|besonders
+24|N Dat Sg m|Gebiet, Zone
+25|N Gen Sg n|Wirbelsäule
+26|bA Gen Pl|@Extremitäten
+27|N Akk Pl n|Schwierigkeiten
+28|Adv|immer mehr
+29|Ptk|„nicht ___ …, sondern auch“
+30|N Akk Sg f|Risiko
+31|bA Akk Sg m|@Arbeitnehmer
+32|V Präs 3Pl|sind, bilden
+33|Ptk|„nicht nur …, sondern ___“
+34|Adj Nom Sg m|die Wirtschaft betreffend
+35|Prp +Akk|zugunsten von, wen betrifft es?
+36|N Akk Sg m|Firma oder Chef, der Leute beschäftigt
+37|Adv|„nicht ___“ = nicht länger
+38|Inf|unbeachtet lassen, ignorieren
+39|Prp +Dat|zusätzlich zu
+40|Adj Dat Sg m|mit Sport verbunden
+41|Prp +Akk|als Ausgleich wofür?
+42|N Akk Pl f|Arbeiten, Aufgaben
+43|Adv|deshalb
+44|Adj|absolut notwendig
+45|uA Akk Sg f|@Sitzposition
+46|N Akk Sg f|wie man auf einem Stuhl sitzt
+47|Kj|verbindet zwei Verben
+48|bA Akk Pl|@Handgelenke
+49|Prp +Gen|zeitlich: in der Zeit von
+50|Prp+bA Dat Sg m (an + dem)|wo? direkt bei
+
+## 3
+1|N Dat Sg m (Monat)|vierter Monat des Jahres
+2|bA Nom Sg m|@Schriftsteller
+3|Adj Nom Sg m|aus Deutschland
+4|Kj|verbindet zwei Berufe
+5|EN (Vorname)|Vorname des Autors der „Blechtrommel“
+6|Vgl|„___ sehr wenige andere“
+7|Idf Nom Pl|nicht viele
+8|HV Präs 3Sg|Perfekt: ___ … mitgestaltet
+9|bA Akk Sg f|@Literaturgeschichte
+10|N Akk Sg f|Entwicklung der Literatur über die Zeit
+11|N Gen Sg f|die heutige Zeit
+12|P2 (trennbares Verb)|mitgeformt, beeinflusst
+13|Pos Akk Sg n|@Werk
+14|V Prät 3Sg|bekam
+15|Prp+bA Dat Sg n (in + dem)|wo?
+16|EN Dat (Land)|Nachbarland Deutschlands im Osten
+17|N Nom Sg m|Schriftsteller
+18|Idf Dat Sg n|„unter ___“ = zum Beispiel
+19|N Akk Sg m|berühmte Auszeichnung aus Schweden
+20|N Akk Sg f|Romane, Gedichte, Dramen
+21|Sj|„auch ___“ = obwohl
+22|Prp +Dat|wo? im Bereich
+23|N Dat Sg f|Mensch, Persönlichkeit
+24|N Dat Sg f|Geschichte eines Lebens
+25|V Prät 3Sg|spaltete die Meinungen
+26|PPr Dat Sg m|steht für Grass; „bescheinigen“ braucht den Dativ
+27|Vgl|„Fans ___ Kritiker“ = und auch
+28|Adv|jedes Mal, stets
+29|Adj Akk Sg n|ungewöhnlich groß
+30|Inf|bestätigen, anerkennen
+31|V Prät 3Sg|schrieb
+32|N Akk Sg f|Texte, die keine Gedichte sind
+33|Ptk|„sowohl … als ___“
+34|Prp +Dat|„___ etwas zählen“
+35|Adv|vermutlich, wahrscheinlich
+36|N Dat Pl n|Bücher, Kunstwerke
+37|bA Nom Sg f (im Titel)|@Blechtrommel
+38|Prp +Dat|Relativsatz: ___ der
+39|EN Nom (Nachname)|Nachname des Autors
+40|N Akk Sg f|Geschichte eines Lebens
+41|Adj Gen Sg m|sehr klein gewachsen
+42|Prp +Akk|„___ … Weise“ = wie?
+43|N Akk Sg f|Art, Methode
+44|Prp +Dat|zusätzlich zu
+45|Adj Dat Sg f|mit Kunst verbunden
+46|V Prät 3Sg|Vergangenheit von „sein“
+47|EN Nom (Nachname)|Nachname des Autors
+48|Ptk|ebenfalls
+49|Pos Akk Sg f|@Aktivität
+50|N Akk Sg f|Engagement, Tätigkeit
+
+## 4
+1|N Nom Pl f|Reptilien ohne Beine
+2|PPr Nom Sg n|„___ gibt“
+3|Prp +Dat|wo?
+4|Adv|jedoch, aber
+5|Adv|zu diesem Zeitpunkt, in diesem Fall
+6|Idf Nom|unbestimmte Person
+7|bA Akk Pl|@Ansammlungen
+8|N Akk Pl f|Gruppen von Leuten an einem Ort
+9|N Dat Pl m|Personen
+10|N Dat Pl f|Orte im Geschäft, wo man bezahlt
+11|Prp +Dat|wo? an einem Amt
+12|V Präs 3Sg|denkt an, bezieht sich auf
+13|V Präs 3Sg|„Schlange ___“ = in einer Reihe warten
+14|Kj|verbindet zwei Aussagen
+15|Adv|meistens
+16|Adj Dat Sg f|viel, stark
+17|Sj|Bedingung: falls
+18|N Dat Sg f|langes Tier ohne Beine
+19|bA Nom Sg n|@Reptil
+20|Adv|hauptsächlich
+21|N Dat Sg m|unten, worauf man steht
+22|N Nom Sg n|Tierklasse: Echsen, Schlangen, Krokodile
+23|HV Präs 3Sg|„gemeint ___“
+24|EN Nom (Land)|Land in Mitteleuropa
+25|Adj Nom Sg n|deutlich, typisch
+26|Prp +Dat|zwischen, inmitten
+27|Adj Dat Pl|von hier, heimisch
+28|N Dat Pl n|Tierklasse: Echsen, Schlangen, Krokodile
+29|Prp +Dat|„___ erster Stelle“
+30|N Dat Sg f|Position, Platz
+31|bA Nom Sg f|@Kreuzotter
+32|Ptk|Infinitiv-Partikel vor „nennen“
+33|Rel Nom Sg f|bezieht sich auf „Kreuzotter“
+34|Adj|kann durch Biss krank machen
+35|Kj|verbindet zwei Relativsätze
+36|N Gen Sg f|wenn etwas selten ist
+37|Adv|bereits
+38|Idf Gen Sg f|etwas, ein bisschen
+39|Prp|„___ Naturschutz stellen“
+40|P2|Passiv: wurde … ___
+41|bA Nom Sg f|@Blindschleiche
+42|N Dat Sg m|Verbindung, Kontext
+43|Adj Dat Pl|von hier, heimisch
+44|Adv|auch, gleichfalls
+45|Adj Nom Sg f (Partizip II)|genannt
+46|Adv|dagegen, im Gegensatz dazu
+47|Prp +Gen|obwohl es … gibt
+48|N Gen Sg f|wie lang etwas ist
+49|N Nom Sg f|langes Tier ohne Beine
+50|V Präs 3Sg|„___ zu“ = ist Teil von

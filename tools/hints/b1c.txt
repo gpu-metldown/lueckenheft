@@ -1,0 +1,214 @@
+## b1-87
+1|N Nom Sg f|Betreuung, Pflege
+2|Adj Dat Pl|Gegenteil von „jung“
+3|Prp +Dat|wo?
+4|V Präs 3Sg|passiert, erfolgt
+5|Idf Dat Pl|ein paar
+6|Adv|vor allem
+7|bA Akk Sg f|@Nutzung
+8|Prp +Dat|Nutzung ___ etwas
+9|Prp+bA Dat Sg f (zu + der)|Einrichtungen ___ Altenpflege: wofür?
+10|Prp +Dat|zeitlich: im Anschluss an
+11|N Dat Sg f|Entwicklung hin zu Fabriken
+12|bA Dat Pl|@beiden Weltkriegen
+13|N Dat Pl m|große Kriege 1914–18 und 1939–45
+14|Prp +Dat|wo?
+15|bA Nom Sg m|@familiäre Zusammenhalt
+16|N Nom Sg m|Solidarität, Verbundenheit
+17|Idf|„immer ___ nachlassen“ = zunehmend
+18|Adv|deshalb
+19|Rfl Akk 3Pl|„___ entscheiden“
+20|Ptk|„___ noch“ = bloß noch
+21|Adv|verstärkt „wenige“
+22|N Nom Pl f|Eltern mit Kindern
+23|Prp+bA Dat Sg m (in + dem)|wo?
+24|N Dat Sg m|Gemeinschaft der Familie
+25|Inf|betreuen, versorgen
+
+## b1-88
+1|Sj|Bedingung: falls
+2|Prp +Dat|Herkunft: woher?
+3|N Dat Pl f|reiche Länder mit viel Industrie
+4|N Akk Pl f|Produkte
+5|Adj Komp Dat Pl|Komparativ von „arm“
+6|bA Gen Sg f|@Welt
+7|Adj|billig, preiswert
+8|Inf|„produzieren ___“ = von anderen machen ___
+9|PPr Nom 3Pl|die Firmen
+10|Prp +Akk|Verantwortung ___ etwas
+11|N Akk Pl f|Umstände am Arbeitsplatz
+12|N Gen Pl m|Angestellte
+13|bA Akk Pl|@möglichen Auswirkungen
+14|N Akk Pl f|Folgen
+15|N Gen Sg f|Herstellung
+16|bA Akk Sg f|@Umwelt
+17|Inf (untrennbar)|annehmen, auf sich nehmen
+18|Adj|exakt, sorgfältig
+19|PPr Nom 3Pl|die Firmen
+20|Inf|überprüfen
+21|Prp +Dat|„___ der Fertigung“ = während
+22|N Dat Sg f|Produktion
+23|N Gen Pl f|Produkte
+24|N Nom Sg f|wenn Kinder arbeiten müssen
+25|N Akk Sg m|„zum ___ kommen“ = benutzt werden
+
+## b1-89
+1|N Nom Sg m|Schreibtisch mit Computer
+2|Adv|verstärkt: sehr
+3|N Akk Pl f|Bedingungen
+4|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+5|Adj Akk Sg n|Gegenteil von „krank“
+6|Prp +Akk|Gegenteil von „mit“
+7|Adj|machbar
+8|Inf|„möglich ___“ = ermöglichen
+9|V Präs 3Sg|Form von „sein“
+10|bA Nom Sg f|@Person
+11|Prp +Dat|wo?
+12|Adj Dat Sg f|passend, korrekt
+13|V Präs 3Sg|ist auf einem Stuhl
+14|bA Nom Pl|@Augen
+15|bA Akk Sg m|@korrekten Abstand
+16|N Akk Sg m|Entfernung
+17|N Dat Sg m|Monitor
+18|V Präs 3Pl (Satzanfang = Bedingung)|Form von „sein“: „___ … nicht erfüllt“
+19|Adj Nom Pl|bedeutend
+20|NegP|verneint ein Verb oder Adjektiv
+21|Adv|dann, in diesem Fall
+22|Adj Nom Pl|heftig, intensiv
+23|Kj|verbindet zwei Nomen
+24|bA Nom Sg f|@Folge
+25|Inf|„die Folge ___“ = daraus folgen
+
+## b1-90
+1|N Nom Pl f|was man normalerweise im Urlaub macht
+2|N Gen Pl|Menschen aus Deutschland
+3|Adv|„___ wieder“ = oft
+4|Prp+bA Dat Sg n (zu + dem)|„werden ___ Thema“
+5|Adj Gen Pl|der Wissenschaft
+6|bA Nom Sg f|@Frage
+7|Frg|Frage nach dem Grund
+8|N Nom Pl|Menschen aus Deutschland
+9|Adj Akk Pl|gewisse, spezielle
+10|V Präs 3Pl|fahren in den Urlaub
+11|Sj|leitet eine indirekte Ja/Nein-Frage ein
+12|Dem Akk Pl|@Reisen
+13|Prp+bA Dat Sg m (in + dem)|wo? in welchem Rahmen
+14|Kj|Alternative
+15|Prp +Dat|zusammen ___ jemandem
+16|V Präs 3Pl (untrennbar)|machen, durchführen
+17|NegP|„___ nur …“
+18|Prp +Akk|interessant ___ wen?
+19|N Akk Sg f|alle Firmen im Tourismus
+20|Frg|Frage nach der Art und Weise
+21|Rfl Akk 3Pl|„___ erholen“
+22|N Nom Pl|Menschen aus Deutschland
+23|Frg Akk|Frage nach einer Sache
+24|Prp+bA Dat Sg m (in + dem)|wann/wo? während
+
+## b1-91
+1|Adv|in unserer Zeit
+2|Idf Nom|unbestimmte Person
+3|Ptk|bloß
+4|N Akk Sg m|Gerät zum Kochen in der Küche
+5|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+6|Inf|Essen warm zubereiten
+7|Adj Komp Dat Pl|vergangen, damalig
+8|Adv|aber
+9|Adv|ab und zu
+10|Adv|in unserer Zeit
+11|MV Prät 3Pl|Notwendigkeit, Vergangenheit
+12|bA Dat Sg n|@Kochen
+13|Adv|zuerst
+14|P2|Passiv: mit der Axt zerkleinert
+15|N Nom Sg f|Platz für ein Feuer
+16|bA Nom Sg m|@Herd
+17|P2 (trennbares Verb)|Passiv: fertig gemacht
+18|bA Nom Sg n|@Feuer
+19|P2|Passiv: angezündet
+20|Adv|„___ wenn“ = nicht vorher
+21|bA Nom Sg n|@Feuer
+22|uA Akk Sg f|@bestimmte Stärke
+23|N Akk Sg f|Kraft, Intensität
+24|HV Prät 3Sg|Plusquamperfekt: erreicht ___
+25|P2|Passiv: Essen zubereitet
+
+## b1-92
+1|bA Nom Sg m|@Frühling
+2|V Präs 3Sg|Form von „sein“
+3|bA Dat Sg f|@Regel
+4|Adv|jedes Mal, stets
+5|N Nom Sg f|Frühling, Sommer, Herbst, Winter
+6|Rel Dat Sg f|„in ___“ – bezieht sich auf „Jahreszeit“
+7|N Nom Sg n|Sonne, Regen, Temperatur
+8|Adj Sup|ändert sich am häufigsten
+9|N Nom Sg m|weiße Flocken im Winter
+10|Rfl Akk 3Sg|„___ abwechseln“
+11|N Dat Sg m|Eiskörner, die vom Himmel fallen
+12|N Dat Sg m|Licht der Sonne
+13|Adv|ab und zu
+14|Ptk|ebenfalls
+15|VPt|trennbarer Verbteil: „wechselt … ___“
+16|uA Dat Sg m|@Tag
+17|V Präs 3Sg|fängt an
+18|N Nom Sg f|Pflanzen, Tiere, Landschaft
+19|Inf|Blüten bekommen
+20|Adj Nom Pl (Ordnungszahl)|Nummer eins
+21|V Präs 3Pl|werden größer
+22|bA Dat Pl|@Bäumen
+23|Kj|aber
+24|V Präs 3Sg|kommt danach
+25|Adj Nom Sg m|wiederholt, noch einmal
+
+## b1-93
+1|Sj|„immer ___“ = jedes Mal, als
+2|Vgl|„___ Kind“ = in meiner Kindheit
+3|N Akk Pl|schulfreie Zeit
+4|V Prät 3Pl|reisten
+5|N Nom Pl|Mutter und Vater
+6|PPr Dat 1Sg|der Erzähler selbst
+7|Pos Dat Pl|@zwei Geschwistern
+8|N Dat Pl n|Brüder und Schwestern
+9|N Akk Sg m|Ferienreise
+10|V Prät 1Pl|reisten
+11|Pab|bei diesen Reisen
+12|Adv|verstärkt „weit“
+13|Adv|ab und zu
+14|PPr Nom 1Pl|der Erzähler und seine Familie
+15|bA Akk Sg f|@Nordsee
+16|Idf Akk Pl|weitere, nicht dieselben
+17|Prp +Akk|Richtung: wohin? (ans Meer)
+18|EN|Meer im Nordosten Deutschlands
+19|Adv|ein Mal
+20|Prp +Dat|Richtung: wohin? (Land/Region)
+21|bA Nom Pl|@Sommerferien
+22|V Prät 3Pl|Vergangenheit von „sein“
+23|bA Nom Pl|@absoluten Höhepunkte
+24|N Nom Pl m|beste Momente
+25|N Gen Sg n|zwölf Monate
+
+## b1-94
+1|Sj|Bedingung/Zeit: falls
+2|Prp +Dat|wo?
+3|Adj|Gegenteil von „gesund“
+4|Kj|verbindet zwei Verben
+5|N Akk Sg m|Doktor
+6|MV Präs 3Sg|Notwendigkeit
+7|uA Nom Sg f|@Krankenversicherung
+8|bA Nom Sg f|@Grundvoraussetzung
+9|Prp +Akk|Voraussetzung ___ etwas
+10|N Akk Sg m|Termin beim Doktor
+11|EN Dat (Land)|Land in Mitteleuropa
+12|PPr Nom Sg n|„___ gibt“
+13|N Akk Sg n|Organisation der Gesundheitsversorgung
+14|Num|Zahl nach eins
+15|N Nom Pl|Arbeitnehmer in einer Firma
+16|Adv|im Normalfall
+17|Pos Dat Sg m|@Arbeitgeber
+18|Prp +Dat|„versichert ___ einer Kasse“
+19|Adv|„___ genannt“
+20|Adj Gen Sg f|durch Gesetz geregelt
+21|P2|Passiv: in einer Versicherung angemeldet
+22|Kj|Alternative
+23|V Präs 3Pl|„sich ___“ = eine Versicherung abschließen
+24|Prp +Dat|„sich versichern ___ einer …“
+25|Adj Dat Sg f|nicht staatlich

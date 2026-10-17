@@ -1,0 +1,207 @@
+## 9
+1|Kj|Alternative: A ___ B
+2|V Präs 1Sg|hoffe für jemanden, dass …
+3|uA Akk Sg m|@Rutsch
+4|N Akk Sg m|„guten ___!“ – Gruß zu Silvester
+5|V Präs 3Pl|Form von „sein“
+6|Rel Akk Pl|bezieht sich auf „Redewendungen“
+7|Prp +Dat|wo?
+8|Adv|oft
+9|N Dat Sg n|letzte Tage im Dezember
+10|Idf Nom Pl|eine große Zahl
+11|Rel Nom Pl|bezieht sich auf „Menschen“
+12|NegP|verneint ein Verb oder Adjektiv
+13|N Akk Sg f|erste Sprache, die man als Kind lernt
+14|V Präs 3Pl|„ins Grübeln ___“ = nachdenklich werden
+15|Dem Gen Sg f|@Wendung
+16|Prp+bA Akk Sg n (in + das)|„___ Grübeln kommen“
+17|N Nom Sg n (nominalisiertes Verb)|auf Eis gleiten
+18|V Präs 3Sg|heißt
+19|Prp +Dat|wo? oben
+20|Kj|Alternative
+21|N Dat Sg m|Erde unter den Füßen
+22|N Akk Sg m|Stabilität, Festigkeit
+23|Inf|nicht mehr haben
+24|Adv|vielleicht, möglicherweise
+25|Zu (trennbares Verb)|auf den Boden stürzen
+26|Frg Nom|Frage nach einer Sache
+27|Ptk|verstärkt eine Frage
+28|uA Nom Sg m|@Rutsch
+29|uA Nom Sg f|@Erklärung
+30|N Nom Sg f|Begründung
+31|Sj|leitet einen Inhaltssatz ein
+32|N Nom Sg n|anderes Wort für Nomen
+33|Prp +Dat|„___ Zeiten …“ = damals
+34|bA Gen Pl|@Gebrüder
+35|EN (Nachname)|bekannte Märchensammler: Jacob und Wilhelm ___
+36|N Gen Sg m|höfliche Anrede: der ___ von Goethe
+37|EN (Nachname)|Dichter des „Faust“
+38|Vgl|„___ Synonym“ = in der Funktion
+39|Prp +Akk|Synonym ___ etwas
+40|Kj|Alternative
+41|N Akk Sg f|Reise mit einem Fahrzeug
+42|HV Prät 3Sg|Passiv Vergangenheit
+43|uA Nom Sg f|@Reise
+44|N Nom Sg f|Fahrt an einen anderen Ort
+45|Adj Akk Sg n|Gegenteil von „alt“
+46|Adv|das heißt
+47|Adj Nom Sg m|Gegenteil von „schlecht“
+48|V Präs 3Sg|Form von „sein“
+49|Adv|verstärkt „viel“
+50|Adj Komp|Komparativ von „einfach“
+
+## 10
+1|Idf Nom|unbestimmte Person
+2|Adj Akk Sg n|für alle Menschen da
+3|Vgl|zum Beispiel
+4|N Akk Sg f|fährt auf Schienen durch die Stadt
+5|N Akk Sg f|Zug: S-___
+6|Prp|„___ … zu haben“ = und nicht
+7|N Akk Sg f|Ticket
+8|Ptk|vor dem Infinitiv „haben“
+9|V Präs 3Sg|bezeichnet als
+10|DemP Akk Sg n|meint den ganzen Vorgang davor
+11|Sj|Grund: weil
+12|Adv|stets, jedes Mal
+13|V Präs 3Sg|„es ___“ = existiert
+14|Adj Akk Pl|für alle Menschen da
+15|Prp +Akk|Gegenteil von „mit“
+16|V Präs 3Pl|benutzen
+17|PPr Nom Sg n|„gibt ___“
+18|Idf Dat Pl|jede, ohne Ausnahme
+19|N Akk Pl m|Angestellte im öffentlichen Dienst
+20|bA Akk Pl|@Fahrkarten
+21|bA Gen Pl|@Fahrgäste
+22|V Präs 3Pl|überprüfen
+23|N Akk Pl m|Angestellte, Kollegen
+24|N Gen Pl m|Firmen, die Busse und Bahnen betreiben
+25|Idf Nom|unbestimmte Person
+26|N Akk Pl m|Personen, die Tickets prüfen
+27|uA Nom Sg m|@Fahrgast
+28|Neg Akk Sg m|@Fahrausweis
+29|N Akk Sg m|Ticket
+30|MV Präs 3Sg|Fähigkeit, Möglichkeit
+31|PPr Nom 3Sg m|männliche Person
+32|PPr Nom 3Sg f|weibliche Person
+33|uA Akk Sg f|@Strafe
+34|Prp +Dat|eine Strafe ___ 60 Euro
+35|N (Währung)|Geld in Deutschland
+36|Adv|außerdem, dazu
+37|bA Nom Pl|@Personalien
+38|P2 (trennbares Verb)|Passiv: notiert
+39|Idf Nom|unbestimmte Person
+40|Vgl|Komparativ: öfter ___ …
+41|Prp +Akk|Gegenteil von „mit“
+42|P2 (trennbares Verb)|Passiv: gefunden, erwischt
+43|HV Präs 3Sg|Passiv: ___ … informiert
+44|bA Nom Sg f|@Polizei
+45|P2|Passiv: benachrichtigt
+46|N Nom Pl m|Personen
+47|Pos Akk Sg n|@Schwarzfahren
+48|Adv|mit Vergnügen, gerne
+49|Prp +Akk|Protest ___ etwas
+50|N Akk Pl m|Kosten für Tickets
+
+## 11
+1|N Nom Pl f|Länder mit viel Industrie
+2|P2|angetrieben, motiviert
+3|uA Dat Sg n|@Zuviel
+4|Rel Nom Sg n|bezieht sich auf „Zuviel“
+5|Adj Sup Akk Pl|sehr verschieden
+6|V Präs 3Sg|besitzt
+7|N Nom Sg n|zu viel von etwas
+8|N Dat Pl f|Nachrichten, Daten
+9|Ptk|„___ groß“ = übermäßig
+10|N Nom Sg n|alle Produkte, die man kaufen kann
+11|Idf|„zu ___“ = übermäßig
+12|Sj (Infinitivsatz mit „zu“)|Zweck: „___ nur einige zu nennen“
+13|Idf Akk Pl|ein paar
+14|Inf|aufzählen
+15|bA Gen Sg f|@Tatsache
+16|Sj|leitet einen Inhaltssatz ein
+17|N Nom Sg m|der größere Teil
+18|N Gen Sg f|alle Menschen der Erde
+19|N Akk Sg n|zu viel von etwas
+20|NegP|verneint ein Verb oder Adjektiv
+21|V Präs 3Sg|wirkt, sieht aus
+22|Adv|anfangs, erst einmal
+23|Sj|leitet einen Inhaltssatz ein
+24|Prp +Dat|wo?
+25|N Dat Pl f|Gemeinschaften von Menschen
+26|Adj Gen Sg f (Ordnungszahl)|„die ___ Welt“ = reiche Länder
+27|Adv|„___ mehr“ = zunehmend
+28|N Nom Pl m|Personen
+29|Ptk|„nicht ___ …, sondern auch“
+30|N Dat Sg m|Mode, Entwicklung
+31|Idf|Komparativ von „viel“
+32|V Präs 3Pl|machen mit, schließen sich an
+33|Rfl Dat 3Pl|„___ etwas zum Ziel setzen“
+34|bA Akk Sg f|@Vereinfachung
+35|Pos Gen Sg n|@Lebens
+36|Prp+bA Dat Sg n (zu + dem)|„sich etwas ___ Ziel setzen“
+37|P2|„zum Ziel ___ haben“ = beschlossen
+38|bA Nom Pl|@Anhänger
+39|Dem Gen Sg m|@Trends
+40|V Präs 3Pl|„___ danach“ = versuchen zu erreichen
+41|Rfl Akk 3Pl|„___ entledigen“
+42|Kj|„nach ___ nach“ = langsam
+43|Rel/DemP Gen Sg n|„sich ___ entledigen, was …“ (Genitiv)
+44|Inf (reflexiv: sich ___)|loswerden
+45|PPr Nom 3Pl|die Anhänger
+46|Pos Dat Sg f|@Existenz
+47|Vgl|„etwas ___ Ballast empfinden“
+48|V Präs 3Pl|fühlen, wahrnehmen
+49|bA Gen Sg n|@Zuviels
+50|Prp +Dat|„Zuviel ___ etwas“
+
+## 12
+1|Num|Zahl nach eins
+2|V Prät 3Sg (reflexiv)|passierte
+3|Prp +Gen/Dat|gemäß, nach Aussage von
+4|bA Gen Sg f|@Autobahnpolizei
+5|uA Nom Sg m|@Verkehrsunfall
+6|N Nom Sg m|Unglück im Straßenverkehr
+7|bA Gen Sg n|@Kreuzes
+8|N Gen Sg n|Kreuzung zweier Autobahnen
+9|Rel Dat Sg n|„an ___“ = wo
+10|N Nom Pl m|LKW mit gefährlicher Ladung
+11|Adv|einfach, schnell
+12|N Dat Sg f|was ein LKW transportiert
+13|HV Prät 3Pl|Vergangenheit von „sein“
+14|uA Nom Sg m|@Polizeisprecher
+15|V Prät 3Sg|sagte, dass es stimmt
+16|Sj|Grund: weil
+17|N Nom Pl m|LKW
+18|N Akk Sg f|was ein LKW transportiert
+19|HV KII 3Pl|indirekte Rede: verloren ___
+20|Adj Nom Sg m|ganz, vollständig
+21|Prp|„___ Richtung …“
+22|N Gen Sg m|dort landen Flugzeuge
+23|P2 (Passiv)|„gesperrt ___“ (Passiv Perfekt)
+24|bA Nom Sg f|@Lage
+25|Prp +Dat|„___ Ort“ = direkt dort
+26|PPr Akk Sg n|„___ ermöglichen“
+27|HV KI 3Sg|indirekte Rede: Futur/Passiv
+28|Adv|„___ befahren“ = stark genutzt
+29|N Nom Sg f|Schnellstraße für Autos
+30|Adv|aber
+31|Prp +Akk|___ wen/was?
+32|Adj Akk Sg m|üblich, gewöhnlich
+33|P2 (trennbares Verb)|wieder geöffnet
+34|HV Präs 3Sg|Perfekt: ___ sich … gebildet
+35|Prp|„___ Richtung …“
+36|Adj (Ortsname)|aus Frankfurt
+37|uA Nom Sg m|@Stau
+38|Adj Nom Sg m|nicht kurz
+39|P2|entstanden
+40|Rfl Akk 3Sg|„___ auflösen“
+41|Ptk|ebenfalls
+42|Prp +Akk|„___ … hinweg“
+43|Adj Akk Sg m|ganz
+44|Adv|„über … ___“ = während der ganzen Zeit
+45|Inf (trennbar, reflexiv)|verschwinden
+46|Adj Nom Pl|kennen sich in der Gegend aus
+47|HV Präs 3Pl|Passiv: ___ gebeten
+48|bA Akk Sg n|@Kreuz
+49|N Akk Sg n|Kreuzung zweier Autobahnen
+50|Ptk|vor dem Infinitiv „umfahren“

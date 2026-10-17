@@ -1,0 +1,207 @@
+## 17
+1|N Nom Pl n|Staaten
+2|N Gen Sg f|unser Planet
+3|Ptk|ebenfalls
+4|Prp +Akk|„verfügen ___ etwas“ = haben
+5|N Akk Sg n|System von verbundenen Stellen
+6|N Gen Pl m|Vereine für Autofahrer (z. B. ADAC)
+7|N Dat Pl m|Leute, die ein Auto steuern
+8|uA Akk Sg f|@Mitgliedschaft
+9|N Akk Sg f|Unterstützung
+10|Adj Dat Pl|durch das Auto verursacht
+11|V Präs 3Pl|anbieten
+12|bA Nom Sg n|@Auto
+13|Adv|folglich, das heißt
+14|uA Akk Sg m|@Fehler
+15|N Akk Sg m|Defekt, Irrtum
+16|Ptk|ebenfalls
+17|N Akk Sg f|kaputter, platter Reifen
+18|Kj|Alternative
+19|PPr Nom Sg n|steht für „das Auto“
+20|uA Gen Sg m|@Unfalls
+21|Adj|kann nicht mehr fahren
+22|Adv|dann, in diesem Fall
+23|bA Nom Pl|@Automobilclubs
+24|uA Akk Sg m|@Abschleppwagen
+25|Prp+bA Dat Sg f (zu + der)|„___ Verfügung stellen“
+26|Prp +Dat|„___ manchen Fällen“
+27|N Dat Pl m|Situationen
+28|Adv|verstärkt: noch dazu
+29|N Nom Sg m|Transport zurück nach Hause
+30|N Gen Pl m|Personen im Auto
+31|V KI 3Sg|„___ es … oder …“ = entweder … oder
+32|Prp +Akk|Mittel: wodurch?
+33|N Akk Sg f|Mieten
+34|N Gen Sg n|geliehenes Auto
+35|N Dat Sg m|Stelle, Platz
+36|N Gen Sg f|technischer Defekt unterwegs
+37|Prp +Akk|Mittel: wodurch?
+38|N Akk Sg f|möglich machen
+39|N Gen Sg m|Flug zurück
+40|N Dat Sg m|Ort, an dem man Ferien macht
+41|Adj Nom Pl|exakt
+42|bA Gen Pl|@Automobilclubs
+43|MV Präs 3Pl|Möglichkeit
+44|Adv|zum Teil
+45|Kj|verbindet zwei Verben
+46|Adv|deshalb
+47|N Dat Sg m|Unterschreiben, Vertrag
+48|N Gen Sg f|wenn man Mitglied wird
+49|Prp+bA Dat Sg m (von + dem)|Passiv: von wem?
+50|P2|Passiv: kontrolliert
+
+## 18
+1|bA Nom Sg f|@Vereinzelung
+2|bA Gen Sg n|@Individuums
+3|V Präs 3Sg|wirkt so, als ob
+4|Prp +Dat|„___ Zeiten …“ = während
+5|bA Gen Sg f|@Vernetzung
+6|N Gen Sg f|Verbindung über das Internet
+7|Adj Akk Pl|gesellschaftlich, mit anderen Menschen
+8|Prp+bA Dat Sg n (in + dem)|wo?
+9|Adv|extrem schnell zunehmend
+10|Inf (reflexiv)|schneller werden
+11|Adj Nom Sg f|gesellschaftlich
+12|Prp+bA Dat Sg n (in + dem)|wo?
+13|V Präs 3Sg|„___ zu etwas“ = verändert sich zu
+14|Idf Akk Pl|eine große Zahl
+15|Prp+bA Dat Sg m (zu + dem)|„wird ___ …“
+16|N Dat Sg m|Ort, wo man andere trifft
+17|Idf Dat Pl|weitere
+18|Sj|Grund: weil
+19|Adv|mit Erfolg
+20|N Akk Sg f|Täuschung, falsche Vorstellung
+21|N Gen Sg f|Nähe, Vertrautheit
+22|N Gen Sg f|Zusammengehörigkeit
+23|Adv|auf diese Weise
+24|uA Nom Sg f|@Gesellschaft
+25|Rel Nom Sg f|bezieht sich auf „Gesellschaft“
+26|Idf|feste Wendung „___ und ___“ = zunehmend
+27|Idf|feste Wendung „___ und ___“ = zunehmend
+28|Adv|gegenseitig, zusammen
+29|Sj|zeitlich/Bedingung: sobald
+30|Rfl Akk|„man steht ___ gegenüber“
+31|Adj Dat Sg n|real, nicht virtuell
+32|V Präs 3Sg (trennbar)|vor jemandem stehen
+33|N Nom Sg m|Schutz wie ein Schild
+34|bA Nom Sg n|@Netz
+35|N Nom Sg n|das Internet: weltweites ___
+36|N Dat Pl m|Personen
+37|V Präs 3Sg|gibt es, besteht
+38|uA Dat Sg f|@Begegnung
+39|Adv|denn, weil
+40|Adv|„nicht ___“ = nicht länger
+41|V Präs 3Sg|„___ zu“ = hat als Folge
+42|N Dat Pl f|Lagen, Momente
+43|Rel Dat Pl|„in ___“ – bezieht sich auf „Situationen“
+44|Rfl Akk|„man fragt ___“
+45|Adv|manchmal
+46|Sj|leitet eine indirekte Ja/Nein-Frage ein
+47|bA Akk Sg f|@Person
+48|Rel Nom Sg f|bezieht sich auf „Person“
+49|Prp +Dat|wo? davor
+50|V Präs 3Sg|ist aufrecht da
+
+## 19
+1|bA Gen Sg f|@Nachhaltigkeit
+2|N Gen Sg f|ökologisch: nicht mehr verbrauchen, als nachwächst
+3|Prp +Dat|„___ Zeiten …“
+4|bA Gen Sg m|@Klimawandels
+5|Kj|verbindet zwei Nomen
+6|Adj Gen Pl|begrenzt, nicht unendlich
+7|uA Nom Sg n|@Schlagwort
+8|Adj Nom Sg n (Partizip II)|oft genannt
+9|Adv|vielleicht
+10|Adj Nom Sg n (Partizip II)|zu oft benutzt
+11|Rel Nom Sg n|bezieht sich auf „Schlagwort“
+12|Adj Akk Sg m|vorsichtig, klug
+13|Prp +Dat|„Umgang ___ etwas“
+14|Kj|und auch
+15|Adv|so weit es geht
+16|N Akk Sg f|Recycling
+17|N Dat Sg n|Schluss
+18|Adj Gen Sg m|festgelegt, gewiss
+19|V Präs 3Sg|erklärt, stellt dar
+20|V Präs 3Sg|„einer Sache ___ das Augenmerk“ = man achtet auf
+21|Adj Nom Sg n|speziell
+22|bA Dat Sg f|@Regenerationsfähigkeit
+23|bA Gen Sg m|@Rohstoffs
+24|N Gen Sg m|Material aus der Natur (Holz, Öl …)
+25|bA Akk Sg n|@System
+26|N Akk Sg f|unser Planet
+27|Adj|fest, sicher
+28|Adj|„so … wie ___“
+29|Inf|bewahren
+30|Ptk|ebenfalls
+31|N Dat Pl f|Altersstufen von Menschen
+32|N Akk Sg n|Existenz, Dasein
+33|N Dat Sg m|Harmonie
+34|bA Dat Sg f|@Natur
+35|Adj Dat Sg f (Partizip I)|die rund um uns ist
+36|Ptk|vor dem Infinitiv „ermöglichen“
+37|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+38|Adj Akk Sg f|umweltschonend, dauerhaft
+39|Prp +Dat|Nutzung ___ etwas
+40|Prp +Dat|wo?
+41|Prp +Akk|___ wen?
+42|Adj|so, dass man es sehen kann
+43|Inf|„sichtbar ___“ = zeigen
+44|N Nom Pl n|Systeme für Prüfzeichen
+45|N Nom Pl n|Stempel, Gütezeichen
+46|Rel Nom Pl|bezieht sich auf „Siegel“
+47|Prp +Gen|in Bezug auf
+48|uA Akk Sg f|@Kaufentscheidung
+49|Adj Akk Sg f (Partizip II)|mit Wissen
+50|Inf|möglich machen
+
+## 20
+1|Prp +Dat|zeitlich: im Anschluss an
+2|N Dat Sg n|Erschütterung der Erde
+3|bA Dat Sg f|@Region
+4|N Dat Sg f|Gebiet
+5|Kj|verbindet zwei Ereignisse
+6|Pab|aus diesem (Erdbeben)
+7|V Prät 3Sg (reflexiv)|geschah
+8|Prp+bA Dat Sg m (an + dem)|Datum: wann?
+9|N (Monat)|dritter Monat des Jahres
+10|bA Nom Sg m|@größte GAU
+11|Adj Sup Nom Sg m|G in „GAU“
+12|N Nom Sg m|U in „GAU“
+13|N Gen Sg n|Kraftwerk mit Kernenergie
+14|bA Dat Sg f|@Reaktorkatastrophe
+15|Prp +Dat|Herkunft: ___ Tschernobyl
+16|Prp+bA Dat Sg n (in + dem)|zeitlich: Jahr
+17|bA Nom Sg n|@Atomkraftwerk
+18|EN|Ort in Japan
+19|Kj|verbindet zwei Verben
+20|Prp +Akk|Ursache: wodurch?
+21|Kj|verbindet zwei Nomen
+22|Num|Zahl nach drei
+23|Num|Zahl nach fünf
+24|bA Nom Sg n|@Austreten
+25|N Nom Sg n (nominalisiertes Verb)|Herauskommen
+26|N Dat Sg f|gefährliche Strahlung
+27|bA Akk Sg f|@Umwelt
+28|V Präs 3Sg|Form von „sein“
+29|Pos Dat Pl|@Folgen
+30|Prp +Akk|Folgen ___ etwas
+31|Adj Akk Sg m|am Pazifik gelegen
+32|Prp|„___ wie vor“ = immer noch
+33|Adv|„nach wie ___“
+34|Zu (trennbares Verb)|vorhersagen: nicht „___“
+35|Prp+bA Dat Sg n (in + dem)|wo?
+36|Adj Dat Sg n (Partizip II)|fern, weit weg
+37|V Prät 3Pl|„große Kreise ___“ = hatten große Wirkung
+38|N Nom Pl n|Geschehnisse
+39|N Akk Pl m|„große ___ ziehen“
+40|Adj Dat Pl|zahlreich
+41|Prp +Akk|Demonstration ___ etwas
+42|N Akk Sg f|Gebrauch
+43|N Dat Sg f|Atomenergie
+44|bA Akk Sg f|@Anti-Atomkraft-Bewegung
+45|Adj Akk Sg f (Partizip II)|stärker geworden
+46|V Prät 3Pl|„vom Netz ___“ = wurden abgeschaltet
+47|N Dat Sg n|„zum ___“ = z. B.
+48|Adv|ohne jede Hoffnung, völlig
+49|N Nom Pl n|Atomkraftwerke
+50|EN Dat (Land)|Land in Mitteleuropa
