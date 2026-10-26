@@ -16,7 +16,7 @@
 15|Prp +Dat|wo? dahinter
 16|Sj|Folge: so dass
 17|Adj|ohne erkannt zu werden
-18|PPr Nom 3Pl|die Verbrecher
+18|PPr Nom 3Pl|die Täter
 19|bA Akk Pl|@verängstigten Angestellten
 20|N Akk Pl|Mitarbeiter
 21|N Gen Sg f|Zweigstelle einer Bank
@@ -29,7 +29,7 @@
 2|N Dat Pl f|früh am Tag
 3|Adv|an diesem Tag
 4|N Nom Sg m|großer Laden für Lebensmittel
-5|Prp +Dat|Passiv: Wer hat überfallen?
+5|Prp +Dat|Passiv: durch wen?
 6|Adj Dat Pl (Partizip II)|mit Waffen
 7|P2 (untrennbar)|Passiv: angegriffen und ausgeraubt
 8|N Nom Pl m|Personen (Plural von „Mann“)
@@ -37,7 +37,7 @@
 10|bA Akk Sg n|@Gebäude
 11|VPt|trennbarer Verbteil: „drangen … ___“
 12|uA Nom Sg m|@gepanzerter Geldtransporter
-13|N Nom Sg m|Fahrzeug für Geld
+13|N Nom Sg m|gepanzertes Fahrzeug für Bargeld
 14|bA Akk Sg n|@Wechselgeld
 15|Prp +Akk|Zweck: wofür?
 16|N Akk Sg n|Verkauf eines Tages
@@ -174,7 +174,7 @@
 12|Adv|„___ wichtiger“ = sogar wichtiger
 13|N Nom Pl m|Personen
 14|Inf|Wissen erwerben
-15|Adj Akk Pl|die Kommunikation betreffend
+15|Adj Akk Pl|zum Austausch gehörend
 16|NegP|„___ mehr nur …“ = ab jetzt anders
 17|Ptk|„___ mündlich“ = bloß
 18|Ptk|vor dem Infinitiv „nutzen“

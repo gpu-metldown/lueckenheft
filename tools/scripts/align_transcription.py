@@ -7,7 +7,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 src = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'tools', 'sources', 'band1-kapitel6.txt'), encoding='utf8').read()
 PREFIX = sys.argv[2] if len(sys.argv) > 2 else 'b1-'   # id prefix of the book, e.g. b1- or b3-
 # Extra accepted answers the solution page doesn't show: {text number: {book answer: 'answer|alternative'}}
-ALTS = {113: {'este': 'este|e'}, 99: {'zial': 'zial|tial'}}
+ALTS = {} if PREFIX != 'b1-' else {113: {'este': 'este|e'}, 99: {'zial': 'zial|tial'}}
 blocks = [b for b in src.split('### ')[1:]]
 out, problems, counts = [], [], {}
 for b in blocks:
@@ -38,8 +38,7 @@ for b in blocks:
     counts[tid] = n
     out.append({'id': f'{PREFIX}{tid}', 'num': tid, 'short': short, 'title': title, 'raw': text})
 print('texts:', len(out), ' gaps total:', sum(counts.values()))
-print('gap counts not 25:', {k: v for k, v in counts.items() if v != 25})
-for g in range(71, 119, 4): print(f'set {g}-{g+3}:', sum(counts[x] for x in range(g, g+4)), end=' | ')
+print('gaps per text:', counts)
 print('\nPROBLEMS:', len(problems)); print('\n'.join(problems))
 os.makedirs(os.path.join(ROOT, 'tools', 'build'), exist_ok=True)
 json.dump(out, open(os.path.join(ROOT, 'tools', 'build', 'aligned.json'), 'w', encoding='utf8'), ensure_ascii=False, indent=0)

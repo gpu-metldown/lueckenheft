@@ -4,7 +4,7 @@
 3|Rel Nom Pl|bezieht sich auf „Überschriften“
 4|N Dat Pl f|tägliche Blätter mit Nachrichten
 5|bA Dat Sg f|@Titelseite
-6|V Präs 3Pl|sind gedruckt, befinden sich
+6|V Präs 3Pl|befinden sich (auf einer Seite)
 7|N Nom Sg f|große Überschrift in der Zeitung
 8|Adv|jedes Mal, stets
 9|Adj Komp Dat Pl|Komparativ von „groß“
@@ -39,7 +39,7 @@
 11|HV Präs 3Pl|Passiv: ___ … geprüft
 12|bA Dat Pl|@Bundesländern
 13|Prp +Dat|zeitlich: ab damals bis heute
-14|N Dat Sg f|Beginn, Start einer Regel
+14|N Dat Sg f|Beginn, Start (eines Gesetzes)
 15|N Gen Sg n|etwas ist nicht erlaubt
 16|bA Dat Pl|@Jahren
 17|Kj|verbindet zwei Zahlen
@@ -54,11 +54,11 @@
 
 ## b1-73
 1|N Nom Sg f|Produktion
-2|N Dat Sg f|Fett aus Milch, aufs Brot
+2|N Dat Sg f|gelbes Fett, das man aufs Brot streicht
 3|Prp|zeitlich: „___ ins 19. Jahrhundert“
 4|N Akk Sg n|100 Jahre
 5|N Nom Sg f|Arbeit ohne Maschinen
-6|N Nom Sg m|fetter oberer Teil der Milch, Sahne
+6|N Nom Sg m|Sahne
 7|Rfl Akk 3Sg|„___ bilden“
 8|bA Dat Sg f|@Milch
 9|N Dat Sg f|weißes Getränk von der Kuh
@@ -66,7 +66,7 @@
 11|Kj|verbindet zwei Verben
 12|Adv|„___ lange …, bis“
 13|Prp +Dat|wo? drinnen
-14|N Dat Sg n|Gefäß zur Herstellung von Butter
+14|N Dat Sg n|Holzgefäß, in dem man Sahne stampft
 15|Sj|zeitlich: Endpunkt („so lange …, ___ …“)
 16|bA Nom Sg f|@Butter
 17|V Prät 3Sg|entstand
@@ -137,7 +137,7 @@
 1|bA Nom Sg m|@Jahreswechsel
 2|Prp +Dat|wo?
 3|HV Präs 3Sg|Passiv: ___ … genannt
-4|EN|Name des letzten Tages im Jahr
+4|EN|Name des letzten Tages vor Neujahr
 5|Prp +Dat|Datum: ___ diesem Tag
 6|N Dat Sg m|24 Stunden
 7|N Dat Sg m (Monat)|letzter Monat
@@ -155,7 +155,7 @@
 19|Kj|verbindet zwei Nomen
 20|Adj|man kann es kaufen
 21|Ptk|ausschließlich, bloß
-22|EN|31. Dezember
+22|EN|letzter Tag vor Neujahr
 23|N Nom Pl f|Leute, keine Firmen
 24|EN Dat (Land)|Land in Mitteleuropa
 25|N Akk Sg n|Raketen am Himmel
@@ -164,7 +164,7 @@
 1|N Nom Sg n|Behörde des Bundes: Kraftfahrt-___
 2|Prp +Dat|Mittel: womit?
 3|N Dat Sg n|Datenbank über Verkehrssünder
-4|EN Dat (Stadt)|Stadt in Norddeutschland, bekannt für „Punkte“
+4|EN Dat (Stadt)|Stadt in Norddeutschland mit dem Register der Verkehrssünder
 5|N Akk Sg n|Liste
 6|Prp +Dat|wo?
 7|Adj|negativ bemerkt
@@ -181,7 +181,7 @@
 18|N Nom Pl m|Zählwerte, Minuspunkte
 19|V Präs 3Sg (Satzanfang = Bedingung)|kommt an, schafft
 20|N Nom Sg m|wer am Straßenverkehr teilnimmt
-21|N Akk Sg m|Anzahl der Punkte
+21|N Akk Sg m|Konto an Strafzählern
 22|N Dat Pl m|Zählwerte
 23|HV Präs 3Sg|Passiv: ___ … entzogen
 24|bA Nom Sg f|@Fahrerlaubnis

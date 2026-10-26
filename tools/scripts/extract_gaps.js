@@ -11,11 +11,11 @@ const data = eval('(() => {' + js.slice(i, j) + '; return {TEXTS, BAND1}; })()')
 const all = [...data.TEXTS, ...data.BAND1];
 const out = {};
 for (const t of all) {
-  let k = 0; const words = [];
+  let k = 0; const words = [], pres = [];
   const plain = t.raw.replace(/([A-Za-zÄÖÜäöüß]*)\[([^\]]+)\]/g, (m, pre, ans) => {
-    k++; const w = pre + ans.split('|')[0]; words.push(w); return '⟨' + k + ':' + w + '⟩';
+    k++; const w = pre + ans.split('|')[0]; words.push(w); pres.push(pre); return '⟨' + k + ':' + w + '⟩';
   });
-  out[String(t.id)] = {n: k, words, plain};
+  out[String(t.id)] = {n: k, words, pres, plain};
 }
 fs.mkdirSync(path.join(root, 'tools', 'build'), {recursive: true});
 fs.writeFileSync(path.join(root, 'tools', 'build', 'gaps.json'), JSON.stringify(out));

@@ -26,9 +26,52 @@ def expand(g):
         out += ' · ' + txt
     if paren: out += ' (' + paren + ')'
     return out
-def mean(s):
+def mask_ref(ref, tid, i):
+    # Show the referenced words the way the learner sees them: a word that is itself a later gap
+    # becomes its printed beginning + "…" (e.g. "Natur" -> "Na…").
+    if tid not in G: return ref
+    plain = G[tid]['plain']; k = plain.find('⟨%d:' % i)
+    after = plain[k:].split('⟩', 1)[1] if k >= 0 else ''
+    out = []
+    for tok in ref.split():
+        m = re.search(r'⟨(\d+):' + re.escape(tok) + r'⟩|(?<![A-Za-zÄÖÜäöüß])' + re.escape(tok) + r'(?![A-Za-zÄÖÜäöüß])', after)
+        if m and m.group(1):
+            j = int(m.group(1)); pre = G[tid]['pres'][j-1]
+            out.append((pre or '') + '…')
+            after = after[m.end():]
+        else:
+            out.append(tok)
+            if m: after = after[m.end():]
+    return ' '.join(out)
+def mask_quotes(s, tid, i):
+    # Inside quoted text snippets („…“), a word that is another gap's answer is shown as the learner
+    # sees it on the page (printed beginning + "…"), using the nearest such gap.
+    if tid not in G: return s
+    words, pres = G[tid]['words'], G[tid]['pres']
+    def fix_quote(m):
+        def fix_word(w):
+            tok = w.group(0)
+            # only gaps close to this one (the snippet quotes the nearby sentence), and only if the word
+            # is not printed in full in that same stretch of text
+            plain = G[tid]['plain']; k = plain.find('⟨%d:' % i)
+            window = plain[max(0, k - 160): k + 200]
+            near = [int(j) for j in re.findall(r'⟨(\d+):' + re.escape(tok) + r'⟩', window) if int(j) != i]
+            printed = re.search(r'(?<![A-Za-zÄÖÜäöüß:])' + re.escape(tok) + r'(?![A-Za-zÄÖÜäöüß⟩])', re.sub(r'⟨\d+:[^⟩]*⟩', '#', window))
+            if not near or printed: return tok
+            j = min(near, key=lambda j: abs(j - i))
+            return pres[j-1] + '…' if pres[j-1] else tok
+        return '„' + re.sub(r'[A-Za-zÄÖÜäöüß]+', fix_word, m.group(1)) + '“'
+    s = re.sub(r'„([^“]*)“', fix_quote, s)
+    # A context pattern without quotes ("Ausnahmen ___ einer Regel") is treated like a quote,
+    # up to an " = " explanation.
+    if '___' in s and '„' not in s:
+        left, sep, right = s.partition(' = ')
+        s = fix_quote(re.match(r'(.*)', left, re.S))[1:-1] + sep + right
+    return s
+def mean(s, tid=None, i=None):
     s = s.strip()
-    s = re.sub(r'@(.+)$', lambda m: 'gehört zu „' + m.group(1).strip() + '“', s)
+    if tid is not None and '@' not in s: s = mask_quotes(s, tid, i)
+    s = re.sub(r'@(.+)$', lambda m: 'Bezugswort: „' + mask_ref(m.group(1).strip(), tid, i) + '“', s)
     return s
 hints, problems, raw_lines = {}, [], {}
 for f in sorted(glob.glob(os.path.join(ROOT, 'tools', 'hints', '*.txt'))):
@@ -41,7 +84,7 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'tools', 'hints', '*.txt'))):
         if len(parts) != 3: problems.append(f'{cur}: bad line {line!r}'); continue
         n, g, mn = parts; n = int(n)
         if n in hints[cur]: problems.append(f'{cur}: duplicate gap {n}')
-        hints[cur][n] = [expand(g), mean(mn)]
+        hints[cur][n] = [expand(g), mean(mn, cur, n)]
         raw_lines.setdefault(cur, {})[n] = parts
 out = {}
 for tid, h in hints.items():
@@ -76,6 +119,18 @@ for tid, h in hints.items():
 done = sum(G[t]['n'] for t in out); total = sum(v['n'] for v in G.values())
 print(f'texts with hints: {len(out)}/{len(G)}, gaps {done}/{total}')
 print('PROBLEMS:', len(problems)); print('\n'.join(problems[:80]))
+# Warnings: a hint that names another gap's answer from the same text (words of 4+ letters).
+warnings = []
+for tid, h in hints.items():
+    if tid not in G: continue
+    words = G[tid]['words']
+    for i, (g, mn) in h.items():
+        txt = mn
+        for j, w in enumerate(words, 1):
+            visible = re.sub(r'⟨\d+:[^⟩]*⟩', ' ', G[tid]['plain'])
+            if j != i and len(w) >= 4 and w != words[i-1] and not re.search(r'(?<![A-Za-zÄÖÜäöüß])' + re.escape(w) + r'(?![A-Za-zÄÖÜäöüß])', visible, re.I) and re.search(r'(?<![A-Za-zÄÖÜäöüß])' + re.escape(w) + r'(?![A-Za-zÄÖÜäöüß])', txt, re.I):
+                warnings.append(f'{tid}#{i} hint names the answer of gap {j} ("{w}"): {mn}')
+print('WARNINGS (other gaps given away):', len(warnings)); print('\n'.join(warnings))
 json.dump(out, open(os.path.join(ROOT, 'tools', 'build', 'hints.json'), 'w', encoding='utf8'), ensure_ascii=False)
 if '-s' in sys.argv:
     t = sys.argv[sys.argv.index('-s')+1]

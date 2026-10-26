@@ -159,15 +159,15 @@
 2|N Dat Sg n|Erschütterung der Erde
 3|bA Dat Sg f|@Region
 4|N Dat Sg f|Gebiet
-5|Kj|verbindet zwei Ereignisse
-6|Pab|aus diesem (Erdbeben)
+5|Kj|verbindet zwei Satzteile
+6|Pab|aus diesem (Beben)
 7|V Prät 3Sg (reflexiv)|geschah
 8|Prp+bA Dat Sg m (an + dem)|Datum: wann?
 9|N (Monat)|dritter Monat des Jahres
 10|bA Nom Sg m|@größte GAU
 11|Adj Sup Nom Sg m|G in „GAU“
 12|N Nom Sg m|U in „GAU“
-13|N Gen Sg n|Kraftwerk mit Kernenergie
+13|N Gen Sg n|Kraftwerk mit Uran
 14|bA Dat Sg f|@Reaktorkatastrophe
 15|Prp +Dat|Herkunft: ___ Tschernobyl
 16|Prp+bA Dat Sg n (in + dem)|zeitlich: Jahr

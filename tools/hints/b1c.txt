@@ -47,7 +47,7 @@
 19|PPr Nom 3Pl|die Firmen
 20|Inf|überprüfen
 21|Prp +Dat|„___ der Fertigung“ = während
-22|N Dat Sg f|Produktion
+22|N Dat Sg f|Herstellung
 23|N Gen Pl f|Produkte
 24|N Nom Sg f|wenn Kinder arbeiten müssen
 25|N Akk Sg m|„zum ___ kommen“ = benutzt werden

@@ -3,7 +3,7 @@
 2|Adv|„immer ___“ = mehr und mehr
 3|Rfl Akk 3Sg|„um ___ greifen“ = größer werden, wachsen
 4|N Akk Sg f|Verbreitung von Computern
-5|N Gen Sg f|alle Menschen zusammen
+5|N Gen Sg f|Gemeinschaft aller Leute
 6|Rfl Akk 3Sg|„hat ___ … verändert“
 7|N Nom Sg f|Weise, Methode
 8|N Nom Pl m|Personen
@@ -58,7 +58,7 @@
 3|N Gen Sg n|zwölf Monate
 4|Rel Dat Sg f|„in ___“ – bezieht sich auf „Zeit“
 5|Prp +Akk|schicken ___ jemanden
-6|N Akk Pl m|gute Bekannte, die man mag
+6|N Akk Pl m|Leute, die man mag und gut kennt
 7|N Akk Pl m|Personen, die man kennt
 8|HV Präs 3Pl|Passiv: verschickt ___
 9|V Präs 3Sg|„sich etwas ___“ = hoffen
@@ -121,7 +121,7 @@
 12|bA Dat Sg f|@gesamten Natur
 13|N Dat Sg f|Pflanzen, Tiere, Landschaft
 14|HV Präs 3Pl|Passiv: ___ … angezogen
-15|Adj Dat Sg f|in der Nacht
+15|Adj Dat Sg f|wenn es dunkel ist
 16|Adv|„___ sehr …, dass“
 17|P2 (trennbares Verb)|Passiv: hingelockt
 18|PPr Nom 3Pl|die Insekten
@@ -183,7 +183,7 @@
 20|N Nom Pl m|Personen
 21|N Akk Sg f|Stunden und Minuten
 22|Ptk|vor dem Infinitiv „kochen“
-23|Kj|Alternative
+23|Kj|Wahlmöglichkeit: A ___ B
 24|Ptk|vor dem Infinitiv „lassen“
 
 ## b1-86

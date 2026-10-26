@@ -40,7 +40,7 @@
 12|N Nom Sg m|Person, die zu Fuß geht
 13|Prp +Akk|„___ … herangehen“ = Richtung: wohin?
 14|N Akk Sg m|weiß-schwarzer Übergang
-15|Prp +Dat|Passiv: Wer beachtet?
+15|Prp +Dat|Passiv: durch wen?
 16|Adj Dat Pl (Partizip I)|die näher kommen
 17|P2|Passiv: wahrgenommen, respektiert
 18|MV Präs 3Sg|Pflicht
@@ -63,7 +63,7 @@
 8|N Akk Sg f|Bezahlung
 9|N Gen Sg n|monatlicher Lohn
 10|Adv|fast nicht
-11|N Dat Sg f|Job, Arbeit
+11|N Dat Sg f|Job, Anstellung
 12|bA Nom Sg m|@Lohn
 13|Prp+bA Dat Sg n (an + dem)|„___ Ende“
 14|bA Gen Sg f|@Woche
@@ -96,7 +96,7 @@
 14|HV Präs 3Sg|„___ reif“ = verändert sich
 15|Kj|verbindet zwei Aussagen
 16|Prp +Dat|Passiv: Wer erntet?
-17|N Dat Pl m|Bauern, die Wein machen
+17|N Dat Pl m|Bauern, die Trauben anbauen
 18|bA Nom Pl|@Menschen
 19|V Präs 3Pl (trennbar: ___ … vor)|„sich ___ … vor“ = sich fertig machen
 20|Adv|Gegenteil von „schnell“
@@ -114,7 +114,7 @@
 5|bA Gen Pl|@wichtigsten Verhaltensregeln
 6|N Gen Pl f|Ratschläge, wie man sich verhält
 7|N Dat Sg n (nominalisiertes Verb)|Erfolg in einer Prüfung
-8|N Dat Pl f|schriftliche Prüfungen an der Uni
+8|N Dat Pl f|schriftliche Tests an der Uni
 9|N Dat Pl f|Tests, Examen
 10|N Nom Pl m|Personen
 11|Adv|schon
@@ -141,7 +141,7 @@
 4|bA Dat Sg f|@Rheinstraße
 5|uA Nom Sg m|@roter BMW
 6|EN (Automarke)|bayerische Automarke mit drei Buchstaben
-7|Rel Nom Sg m|bezieht sich auf den Wagen
+7|Rel Nom Sg m|bezieht sich auf das Auto
 8|bA Dat Sg m|@Weg
 9|Prp +Akk|Richtung: wohin?
 10|N Akk Sg f|Zentrum der Stadt
@@ -180,7 +180,7 @@
 16|Prp+bA Dat Sg n (von + dem)|„abhängig ___ Alter“
 17|bA Gen Pl|@Kinder
 18|Adj|bedingt durch
-19|N Nom Sg n|Geld vom Staat für Eltern
+19|N Nom Sg n|monatliches Geld für Familien
 20|Prp +Dat|wo? an welchem Amt
 21|N Dat Sg f|Amt, das Kindergeld zahlt
 22|Kj|verbindet zwei Partizipien
@@ -194,20 +194,20 @@
 3|V Prät 3Sg|bewegte sich mit dem Auto
 4|Adj Nom Sg m|Farbe des Himmels
 5|Prp +Dat|wo? oben
-6|N Dat Sg f|wichtigste Straße im Ort
+6|N Dat Sg f|wichtigste Verkehrsader im Ort
 7|N Dat Sg f|„in ___ …“ = auf dem Weg nach
 8|Sj|zeitlich (Vergangenheit, einmalig)
 9|N Nom Sg m|Person am Steuer
 10|N Akk Sg m|kurze Zeit, Augenblick
 11|V Prät 3Sg|Vergangenheit von „sein“
-12|PPr Nom 3Sg m|der Fahrer
+12|PPr Nom 3Sg m|die Person am Steuer
 13|Adv|verstärkt „wenig“
 14|P2|Plusquamperfekt: Schlaf gehabt
 15|V Prät 3Sg (trennbar: ___ … ab)|„von der Fahrbahn ___ … ab“
 16|Prp +Dat|„___ der Fahrbahn abkommen“
-17|N Dat Sg f|Teil der Straße für Autos
+17|N Dat Sg f|Fahrspur, auf der Autos fahren
 18|Kj|verbindet zwei Verben
-19|Prp +Akk|Richtung: wohin? hinein
+19|Prp +Akk|wohin? hinein
 20|N Akk Sg m|Abgrenzung um ein Grundstück
 21|Rfl Akk 3Sg|„___ befinden“
 22|Prp +Dat|wo? direkt neben

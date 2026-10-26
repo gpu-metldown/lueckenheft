@@ -1,0 +1,675 @@
+## 21
+1|Prp +Dat|wo? (Stadt)
+2|Prp+bA Dat Sg m (an + dem)|Frankfurt ___ Main: an einem Fluss
+3|Adj Nom Sg m (Partizip II)|auf die Welt gekommen
+4|EN (Vorname)|zweiter Vorname des Dichters
+5|EN (Nachname)|berühmtester deutscher Dichter
+6|Prp +Dat|„gilt ___ jemandem als …“ = zusammen mit
+7|Adv|ein bisschen
+8|N Dat Sg m|Person, die zur gleichen Zeit lebt
+9|EN (Nachname)|Dichter des „Wilhelm Tell“
+10|N Akk Sg m|perfektes Beispiel, Symbol
+11|Adj Gen Sg n|zum Land mit der Hauptstadt Berlin gehörend
+12|Kj|„___ nicht nur das“ = doch, jedoch
+13|Ptk|„nicht ___ das“ = bloß
+14|Adv|auf der ganzen Erde
+15|N Nom Pl m|Personen
+16|N Akk Sg m|wie jemand heißt
+17|Adj Gen Sg m|mit vielen Talenten
+18|NegP|„___ nur …, sondern auch“
+19|Prp +Dat|„assoziieren ___ etwas“
+20|N Dat Pl f|Erfolge, Werke
+21|Ptk|„sondern ___“
+22|EN Dat (Land)|Land in Mitteleuropa, Hauptstadt Berlin
+23|EN Nom (Nachname)|der Dichter, um den es geht
+24|Idf Nom|unbestimmte Person
+25|N Dat Sg f|Hinweis, wenn man über etwas spricht
+26|Pos Akk Pl|@Werke
+27|Adv|oft
+28|Prp +Dat|Mittel: womit?
+29|N Dat Sg m|Nachname
+30|V Prät 3Sg|Vergangenheit von „sein“
+31|Ptk|„nicht ___ …, sondern“
+32|Adv|sehr („___ talentiert“)
+33|N Nom Sg m|Autor von Büchern
+34|N Nom Sg m|schreibt Stücke für die Bühne
+35|V Prät 3Sg|Vergangenheit von „sein“
+36|Pos Dat Pl|@Zeitgenossen
+37|Ptk|ebenfalls
+38|N Nom Sg m|Fachmann für Recht
+39|Kj|verbindet die letzten Glieder einer Aufzählung
+40|Prp +Dat|„Naturwissenschaftler ___ einer Gabe“ = der … hat
+41|Adj Dat Sg f|ausgezeichnet, sehr gut
+42|Adj|viele kennen ihn
+43|EN Gen (Nachname)|Genitiv des Dichternamens
+44|N Dat Pl n|Bücher, Kunstwerke
+45|bA Nom Sg f|@Tragödie
+46|EN (Werktitel)|Gelehrter, der mit dem Teufel einen Pakt schließt
+47|bA Nom Sg m|@Roman
+48|bA Nom Pl (im Titel)|@Leiden
+49|bA Gen Sg m|@jungen W…
+50|EN (Name)|Hauptfigur des Briefromans, verliebt in Lotte
+
+## 22
+1|Adj Nom Pl|aus Pflanzen
+2|Adj Nom Pl|so genannt
+3|V Präs 3Pl|geben
+4|Prp|„___ anderem“ = u. a.
+5|Pos Akk Sg m|@herben, trockenen Geschmack
+6|Adj Akk Sg m|nicht süß (beim Wein)
+7|PPr Nom 3Pl|die Tannine
+8|N Dat Pl m|alkoholische Getränke aus Trauben
+9|bA Gen Sg f|@Reifung
+10|Kj|„___ … oder …“
+11|P2 (trennbares Verb)|Passiv: hinzugefügt
+12|V Präs 3Pl|kommen (an einen Ort)
+13|bA Akk Pl|@Holzfässer
+14|Prp +Dat|Relativsatz: „___ denen“ = wo
+15|bA Nom Sg m|@Wein
+16|P2|Passiv: aufbewahrt
+17|Prp +Akk|wohin?
+18|N Akk Sg m|das fertige alkoholische Getränk
+19|Idf Nom Pl|eine große Zahl Menschen
+20|NegP|verneint ein Verb oder Adjektiv
+21|V Präs 3Sg|Form von „sein“
+22|PPr Nom 3Pl|die Tannine
+23|N Dat Pl f|Vermutungen
+24|N Gen Pl m|Fachleute
+25|N Gen Pl m|Ärzte
+26|Ptk|ebenfalls
+27|Adj|„___ sein für“ = die Ursache sein
+28|Sj|leitet einen Inhaltssatz ein
+29|Prp+bA Dat Sg m (an + dem)|„___ nächsten Tag“
+30|N Dat Sg m|24 Stunden
+31|Prp +Akk|„klagen ___ etwas“
+32|V Präs 3Pl|sich beschweren
+33|Idf|„___ zu tun haben mit“ = keine Verbindung
+34|Adj Dat Sg m|zu viel
+35|Ptk|„___ tun haben“
+36|Inf|„nichts zu tun ___“
+37|N Dat Pl n|Gerbstoffe im Wein
+38|Kj|jedoch
+39|bA Nom Pl|@Farbstoffe
+40|Prp+bA Dat Sg m (in + dem)|wo?
+41|Vgl|„___ möglicher Grund“ = in der Rolle
+42|N Nom Sg m|Ursache
+43|bA Akk Sg m|@Kopfschmerz
+44|P2|Passiv: angenommen
+45|Adv|oft
+46|uA Dat Sg f|@Histaminausschüttung
+47|V Präs 3Sg (trennbar)|„___ mit“ = verbunden ist mit
+48|Adv|deshalb, folglich
+49|Adj Nom Sg m|durch eine Allergie
+50|P2 (trennbares Verb)|Passiv: klassifiziert
+
+## 23
+1|N Nom Sg f|Gebrauch
+2|N Gen Pl n|Zeitung, Radio, Fernsehen
+3|N (Wortteil)|„___- oder Informationserwerb“ = Kenntnis-
+4|N Dat Sg m|Beschaffung von Informationen
+5|Prp +Dat|wo?
+6|N Dat Pl m|Gebiete
+7|N Gen Sg n|Existenz, Alltag
+8|bA Dat Sg m|@Vormarsch
+9|Kj|„___ … oder …“ = gleichgültig, welche Möglichkeit
+10|bA Nom Sg f|@Hausaufgabe
+11|Prp +Dat|wo?
+12|N Dat Sg f|dort lernen Kinder
+13|bA Nom Sg f|@Bachelor-Arbeit
+14|Prp+bA Dat Sg n (an + dem)|„___ Ende“
+15|bA Gen Sg n|@Studiums
+16|Prp +Gen|mit Unterstützung (hier mit „von“)
+17|N Dat Pl f|Sammlungen von Daten
+18|N Dat Pl n|Webseiten mit Wissen
+19|bA Nom Sg m|@Zugriff
+20|Prp +Akk|„Zugriff ___ etwas“
+21|Adv|in unserer Zeit
+22|P2|Passiv: schneller gemacht
+23|Adv|gleichzeitig
+24|Frg|Frage nach dem Grad: in welchem Maß
+25|Prp +Akk|Mittel: durch
+26|N Akk Sg n|weltweites Computernetz
+27|N Nom Pl f|Nachrichten, Wissen
+28|Prp+bA Dat Sg m (in + dem)|„___ Vergleich zu“
+29|Prp +Dat|„im Vergleich ___“
+30|Prp +Akk|Mittel: durch
+31|Adj Dat Pl (Partizip II)|selbst zusammengetragen
+32|V Präs 3Sg|„___ sich sagen“ = kann man sagen
+33|Ptk|„___ schwer“ = kaum
+34|Inf|feststellen, äußern
+35|V Präs 3Sg|Form von „sein“
+36|bA Nom Sg f|@redaktionelle Bearbeitung
+37|N Nom Sg f|Überarbeitung, Kontrolle
+38|N Dat Pl f|Sammlungen von Daten
+39|Adv|deshalb, folglich
+40|bA Nom Sg f|@Überprüfung
+41|Adv|an diesem Ort
+42|N Gen Pl n|Tatsachen
+43|Ptk|„___ wünschen übrig lassen“
+44|Adv|„zu wünschen ___ lassen“ = nicht gut genug sein
+45|Prp +Dat|„___ der Arbeit“ = während
+46|N Dat Sg f|Tätigkeit
+47|N Dat Pl f|Nachrichten, Wissen
+48|Rfl Akk 3Sg|„es lohnt ___“
+49|bA Nom Sg f|@Konsultation
+50|Prp +Dat|Konsultation ___ etwas
+
+## 24
+1|bA Gen Sg n|@Zeitalters
+2|N Gen Sg n|Epoche
+3|Adv|mittlerweile
+4|Prp +Dat|wo?
+5|N Dat Sg f|Bereich, Sphäre („die ___ des Konsums“)
+6|N Gen Sg m|Kaufen und Verbrauchen von Waren
+7|bA Nom Pl|@meisten Firmen
+8|N Nom Pl f|Unternehmen
+9|Prp +Dat|wo?
+10|Adj Dat Sg f|wirklich, nicht virtuell
+11|N Akk Pl n|Verkaufsstellen
+12|N Akk Pl f|Filialen, Standorte
+13|V Präs 3Pl (trennbar: ___ … an)|„___ … an“ = offerieren
+14|N Dat Pl m|Käufer
+15|N Akk Pl m|Leistungen, Services
+16|Ptk|ebenfalls
+17|uA Akk Sg f|@virtuelle Geschäftspräsenz
+18|N Akk Sg f|Auftritt eines Ladens (hier: online)
+19|Kj|verbindet zwei Satzteile
+20|Adv|auf diese Weise
+21|N Akk Pl n|Teile eines Marktes
+22|bA Akk Sg m|@Verkauf
+23|Pos Gen Pl|@Produkte
+24|Inf|gebrauchen, verwenden
+25|Idf Dat Pl|einige
+26|V Präs 3Pl|„___ … vor“ = sind voraus
+27|N Nom Sg n|Online-Handel
+28|bA Nom Sg m|@daraus generierte Umsatz
+29|Adj Nom Sg m (Partizip II)|erzeugt, erwirtschaftet
+30|Adv|verstärkt: noch dazu
+31|Adv|„___ weit …, dass“
+32|Prp +Dat|„___ den Geschäften liegen“ = voraus
+33|N Dat Pl n|Verkaufsstellen
+34|N Dat Pl f|große Orte (Plural)
+35|Adv|zum Teil
+36|N Nom Pl m|Verkaufsstellen (Plural von „Laden“)
+37|HV Inf|Passiv: geschlossen ___ können
+38|Abk|„beziehungsweise“ (abgekürzt)
+39|Prp +Gen (hier mit „von“)|wegen
+40|Adj Dat Pl (Partizip I)|sinkend
+41|Adv|verstärkt: noch dazu
+42|Adj|spannend
+43|Prp +Dat|„___ Zukunft“ = später
+44|Inf|„… wird … ___“ = Infinitiv von „ist“
+45|bA Nom Sg f|@Veränderung
+46|bA Gen Sg f|@Konsumlandschaft
+47|bA Akk Sg n|@Bild
+48|bA Gen Pl|@Innenstädte
+49|Prp +Dat|wo?
+50|Inf|prägen, wirken auf
+
+## 25
+1|N Dat Sg f|Mieten
+2|N Gen Sg f|Räume, in denen man lebt
+3|uA Gen Sg n|@Hauses
+4|HV Präs 3Sg|Passiv: ___ … gefordert
+5|EN Dat (Land)|Land in Mitteleuropa, Hauptstadt Berlin
+6|bA Dat Sg f|@üblichen Kaution
+7|N Dat Sg f|Sicherheitsgeld für den Vermieter
+8|Prp +Dat|„___ der Regel“ = normalerweise
+9|N Dat Sg f|„in der ___“ = normalerweise
+10|N Akk Pl f|Miete für einen Monat (Plural)
+11|Adv|oft
+12|bA Nom Sg m|@Nachweis
+13|uA Gen Sg f|@privaten Haftpflichtversicherung
+14|N Gen Sg f|deckt Schäden, die man anderen macht
+15|uA Nom Sg f|@solche Versicherung
+16|N Nom Sg f|Schutz vor Kosten bei Schäden
+17|N Akk Pl m|Situationen, in denen etwas kaputtgeht
+18|Prp +Akk|Ursache: wodurch?
+19|N Akk Sg n|eigene Schuld
+20|Adj Dat Sg n|einem anderen gehörend
+21|P2|Perfekt von „entstehen“
+22|VPt|trennbarer Verbteil: „deckt … ___“
+23|V Präs 3Sg|befreit von einer Last
+24|bA Akk Sg m|@Verursacher
+25|Adv|„___ wie“ = ebenso wie
+26|bA Akk Sg m|@finanziell Geschädigten
+27|N Akk Sg m (nominalisiertes Adjektiv)|Person, die einen Schaden hat
+28|bA Dat Sg f|@Abwicklung
+29|bA Gen Sg m|@Schadensfalls
+30|Prp +Dat|zusätzlich zu
+31|Adv|oftmals
+32|N Nom Sg f (Kurzform)|Kurzname: Schutz bei Schäden an anderen
+33|N Dat Sg f|Schutz vor Kosten bei Schäden
+34|Rfl Akk 3Sg|„es empfiehlt ___“
+35|bA Nom Sg m|@Abschluss
+36|uA Gen Sg f|@Hausratversicherung
+37|Rel Nom Sg f|bezieht sich auf „Hausratversicherung“
+38|bA Akk Sg n|@Inventar
+39|uA Gen Sg m|@Haushalts
+40|Prp +Akk|Schutz ___ etwas
+41|N Akk Sg m|sehr starker Wind
+42|Kj|verbindet die letzten Glieder einer Aufzählung
+43|V Präs 3Sg|sichert, bewahrt
+44|Prp+bA Dat Sg m (in + dem)|„___ Schadensfall“ = wenn er eintritt
+45|bA Nom Sg m|@Wiederbeschaffungswert
+46|bA Gen Pl|@beschädigten Güter
+47|N Gen Pl n|Waren, Sachen
+48|HV Präs 3Sg|Passiv: ersetzt ___
+49|N Nom Sg f|Höhe der monatlichen Zahlung
+50|N Gen Pl f|Typen von Versicherungen
+
+## 26
+1|N Akk Sg m|„___ für ___“ = langsam, allmählich
+2|N Akk Sg m|„___ für ___“ = langsam, allmählich
+3|N Gen Pl f|Ursprungsorte (z. B. von Öl)
+4|N Gen Pl m|Kohle, Öl, Gas
+5|bA Gen Sg f|@scheinbar endlosen Nachfrage
+6|Adj Gen Sg f|ohne Ende
+7|bA Gen Sg f|@Erdbevölkerung
+8|Prp +Dat|„Nachfrage ___ etwas“
+9|HV Präs 3Pl|„___ … laut“ = es gibt
+10|Adv|„___ mehr“ = zunehmend
+11|N Nom Pl f|Meinungen (die man hört)
+12|Rel Nom Pl|bezieht sich auf „Stimmen“
+13|N Akk Sg f|Umstieg auf neue Energie
+14|uA Akk Sg n|@Umdenken
+15|Prp +Dat|wo? im Bereich
+16|Adj Dat Sg f|weltweit
+17|V Präs 3Pl|verlangen
+18|Adj Akk Sg f (Partizip I)|sehr wichtig
+19|Prp +Dat|wo? im Bereich
+20|N Dat Sg f|Veränderung, Neugestaltung
+21|Adj Gen Sg m|auf der ganzen Erde
+22|Prp +Dat|„Umgang ___ etwas“
+23|HV Präs 3Sg|Futur: ___ … spielen
+24|N Nom Sg m|Verwendung
+25|N Gen Pl f|Strom, Wärme (Plural)
+26|Prp +Dat|„___ … versteht man“
+27|N Dat Pl f|Strom, Wärme (Plural)
+28|Idf Nom|unbestimmte Person
+29|N Akk Pl f|Orte, woher Strom und Wärme kommen
+30|Rfl Akk 3Pl|„___ auszeichnen“
+31|Pos Dat Sg f|@Nutzung
+32|Pab|„___, dass …“ = auf diese Weise, dass
+33|Sj|leitet einen Inhaltssatz ein
+34|N Nom Sg f|Ursprung, Herkunft
+35|N Akk Pl f|Strom, Wärme (Plural)
+36|Adv|sozusagen, praktisch
+37|N Dat Sg f|Anzahl, Quantität
+38|N Dat Sg f|„zur ___ stellen“ = anbieten
+39|MV Präs 3Sg|Möglichkeit
+40|Prp +Dat|„basieren ___ etwas“
+41|N Dat Sg m|Material aus der Natur
+42|Rel Nom Sg m|bezieht sich auf „Rohstoff“
+43|Adv|verstärkt „schnell“
+44|V Präs 3Sg (trennbar)|wächst neu
+45|bA Dat Pl|@erneuerbaren Energien
+46|N Dat Pl f|Strom, Wärme (Plural)
+47|Prp|„___ anderem“ = u. a.
+48|N (Wortteil)|„___- und Windenergie“: Energie aus Flüssen
+49|N Nom Sg f|Strom aus Windrädern
+50|N Nom Sg f|Wärme aus dem Inneren der Erde
+
+## 27
+1|PPr Nom 3Sg f|die Imbissbude
+2|Adv|sehr („___ geliebt“)
+3|Kj|verbindet zwei Verben
+4|Prp +Dat|wo?
+5|Idf Dat Sg m|@Ort
+6|P2|vorhanden, präsent
+7|Prp +Dat|wo?
+8|Kj|verbindet zwei Länder
+9|Adj Dat Sg n|übrig, anderen
+10|bA Nom Sg f|@Imbissbude
+11|Prp +Dat|„___ … versteht man“
+12|N Dat Sg f|kleiner Verkaufsstand für Essen
+13|Idf Nom|unbestimmte Person
+14|Prp +Dat|„___ der Regel“ = normalerweise
+15|N Dat Sg f|„in der ___“ = normalerweise
+16|Adv|ab und zu
+17|Ptk|ebenfalls
+18|Adj Akk Sg m (Partizip II)|fest eingebaut
+19|Prp +Dat|Relativsatz: „___ dem“ = wo
+20|N Nom Pl m|Waren an der Bude
+21|N (Wortteil)|„___ frites“: frittierte Kartoffeln
+22|N Nom Sg f|gebratene Wurst
+23|N Nom Pl m|Brötchen mit Fleisch (englisches Wort)
+24|N Nom Pl n|Sachen zum Trinken
+25|HV Inf|Passiv: verkauft ___
+26|HV Präs 3Pl|Passiv: ___ … platziert
+27|Prp +Dat|wo? direkt neben
+28|Adj Dat Pl (Partizip II)|„viel ___“ = mit viel Verkehr
+29|Kj|Alternative
+30|N Dat Sg f|geringe Entfernung
+31|N Dat Pl n|Häuser mit Büros
+32|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+33|Prp +Dat|wann? während
+34|N Dat Sg f|Pause am Mittag
+35|Adj Akk Sg f|Gegenteil von „langsam“
+36|Inf|anbieten, auf den Tisch bringen
+37|MV Inf|„servieren zu ___“
+38|HV Präs 3Sg|Passiv: gegessen ___
+39|N Dat Sg m|kleiner Verkaufsstand für Essen
+40|N Dat Sg n|Gabeln und Messer aus Kunststoff
+41|Prp +Dat|„essen ___ einem Teller“
+42|Rel Nom Pl|bezieht sich auf „Papptellern“
+43|bA Dat Sg m|@Verzehr
+44|bA Gen Sg n|@Gerichts
+45|P2|Passiv: weggeworfen
+46|Prp +Dat|Grund: wegen
+47|V Präs 3Pl|„___ auf etwas zurück“ = verwenden
+48|N Nom Pl m|Personen, die eine Imbissbude führen
+49|Adv|mittlerweile
+50|Prp +Akk|„zurückgreifen ___ etwas“
+
+## 28
+1|bA Nom Sg f|@zunehmende Urbanisierung
+2|N Nom Sg f|Verstädterung
+3|N Gen Pl f|reiche Länder mit viel Industrie
+4|bA Nom Sg m|@Trend
+5|Sj|leitet einen Inhaltssatz ein
+6|Idf|„immer ___“ = zunehmend
+7|Adv|meistens
+8|bA Dat Sg f|@Suche
+9|Prp +Dat|„Suche ___ etwas“
+10|Adj Komp Dat Sg f|Komparativ von „gut“
+11|bA Akk Pl|@ländlichen Regionen
+12|N Akk Pl f|Gebiete
+13|N Gen Sg n|Staat
+14|Kj|verbindet zwei Verben
+15|Prp +Dat|wo?
+16|Inf (trennbar, reflexiv)|sich niederlassen, wohnen
+17|N Akk Pl f|Folgen, Effekte
+18|bA Akk Pl|@unterschiedlichsten Ebenen
+19|N Akk Pl f|Stufen, Bereiche
+20|N Gen Sg f|Leben, Dasein
+21|Adv|„nicht ___“ = auch, besonders
+22|PPr Nom 1Pl|alle, auch der Schreiber
+23|uA Akk Sg n|@Leben
+24|Prp +Dat|„___ wenig Raum“ = wo?
+25|N Dat Sg m|Platz
+26|Idf|nicht viel
+27|Pos Akk Sg n (1Pl)|@Bedürfnis
+28|Prp +Dat|„Bedürfnis ___ etwas“
+29|N Dat Sg n|Gedeihen, Größerwerden
+30|bA Dat Sg f|@Natur
+31|Prp+bA Dat Sg m (in + dem)|„___ Wechsel der Jahreszeiten“
+32|bA Gen Pl|@Jahreszeiten
+33|Idf Akk Pl|eine große Zahl
+34|Adv|Dauer: „___“ nach „Jahre“ = während vieler Jahre
+35|Dem Nom Sg n|@Bedürfnis
+36|Prp +Dat|„___ Form von …“
+37|Prp +Dat|„in Form ___ …“
+38|N Dat Pl f|Rosen, Tulpen …
+39|N Dat Pl m|Behälter für Pflanzen am Balkon
+40|Adj Akk Sg n|armselig, schwach
+41|Adv|mittlerweile
+42|V Präs 3Pl|sehen, verstehen
+43|Idf|„immer ___“ = zunehmend
+44|bA Akk Sg m|@beruhigenden … Aspekt
+45|Kj|verbindet zwei Adjektive
+46|Adj Akk Sg m (Partizip I)|zufrieden machend
+47|bA Gen Sg m|@Anbaus
+48|Prp +Dat|Anbau ___ etwas
+49|Prp +Dat|wo? oben darauf
+50|Kj|verbindet zwei Orte
+
+## 29
+1|bA Nom Sg f|@Tradition
+2|bA Gen Sg n|@klassischen Handwerks
+3|N Gen Sg n|Berufe wie Tischler, Maurer, Bäcker
+4|Prp +Dat|zeitlich: im Anschluss an
+5|Pos Gen Sg f (3Pl)|@Ausbildung
+6|Prp +Akk|Dauer: „___ mehrere Jahre“
+7|N Akk Pl n|Zeiträume von zwölf Monaten
+8|N Akk Sg f|lange Reise zu Fuß, von Ort zu Ort
+9|Inf|senden, losgehen lassen
+10|Prp +Dat|wo?
+11|N Dat Pl f|Gebiete
+12|N Gen Sg n|Staat
+13|Prp+bA Dat Sg n (in + dem)|wo?
+14|N Akk Sg f|Praxis im Beruf
+15|Inf|zusammentragen
+16|Rfl Akk 3Pl|„___ qualifizieren“
+17|Vgl|in der Rolle von
+18|Ptk|vor dem Infinitiv „qualifizieren“
+19|V Präs 3Sg|Form von „sein“
+20|Adj Dat Pl|vergleichbar
+21|Adv|auf der ganzen Erde
+22|Inf|„ist … zu ___“ = es gibt sie
+23|Adj Dat Sg m|zum Land mit der Hauptstadt Berlin gehörend
+24|HV Präs 3Sg|Passiv: ___ … gehandhabt
+25|N Nom Sg f|Ausführung, Praxis
+26|Adv|wahrscheinlich
+27|Adj Sup|am stärksten mit festen Regeln organisiert
+28|N Nom Pl m|Handwerker mit abgeschlossener Lehre
+29|Prp|„___ weit ins Zeitalter“ = tief in die Zeit
+30|Prp+bA Akk Sg n (in + das)|„bis weit ___ Zeitalter“
+31|bA Gen Sg f|@Industrialisierung
+32|Adv|„bis weit ins … ___“
+33|Num|Zahl: 1 + 1
+34|Num|Zahl: 2 + 1
+35|Prp +Akk|„___ Wanderschaft gehen“
+36|N Akk Sg f|lange Reise zu Fuß, von Ort zu Ort
+37|Prp|„___ … zu besuchen“ = und nicht
+38|Dem Dat Sg f|@Zeit
+39|Pos Akk Sg f (3Pl)|@Heimatregion
+40|Kj|Alternative
+41|Ptk|vor dem Infinitiv „besuchen“
+42|bA Nom Sg f|@Einhaltung
+43|bA Gen Pl|@strengen Walzregeln
+44|N Gen Pl f|Vorschriften für die Walz
+45|Prp +Gen|mit Hilfe von
+46|Adj|vollständig, ohne Unterbrechung
+47|Adj Gen Sg n (Partizip I)|„zu ___“ = das geführt werden muss
+48|P2|Passiv: nachgewiesen
+49|Rel Dat Sg n|„in ___“ – bezieht sich auf das Buch
+50|Pos Akk Pl (3Pl)|@Bewertungen
+
+## 33
+1|N Dat Pl n|Schutzgebiete der UNESCO
+2|EN Dat (Land)|Land in Mitteleuropa, Hauptstadt Berlin
+3|Prp +Akk|Passiv: wer hat es angeregt?
+4|Abk|Organisation der UN für Bildung und Kultur
+5|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+6|Ptk|vor dem Infinitiv „kennzeichnen“
+7|Rel Nom Pl|bezieht sich auf „Regionen“
+8|N Dat Sg n (nominalisiertes Verb)|Kooperation
+9|N Dat Sg m|der Homo sapiens
+10|N Dat Sg f|Pflanzen, Tiere, Landschaft
+11|Kj|verbindet zwei Adjektive
+12|N Akk Pl m|Pfade, Methoden
+13|Kj|verbindet zwei Relativsätze
+14|Prp +Akk|Ursache: wodurch?
+15|N Akk Sg f|ökologisch: nicht mehr verbrauchen, als nachwächst
+16|Pab|in diesem Fall
+17|PPr Nom Sg n|„___ handelt sich um“
+18|Prp +Akk|„es handelt sich ___ etwas“
+19|Prp +Dat|Relativsatz: „___ denen“ = wo
+20|NegP|„___ nur …, sondern“
+21|Prp+bA Dat Sg m (zu + dem)|Zweck: „___ Schutz“
+22|Kj|verbindet zwei Satzteile
+23|N Dat Sg f|Erhaltung
+24|N Gen Sg f|Pflanzenwelt
+25|N Gen Sg f|Tierwelt
+26|N Nom Pl f|Schritte, Aktionen
+27|HV Prät 3Pl|Passiv Vergangenheit
+28|Prp +Dat|Relativsatz: „___ denen“ = wo
+29|N Nom Sg f|Nutzung des Landes (z. B. Landwirtschaft)
+30|N Dat Sg f|Beachtung
+31|N Gen Sg m|Veränderung des Klimas
+32|bA Nom Sg f|@Beteiligung
+33|bA Gen Pl|@Bürger
+34|Prp +Dat|„Beteiligung ___ etwas“
+35|uA Akk Sg f|@übergeordnete Rolle
+36|N Akk Sg f|„eine ___ spielen“ = wichtig sein
+37|P2|geleitet
+38|P2|organisiert, administriert
+39|bA Nom Sg m|@Aufbau
+40|Kj|verbindet zwei Nomen
+41|N Nom Sg f|Vergrößerung
+42|Prp +Dat|Netzwerk ___ etwas
+43|Prp +Akk|Passiv: wer betreibt es?
+44|N Akk Sg n|Plan, Projekt
+45|N Nom Sg m|der Homo sapiens (im Titel)
+46|bA Nom Sg f|@Biosphäre
+47|Prp +Dat|wo?
+48|V Präs 3Sg|„es ___“ = existiert
+49|Adv|im Moment
+50|N Akk Pl n|Schutzgebiete der UNESCO
+
+## 34
+1|Adj Dat Pl|geschäftlich, gewerblich
+2|Prp +Dat|wo?
+3|Adj Dat Pl (Partizip II)|geplant, geleitet
+4|Prp +Gen|im Inneren von
+5|Adj Gen Pl|gesellschaftlich
+6|Kj|Alternative
+7|Adv|schlicht, ohne Umstände
+8|N Dat Sg f|„in ___ von …“ = als
+9|N Gen Sg m|Markt für alte Sachen
+10|N Nom Sg m|Kaufen und Verkaufen
+11|Adj Dat Pl (Partizip II)|nicht neu
+12|N Dat Pl n|Teile der Kleidung
+13|N Dat Sg n (nominalisiertes Adjektiv)|Vergleichbares
+14|Prp +Dat|zusätzlich zu
+15|N Dat Sg f|Möglichkeit
+16|Kj|„hier ___ da“ = manchmal
+17|Prp +Dat|„___ den Waren“ = unter
+18|Adj Dat Pl (Partizip II)|zum Kauf offeriert
+19|uA Akk Sg n|@echtes Schnäppchen
+20|N Akk Sg n|sehr günstiger Kauf
+21|Inf|mit Glück bekommen
+22|Idf Akk Pl|eine große Zahl
+23|bA Nom Sg m|@Gedanke
+24|VPt|trennbarer Verbteil: „treibt … ___“ = motiviert
+25|Rel Nom Pl|bezieht sich auf „Waren“
+26|Pos Dat Pl|@Nutzern
+27|bA Akk Sg n|@Ende
+28|Pos Gen Sg f|@Brauchbarkeit
+29|P2|Perfekt: gekommen bis zu
+30|Adv|gewissermaßen
+31|Adj Akk Sg f|Gegenteil von „alt“
+32|Ptk|vor dem Infinitiv „geben“
+33|Kj|verbindet zwei Infinitive
+34|Prp+bA Dat Sg m (zu + dem)|„___ selben Zweck“
+35|N Dat Sg m|Ziel, Funktion
+36|Rfl Dat 3Pl|„bei ___ selbst“
+37|Zu (trennbares Verb)|benutzen
+38|Prp +Dat|„umgestalten ___ etwas“
+39|Idf Dat Sg m|@Nutzungszweck
+40|Adv|passend
+41|Dem Nom Sg f|@Tatsache
+42|V Präs 3Sg|„___ … zu etwas“ = verwandelt
+43|N Akk Sg m|Kauf
+44|N Gen Pl n|Waren, Erzeugnisse
+45|Prp +Dat|„machen ___ etwas“
+46|Adv|verstärkt „nachhaltig“
+47|N Dat Sg f|Art, Weise
+48|N Gen Sg m|„___ mit“ = Behandlung von
+49|Adv|schon
+50|Adj Dat Pl (Partizip II)|„verfügbar ___“ = zugänglich gemacht
+
+## 35
+1|uA Nom Sg n|@Heldenepos
+2|N Dat Sg n|Deutsch des Mittelalters
+3|Adj Nom Sg n (Partizip II)|geschrieben
+4|bA Gen Sg n|@Mittelalters
+5|Rel Nom Sg n|bezieht sich auf „Heldenepos“
+6|Adv|wahrscheinlich
+7|Adj Dat Sg f|gesprochen, nicht geschrieben
+8|Pos Akk Sg f|@Überlieferung
+9|V Prät 3Sg|„Überlieferung ___“ = wurde überliefert
+10|Prp +Dat|wo?
+11|N Dat Sg f|Geschehen, Story
+12|N Gen Sg n|langes Heldengedicht
+13|Pab|„weisen ___ hin, dass“
+14|Sj|leitet einen Inhaltssatz ein
+15|Idf Gen Sg f|„___ Wahrscheinlichkeit nach“ = sehr wahrscheinlich
+16|Prp|„aller Wahrscheinlichkeit ___“
+17|N Dat Sg m|Anfang
+18|Adj Gen Sg n (Ordnungszahl)|Nummer 13
+19|P2|Passiv: geschrieben
+20|bA Nom Sg f|@Handlung
+21|bA Gen Sg n|@Epos
+22|V Präs 3Sg|Form von „sein“
+23|EN Dat (Fluss)|großer Fluss in Westdeutschland
+24|Prp +Akk|„rund ___ …“ = in der Gegend von
+25|Kj|und auch
+26|EN Dat|der Süden Deutschlands
+27|Kj|verbindet zwei Verben
+28|Rfl Akk 3Sg|„___ ranken um“
+29|N Dat Sg m|„zum ___“ = hauptsächlich
+30|bA Akk Sg n|@Leben
+31|bA Gen Sg m (vor Namen)|@Siegfried
+32|uA Gen Sg m|@Prinzen
+33|Rel Gen Sg m|„___ Werben“ = sein Werben
+34|Prp +Akk|„Werben ___ jemanden“
+35|Pos Akk Sg f|@Ehe
+36|Prp +Dat|„Ehe ___ jemandem“
+37|Pos Akk Sg f|@Ermordung
+38|Kj|und auch
+39|N Akk Sg f|Vergeltung
+40|EN Gen (Name)|Genitiv des Helden
+41|Adv|leider
+42|bA Nom Sg n|@Nibelungenlied
+43|Prp +Akk|Ursache: wodurch?
+44|N Akk Sg f|neue Interpretation
+45|Adj Dat Sg f|patriotisch, für die Nation
+46|Prp+bA Dat Sg m (in + dem)|wann? zur Zeit von
+47|Prp|zeitlich: „___ heute“
+48|uA Nom Sg m|@Teil
+49|Adj|problematisch, kompliziert
+50|N Nom Sg m|Stück, Bereich
+
+## 36
+1|Prp +Dat|Relativsatz: „___ der“ = wo
+2|Adj Nom Pl|gesellschaftlich, mit anderen
+3|Adv|immer mehr
+4|Idf|„nicht ___“ = nicht länger
+5|bA Dat Sg f|@persönlichen Begegnung
+6|N Dat Sg f|Treffen
+7|Prp +Akk|Mittel: durch
+8|N Akk Sg n|weltweites Computernetz
+9|N Nom Sg n|Kommunikationsmittel
+10|bA Dat Sg m|@technischen Fortschritt
+11|N Dat Sg m|Weiterentwicklung
+12|Prp +Dat|zusätzlich zu
+13|N Dat Pl f|Chancen, Optionen
+14|N Gen Sg f|digitale Verbindung von Menschen
+15|Ptk|ebenfalls
+16|N Nom Sg f|Risiko
+17|bA Akk Sg f|@Fähigkeit
+18|Prp+bA Dat Sg f (zu + der)|„Fähigkeit ___ Interaktion“
+19|Prp +Dat|„___ Angesicht zu Angesicht“ = direkt
+20|Prp +Dat|„von Angesicht ___ Angesicht“
+21|Ptk|vor dem Infinitiv „verlieren“
+22|Kj|verbindet zwei Infinitive
+23|Adj Dat Sg n|wirklich, nicht virtuell
+24|Kj|verbindet zwei Satzteile
+25|N Dat Sg m|tägliches Leben
+26|N Dat Pl f|Linien, die nicht überschritten werden
+27|Inf|„an Gren… ___“ = an die Grenze kommen
+28|PPr Nom Sg n|„wenn ___ darum geht“
+29|V Präs 3Sg|„es ___ um etwas“
+30|Pos Dat Pl|@Mitmenschen
+31|N Akk Pl m|Einigungen, bei denen jeder nachgibt
+32|Inf|„Kompromisse ___“ = machen
+33|N Akk Pl m|Streitigkeiten
+34|Inf|„Konflikte ___“ = beenden
+35|V Präs 1Pl|lenken, fahren
+36|Prp +Dat|„___ dieser Entwicklung“ = durch
+37|N Dat Sg f|Veränderung, Wandel
+38|PPr Nom 1Pl|alle, auch der Schreiber
+39|bA Akk Sg f|@virtuelle Vernetzung
+40|N Akk Sg f|digitale Verbindung von Menschen
+41|Ptk|ebenfalls
+42|Sj|Grund
+43|Pos Akk Sg n (1Pl)|@Leben
+44|Adv|im Netz, digital
+45|Kj|verbindet zwei Verben
+46|Adv|„nur ___“ = bloß (zeitlich: weiterhin)
+47|N Akk Pl m|Kontakte, gemeinsame Punkte
+48|bA Dat Sg n|@Leben
+49|Prp +Dat|wo? davor
+50|N Dat Sg f|Eingang zum Haus

@@ -22,7 +22,7 @@
 21|bA Gen Pl|@Straßen- oder Hausschuhe
 22|Kj|Alternative: A ___ B
 23|VPt|trennbarer Verbteil: „legen … ___“ = bestimmen
-24|V Präs 3Sg|„es ___ als höflich“ = man sieht es als höflich an
+24|V Präs 3Sg|„es ___ als …“ = man betrachtet es so
 25|Vgl|„gelten ___ …“
 26|Adj|freundlich, mit guten Manieren
 27|Prp +Dat|zeitlich: früher als
@@ -46,7 +46,7 @@
 45|N Dat Pl f|Gewohnheiten, Bräuche
 46|N Dat Pl f|trägt man unter den Schuhen
 47|Kj|Alternative: A ___ B
-48|N Akk Pl m|bequeme Schuhe für zu Hause
+48|N Akk Pl m|bequeme Hausschuhe
 49|N Akk Pl f|trägt man unter den Schuhen
 50|N Akk Pl m|Besucher
 
@@ -112,7 +112,7 @@
 7|Idf Nom Pl|nicht viele
 8|HV Präs 3Sg|Perfekt: ___ … mitgestaltet
 9|bA Akk Sg f|@Literaturgeschichte
-10|N Akk Sg f|Entwicklung der Literatur über die Zeit
+10|N Akk Sg f|Entwicklung der Dichtung über die Zeit
 11|N Gen Sg f|die heutige Zeit
 12|P2 (trennbares Verb)|mitgeformt, beeinflusst
 13|Pos Akk Sg n|@Werk
@@ -155,7 +155,7 @@
 50|N Akk Sg f|Engagement, Tätigkeit
 
 ## 4
-1|N Nom Pl f|Reptilien ohne Beine
+1|N Nom Pl f|Kriechtiere ohne Beine
 2|PPr Nom Sg n|„___ gibt“
 3|Prp +Dat|wo?
 4|Adv|jedoch, aber

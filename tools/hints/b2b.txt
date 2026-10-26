@@ -119,7 +119,7 @@
 14|Kj|verbindet zwei Nomen
 15|Sj|Grund: weil
 16|Adj Nom Sg m|wo viel wächst, ertragreich
-17|Prp +Akk|Ursache: wodurch?
+17|Prp +Akk|Ursache: mit Hilfe von
 18|Adj Dat Pl|ohne Berge, eben
 19|Adj Dat Pl (Partizip II)|ohne Bäume, abgeholzt
 20|P2 (trennbares Verb)|Passiv: weggenommen, entfernt
@@ -146,7 +146,7 @@
 41|uA Gen Sg m|@Waldbestandes
 42|N Gen Sg m|alle Bäume eines Gebiets
 43|Pab|leitet einen Relativsatz ein: durch das
-44|N Nom Sg m|Erde unter unseren Füßen
+44|N Nom Sg m|Grund unter unseren Füßen
 45|N Akk Sg f|Können, Möglichkeit
 46|Adv|frisch, zum ersten Mal
 47|N Dat Pl f|Bäume, Blumen, Gras
@@ -169,7 +169,7 @@
 12|EN|Name des Heims (heilige Katharina)
 13|V Präs 1Sg|bin beschäftigt
 14|Prp +Dat|zeitlich: von damals bis jetzt
-15|N Dat Sg m|Ende einer Ausbildung mit Prüfung
+15|N Dat Sg m|Ende einer Lehre mit Prüfung
 16|N Gen Sg f|Lehre für einen Beruf
 17|N Dat Sg m|Pfleger für alte Menschen
 18|Num|Zahl nach drei
@@ -189,7 +189,7 @@
 32|HV Prät 3Sg|Passiv Vergangenheit
 33|V Präs 3Pl (Höflichkeitsform)|sehen, bekommen
 34|Pos Akk Sg m|@Lebenslauf
-35|N Akk Sg m|Übersicht über Ausbildung und Arbeit
+35|N Akk Sg m|Übersicht über Schule, Lehre und Jobs
 36|Pos Akk Sg n|@Abschlusszeugnis
 37|bA Gen Sg f|@Altenpflegeschule
 38|Kj|verbindet zwei Dokumente

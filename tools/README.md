@@ -17,6 +17,7 @@ icon.png, apple-touch-icon.png  home-screen icons
 manifest.webmanifest            "add to home screen" settings
 tools/
   sources/band1-kapitel6.txt    Mut zur Lücke 1, texts 71–118: exercise (E:) and solution (S:) transcriptions
+  sources/band2-texte21-36.txt  Mut zur Lücke 2, texts 21–29 and 33–36 (texts 1–20 exist only inside index.html)
   hints/b1*.txt, b2*.txt        hint sources for every gap (Band 1 and Band 2)
   scripts/align_transcription.py  E:/S: transcription -> gap markup, reports every mismatch
   scripts/extract_gaps.js       index.html -> tools/build/gaps.json (all gap words with context)
@@ -28,8 +29,8 @@ tools/
 
 ## How the texts are stored in index.html
 
-- `TEXTS` = Mut zur Lücke 2, Kapitel 1, texts 1–20 (50 gaps each). Their ids stay `"1"`…`"20"`
-  so saved results remain attached.
+- `TEXTS` = Mut zur Lücke 2, texts 1–29 and 33–36 (50 gaps each), ids `"1"`…`"36"`. Ids never change,
+  so saved results remain attached. Texts 30–32 are still missing (solution page 68 was not in the scan).
 - `BAND1` = Mut zur Lücke 1, Kapitel 6, texts 71–118 (about 25 gaps each), ids `b1-71` … `b1-118`.
 - `BOOKS` = tab names, intro text and exam description per book.
 - `SETS` = Band 1 exams, built automatically from 4 consecutive texts, 25 minutes (as the book prescribes).
@@ -45,7 +46,8 @@ tools/
    E: Text with gaps written as Schla_ gibt e_ viele …
    S: The full solution text, word for word …
    ```
-2. **Align**: `python3 tools/scripts/align_transcription.py tools/sources/<name>.txt b1-`
+2. **Align**: `python3 tools/scripts/align_transcription.py tools/sources/<name>.txt <id prefix>`
+   (prefix `b1-` for Band 1, `""` for Band 2)
    It must report `PROBLEMS: 0`. Every problem is either a transcription slip or a real difference between
    exercise and solution page – check the scan before fixing. Unusual gap counts per text are normal
    if the book prints them that way (Band 1: texts 85, 90, 103 have 24 gaps, 99 has 26).
@@ -81,10 +83,14 @@ One block per text, one line per gap: `number|grammar code|meaning`
   Features: `Nom Akk Dat Gen`, `Sg Pl`, `m f n`, `Präs Prät Perf KI KII`, `1Sg … 3Pl`, `Komp Sup`,
   `+Akk +Dat +Gen` (case after a preposition). Free text in brackets at the end is kept as is.
 - **Meaning** = short German clue that must not contain the answer word. `@Wort` expands to
-  „gehört zu „Wort““ – required for articles, possessives, demonstratives and `kein`; the checker verifies
+  „Bezugswort: „Wort““ – required for articles, possessives, demonstratives and `kein`; the checker verifies
   that the noun really follows the gap.
+- Automatic masking: in `@` references, in quoted snippets („…“) and in unquoted patterns with `___`,
+  a word that is itself a nearby gap is shown the way the learner sees it (`Natur` → `Na…`), so a hint never
+  gives the next answer away.
 - The checker rejects: missing or extra gaps, hints containing the answer, articles without `@noun`,
-  `@noun` not found after the gap.
+  `@noun` not found after the gap. It also lists WARNINGS: a meaning that names another gap's answer
+  which is not printed anywhere in the text. Rephrase those unless the word is a common function word.
 
 ## Rules the game follows
 

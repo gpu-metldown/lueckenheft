@@ -7,7 +7,7 @@
 6|N Gen Sg f|Deutsch, Englisch, Arabisch …
 7|Idf Nom Sg f|„keine ___ …“ = keine weitere
 8|Prp +Dat|Kombination ___ etwas
-9|V Präs 3Sg|„___ sich verwenden“ = kann man verwenden
+9|V Präs 3Sg|„___ sich verwenden“ = kann man benutzen
 10|Adv|„___ unterschiedlich wie“
 11|Inf|benutzen
 12|bA Nom Sg m|@Konjunktiv II
@@ -60,7 +60,7 @@
 5|Adj Akk Sg m|des Menschen
 6|Adj|zum Leben notwendig
 7|Adv|jeden Tag
-8|N Akk Sg f|Wasser, Getränke
+8|N Akk Sg f|alles zum Trinken
 9|Inf|bekommen
 10|bA Dat Sg m|@Körper
 11|NegP|verneint ein Verb oder Adjektiv
@@ -113,7 +113,7 @@
 4|HV Prät 3Pl|Zustandspassiv: beschäftigt ___
 5|PPr Nom 3Pl|die Menschen
 6|N Dat Sg m|Ende
-7|N Gen Sg f|normale Arbeitsjahre bis zur Rente
+7|N Gen Sg f|normale Lebensarbeitszeit
 8|Adv|im Moment
 9|Prp +Dat|„liegt ___ 67 Jahren“
 10|V Präs 3Sg|„___ bei …“ = beträgt
@@ -134,7 +134,7 @@
 25|N Akk Sg m|Junge zahlen für Alte: ___
 
 ## b1-116
-1|EN Dat (Land)|Land in Mitteleuropa
+1|EN Dat (Land)|Staat in Mitteleuropa, Hauptstadt Berlin
 2|Vgl|„___ in jedem anderen Land“ = genauso
 3|Idf Dat Sg n|@anderen Land
 4|N Dat Sg n|Staat
@@ -171,7 +171,7 @@
 8|bA Akk Sg f|@Menge
 9|Prp +Dat|Menge ___ etwas
 10|Prp +Dat|wo?
-11|N Dat Sg f|Lufthülle der Erde
+11|N Dat Sg f|Lufthülle unseres Planeten
 12|N Gen Sg f|unser Planet
 13|Inf|kleiner machen
 14|V Präs 3Sg|Form von „sein“
@@ -179,7 +179,7 @@
 16|bA Gen Pl|@weltweiten Klimaveränderungen
 17|N Gen Pl f|Wandel des Klimas
 18|Rel Gen Pl|„mit ___ Auswirkungen“ (Genitiv)
-19|PPr Nom 1Pl|alle Menschen, auch der Schreiber
+19|PPr Nom 1Pl|alle Leute, auch der Schreiber
 20|N Akk Sg m|24 Stunden
 21|MV Präs 1Pl|Pflicht, Notwendigkeit
 22|bA Nom Sg n|@Ausschalten
@@ -212,4 +212,4 @@
 22|N Dat Pl f|Wunden, Schäden
 23|N Gen Sg f|Rückgrat
 24|bA Nom Sg m|@ganze Körper
-25|N Nom Sg m|Kopf, Rumpf, Arme und Beine
+25|N Nom Sg m|Leib, Organismus

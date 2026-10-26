@@ -1,6 +1,6 @@
 ## 13
 1|N Nom Pl f|Quellen für Strom und Wärme (Öl, Gas …)
-2|Rel Dat Pl|„aus ___“ – bezieht sich auf die Energieressourcen
+2|Rel Dat Pl|„aus ___“ – bezieht sich auf die Energiequellen
 3|N Nom Sg f|alle Menschen zusammen
 4|Dem Dat Sg f|@Erde
 5|Inf|nehmen, herausholen
@@ -23,7 +23,7 @@
 22|P2|Passiv: hervorgerufen
 23|Adv|ständig, ohne Pause
 24|Dem Nom Sg f|@Tatsache
-25|V Präs 3Sg|macht, verursacht
+25|V Präs 3Sg|macht, bringt
 26|N Dat Pl m|Leute, die eine Wohnung mieten
 27|EN Dat (Land)|Land in Mitteleuropa
 28|Kj|Grund (Hauptsatz folgt)
@@ -31,18 +31,18 @@
 30|Frg|„___ viel“ = welche Menge
 31|N Akk Sg n|Euro, Münzen und Scheine
 32|Prp +Dat|„___ der Abrechnung“ = im Rahmen von
-33|N Dat Sg f|jährliche Rechnung für Wasser, Heizung …
-34|Inf|Geld geben für etwas
+33|N Dat Sg f|jährliche Rechnung für Wasser, Wärme …
+34|Inf|zahlen
 35|bA Nom Sg f|@Nebenkostenabrechnung
 36|Prp +Dat|Relativsatz: „___ der“ = durch die
 37|bA Nom Sg m|@Mehrverbrauch
 38|Prp +Dat|Mehrverbrauch ___ etwas
-39|N Dat Sg n|Energie für Herd und Heizung
+39|N Dat Sg n|Energie für Herd und Wärme
 40|N Dat Sg f|macht die Wohnung warm
 41|HV Präs 3Sg|Passiv: berechnet ___
 42|NegP|verneint ein Verb oder Adjektiv
 43|bA Akk Sg f|@Miete
-44|N Akk Sg f|Geld, das man jeden Monat für die Wohnung zahlt
+44|N Akk Sg f|monatliche Zahlung für die Wohnung
 45|HV Präs 3Sg|Zustandspassiv: abgedeckt ___
 46|Adv|ein Mal
 47|N Akk Sg n|zwölf Monate
@@ -53,7 +53,7 @@
 ## 14
 1|bA Nom Sg f|@Instandsetzung
 2|bA Gen Sg f|@Infrastruktur
-3|N Gen Sg f|Straßen, Brücken, Leitungen eines Landes
+3|N Gen Sg f|Wege, Brücken, Leitungen eines Landes
 4|Idf Nom Sg f|zählt eins aus einer Gruppe: „___ der wichtigsten Aufgaben“
 5|Adj Sup Gen Pl|Superlativ von „wichtig“
 6|bA Gen Pl|@Länder
@@ -69,7 +69,7 @@
 16|Adv|perfekt, ohne Fehler
 17|N Akk Pl f|Wege für Autos
 18|HV Präs 3Sg|„angewiesen ___“
-19|N Nom Pl f|wichtige Straßen des Bundes
+19|N Nom Pl f|wichtige Fernwege des Bundes
 20|Kj|verbindet zwei Nomen
 21|Adv|immer
 22|Kj|verbindet zwei Adjektive
@@ -86,7 +86,7 @@
 33|Prp +Dat|„führen ___ etwas“
 34|Inf|„zu etwas ___“ = verursachen
 35|Adj Nom Sg f|genau, gewissenhaft
-36|Adj Gen Pl|die Infrastruktur betreffend
+36|Adj Gen Pl|Wege, Brücken und Netze betreffend
 37|V Präs 3Sg|Form von „sein“
 38|Adv|völlig, ganz
 39|Kj|aber
@@ -97,7 +97,7 @@
 44|P2 (trennbares Verb)|Passiv: geplant, terminiert
 45|MV Präs 3Sg|Möglichkeit
 46|Prp +Akk|___ wen/was?
-47|N Akk Sg m|Autos, LKW und Busse auf Straßen
+47|N Akk Sg m|Autos, LKW und Busse unterwegs
 48|N Akk Pl f|Arbeiten auf Baustellen
 49|Adv|„immer ___“ = oft, mehrmals
 50|N Dat Pl f|Störungen, Hindernisse
@@ -106,7 +106,7 @@
 1|Prp +Dat|zeitlich: ab, von damals bis heute
 2|Adj Dat Sg n (Ordnungszahl)|19.
 3|Adj Nom Sg f (Partizip I)|beginnend
-4|V Prät 3Sg|„___ zu“ = hatte als Folge
+4|V Prät 3Sg|„___ zu“ = bewirkte
 5|EN Dat|Mitte des Kontinents
 6|Prp +Dat|„führen ___ etwas“
 7|Rel Nom Pl|bezieht sich auf „Tätigkeitsprofilen“
@@ -159,10 +159,10 @@
 2|N Dat Sg n|Essen von Tieren, z. B. Rind
 3|Idf Dat Pl|weitere, sonstige
 4|N Dat Pl n|Waren, Erzeugnisse
-5|Prp +Dat|Passiv: Wer stellt infrage?
+5|Prp +Dat|Passiv: durch wen?
 6|Idf Komp|Komparativ von „viel“
 7|Prp +Dat|wo?
-8|Adv|„___ stellen“ = bezweifeln
+8|Adv|„___ gestellt“ = bezweifelt
 9|Adj Nom Pl|sehr brutal
 10|Prp +Dat|wo? im Bereich
 11|N Dat Sg f|Haltung von Tieren für Lebensmittel
@@ -191,7 +191,7 @@
 34|N Dat Sg f|was man isst
 35|N Nom Sg m|Ansehen, Image
 36|NegP|verneint ein Verb oder Adjektiv
-37|Adj Akk Pl|zum Leben notwendig
+37|Adj Akk Pl|unbedingt nötig, um zu überleben
 38|Kj|verbindet zwei Nomen
 39|Ptk|vor dem Infinitiv „liefern“
 40|V Präs 3Pl|„eine andere Sprache ___“ = zeigen etwas anderes

@@ -23,7 +23,7 @@
 22|N Akk Sg m|Stabilität, Festigkeit
 23|Inf|nicht mehr haben
 24|Adv|vielleicht, möglicherweise
-25|Zu (trennbares Verb)|auf den Boden stürzen
+25|Zu (trennbares Verb)|stürzen, umfallen
 26|Frg Nom|Frage nach einer Sache
 27|Ptk|verstärkt eine Frage
 28|uA Nom Sg m|@Rutsch
@@ -42,7 +42,7 @@
 41|N Akk Sg f|Reise mit einem Fahrzeug
 42|HV Prät 3Sg|Passiv Vergangenheit
 43|uA Nom Sg f|@Reise
-44|N Nom Sg f|Fahrt an einen anderen Ort
+44|N Nom Sg f|Ausflug an einen anderen Ort
 45|Adj Akk Sg n|Gegenteil von „alt“
 46|Adv|das heißt
 47|Adj Nom Sg m|Gegenteil von „schlecht“
@@ -120,14 +120,14 @@
 15|bA Gen Sg f|@Tatsache
 16|Sj|leitet einen Inhaltssatz ein
 17|N Nom Sg m|der größere Teil
-18|N Gen Sg f|alle Menschen der Erde
+18|N Gen Sg f|alle Leute auf der Erde
 19|N Akk Sg n|zu viel von etwas
 20|NegP|verneint ein Verb oder Adjektiv
 21|V Präs 3Sg|wirkt, sieht aus
 22|Adv|anfangs, erst einmal
 23|Sj|leitet einen Inhaltssatz ein
 24|Prp +Dat|wo?
-25|N Dat Pl f|Gemeinschaften von Menschen
+25|N Dat Pl f|Gemeinschaften von Leuten
 26|Adj Gen Sg f (Ordnungszahl)|„die ___ Welt“ = reiche Länder
 27|Adv|„___ mehr“ = zunehmend
 28|N Nom Pl m|Personen
@@ -164,7 +164,7 @@
 7|bA Gen Sg n|@Kreuzes
 8|N Gen Sg n|Kreuzung zweier Autobahnen
 9|Rel Dat Sg n|„an ___“ = wo
-10|N Nom Pl m|LKW mit gefährlicher Ladung
+10|N Nom Pl m|LKW mit gefährlicher Fracht
 11|Adv|einfach, schnell
 12|N Dat Sg f|was ein LKW transportiert
 13|HV Prät 3Pl|Vergangenheit von „sein“
