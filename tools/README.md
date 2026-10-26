@@ -17,7 +17,7 @@ icon.png, apple-touch-icon.png  home-screen icons
 manifest.webmanifest            "add to home screen" settings
 tools/
   sources/band1-kapitel6.txt    Mut zur Lücke 1, texts 71–118: exercise (E:) and solution (S:) transcriptions
-  sources/band2-texte21-36.txt  Mut zur Lücke 2, texts 21–29 and 33–36 (texts 1–20 exist only inside index.html)
+  sources/band2-texte21-36.txt  Mut zur Lücke 2, texts 21–36 (texts 1–20 exist only inside index.html)
   hints/b1*.txt, b2*.txt        hint sources for every gap (Band 1 and Band 2)
   scripts/align_transcription.py  E:/S: transcription -> gap markup, reports every mismatch
   scripts/extract_gaps.js       index.html -> tools/build/gaps.json (all gap words with context)
@@ -29,8 +29,8 @@ tools/
 
 ## How the texts are stored in index.html
 
-- `TEXTS` = Mut zur Lücke 2, texts 1–29 and 33–36 (50 gaps each), ids `"1"`…`"36"`. Ids never change,
-  so saved results remain attached. Texts 30–32 are still missing (solution page 68 was not in the scan).
+- `TEXTS` = Mut zur Lücke 2, texts 1–36 (50 gaps each; text 31 has 49, as printed), ids `"1"`…`"36"`.
+  Ids never change, so saved results remain attached.
 - `BAND1` = Mut zur Lücke 1, Kapitel 6, texts 71–118 (about 25 gaps each), ids `b1-71` … `b1-118`.
 - `BOOKS` = tab names, intro text and exam description per book.
 - `SETS` = Band 1 exams, built automatically from 4 consecutive texts, 25 minutes (as the book prescribes).

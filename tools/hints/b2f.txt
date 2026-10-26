@@ -673,3 +673,158 @@
 48|bA Dat Sg n|@Leben
 49|Prp +Dat|wo? davor
 50|N Dat Sg f|Eingang zum Haus
+
+## 30
+1|N Akk Sg m|der größere Teil
+2|Prp+bA Dat Sg m (an + dem)|wo? direkt beim Fluss
+3|Ptk|„___ findend“ = die man finden kann
+4|N Gen Pl f|alte Festungen mit Türmen
+5|N Gen Pl f|Reste zerstörter Festungen
+6|bA Nom Sg f|@Marksburg
+7|Prp+bA Dat Sg n (in + dem)|wo?
+8|uA Nom Sg n|@Produkt
+9|Adj Gen Sg f|aus dem Mittelalter
+10|Kj|verbindet zwei Satzteile
+11|Adj Nom Sg f|nur diese eine, sonst keine
+12|Adj Nom Sg f (Partizip II)|kaputt gemacht
+13|Prp +Dat|wo?
+14|N Dat Sg f|Gebiet
+15|Adj Dat Pl|verschieden
+16|V Präs 3Sg|„___ Erwähnung“ = wird erwähnt
+17|Prp +Dat|zeitlich: ab damals bis heute
+18|N Dat Sg n|100 Jahre
+19|Adj Dat Pl|aus früheren Zeiten, alt
+20|N Akk Sg f|„___ finden“ = genannt werden
+21|V Präs 3Sg|Form von „sein“
+22|Zu (trennbares Verb)|vermuten
+23|PPr Nom 3Sg f|die Festung
+24|Adj Komp|Komparativ: eher, vorher
+25|HV Prät 3Sg|Passiv Vergangenheit
+26|EN Nom|Name der Festung
+27|uA Nom Sg n|@ausgesprochen beliebtes Ausflugsziel
+28|Adj Nom Sg n|viele mögen es
+29|bA Gen Sg n|@Mittelrheintals
+30|Kj|verbindet zwei Verben
+31|Pos Dat Pl|@Besuchern
+32|uA Akk Sg m|@tiefen Einblick
+33|N Akk Sg m|Blick hinein, Eindruck
+34|bA Akk Sg f|@mittelalterliche Geschichte
+35|N Akk Sg f|Vergangenheit, Historie
+36|N Nom Sg f|Festung mit Türmen
+37|Prp+bA Dat Sg m (in + dem)|wann? zur Zeit von
+38|N Dat Sg m|Krieg 1939–1945: Zweiter ___
+39|P2|Passiv: kaputt gemacht
+40|HV Präs 3Sg|Zustandspassiv: ___ … restauriert
+41|Kj|jedoch
+42|Kj|verbindet zwei Satzteile
+43|N Dat Sg m|großer Raum der Ritter
+44|N Dat Sg f|Raum zum Kochen in der Festung
+45|Adj Dat Pl|anderen, zusätzlichen
+46|N Dat Pl m|Teile, Zonen
+47|uA Nom Sg f|@gern besuchte Attraktion
+48|Adj Nom Sg f (Partizip II)|„gern ___“ = beliebt
+49|Prp +Akk|Attraktion ___ wen?
+50|Prp +Dat|Herkunft: woher?
+
+## 31
+1|N Nom Pl f|Gemeinschaften von Leuten
+2|N Gen Pl n|reiche Staaten mit viel Industrie
+3|Prp +Akk|Ursache: wodurch?
+4|N Akk Sg f|Aufbau, Organisation
+5|Adv|hauptsächlich
+6|Adj Akk Sg f (Partizip II)|ausgeführt, praktiziert
+7|Kj|verbindet Nomen in einer Aufzählung
+8|Adv|ohne Ende, ohne Limit
+9|N Akk Sg n|zu großes Angebot
+10|N Dat Pl f|Gerichte, Essen
+11|N Dat Pl n|Sachen zum Trinken
+12|Idf Gen Sg f|irgendeiner, aller
+13|Adv|mittlerweile
+14|Adj (Fachwort)|macht dick (Fachwort)
+15|Vgl|„also ___ …“ = das heißt
+16|Kj|verbindet zwei Nomen
+17|Adj (Partizip I)|unterstützend, verstärkend
+18|Adj (Partizip I)|erzeugend, hervorbringend
+19|HV Inf|Passiv: bezeichnet ___ können
+20|N Nom Sg f|das Essen und Trinken
+21|NegP|„___ mehr nur …“
+22|Ptk|„nicht mehr ___ …“ = bloß
+23|Kj|„nicht …, ___ auch“
+24|Abk|„beziehungsweise“ (abgekürzt)
+25|N Nom Sg f|„___ sein“ = wegen des Vergnügens
+26|Pos Gen Sg f (1Pl)|@sitzenden Tätigkeit
+27|N Gen Sg f|Arbeit, Beschäftigung
+28|PPr Nom 1Pl|alle, auch der Schreiber
+29|Ptk|ebenfalls
+30|bA Akk Sg f|@Freizeit
+31|Adv (Partizip I)|auf einem Stuhl
+32|V Präs 3Pl|kommen zustande
+33|Rel Gen Pl|„___ Ursachen“ = ihre Ursachen
+34|Adv|vor allem
+35|Pos Dat Sg f (1Pl)|@Überflussgesellschaft
+36|P2|„___ liegen“ = ihren Grund haben
+37|Adj|bedeutend
+38|Adv|deshalb
+39|N Akk Sg m|Zyklus
+40|Inf (untrennbar)|beenden, unterbrechen
+41|Adv|zum Beispiel
+42|Prp +Akk|„verzichten ___ etwas“
+43|N Akk Sg n|zu großes Angebot
+44|Pos Dat Pl (1Pl)|@Supermärkten
+45|Ptk|vor dem Infinitiv „verzichten“
+46|Sj (Infinitivsatz mit „zu“)|Zweck: damit
+47|bA Dat Sg m|@Bedarf
+48|Adv|so gut es geht
+49|Ptk|vor dem Infinitiv „ernähren“
+
+## 32
+1|Adj Nom Sg f (Partizip II)|benutzt
+2|HV Prät 3Sg|Passiv Vergangenheit
+3|Adj Dat Sg n|Amt für Statistik: ___ Bundesamt
+4|P2|Passiv: publiziert
+5|V Präs 3Sg|stellt dar
+6|Num|Zahl zwischen zwei und vier
+7|bA Akk Pl|@verschiedenen Nationalitäten
+8|N Akk Pl f|Staatsangehörigkeiten
+9|Prp +Dat|wo?
+10|Adj Gen Pl (Partizip I)|wohnend
+11|Prp +Dat|Menschen ___ etwas (die … haben)
+12|N Dat Pl m|Reisedokumente
+13|N Dat Sg m|Entwicklung über die Zeit
+14|N Gen Sg n|100 Jahre
+15|bA Dat Pl|@Daten
+16|V Präs 3Sg (trennbar: ___ … hervor)|„___ … hervor“ = wird deutlich
+17|Sj|leitet einen Inhaltssatz ein
+18|bA Nom Sg f|@Gewichtung
+19|Adj Gen Pl|verschieden
+20|Prp+bA Dat Sg m (in + dem)|„___ Verlauf“ = während
+21|bA Gen Pl|@Jahre
+22|Adv|zum Teil
+23|P2|„hat sich ___“ = hat sich verlagert
+24|Adv|auf diese Weise, zum Beispiel
+25|Rfl Akk 3Sg|„hat ___ … vollkommen verä…“
+26|Prp +Dat|zeitlich: im Anschluss an
+27|Adj Dat Sg m (Ordnungszahl)|Nummer zwei
+28|bA Nom Sg f|@Zusammensetzung
+29|bA Gen Pl|@Nationalitäten
+30|Rel Nom Pl|bezieht sich auf „Nationalitäten“
+31|P2|„haben sich ___“ = haben beschlossen
+32|Prp +Dat|wo?
+33|Ptk|vor dem Infinitiv „leben“
+34|Kj|verbindet zwei Infinitive
+35|Inf|einen Job haben
+36|P2|anders geworden
+37|N Nom Sg m|Prozentsatz, Quote
+38|Prp +Dat|wo?
+39|Adj Gen Pl (Partizip I)|wohnend
+40|V Prät 3Sg|sank
+41|bA Dat Sg f|@Zeit
+42|bA Gen Sg m|@Kalten Krieges
+43|N Gen Sg m|„Kalter ___“ = Ost-West-Konflikt
+44|Prp +Akk|„sinken ___ null“
+45|uA Nom Sg f|@Entwicklung
+46|Rel Nom Sg f|bezieht sich auf „Entwicklung“
+47|Prp+bA Dat Sg n (zu + dem)|„___ Ende“
+48|bA Gen Sg n|@zwanzigsten Jahrhunderts
+49|N Gen Sg n|100 Jahre
+50|Zu (trennbares Verb)|sich in die Gegenrichtung entwickeln
