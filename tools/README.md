@@ -100,3 +100,13 @@ One block per text, one line per gap: `number|grammar code|meaning`
   (that gap counts ½ point). Exams have no Tipp.
 - Progress: saved in the browser; on the Claude artifact also in the viewer's Claude account;
   backup codes (`LH1-…`) move progress between devices.
+
+## Mistake log and export
+
+- Every submitted attempt logs each wrong, empty or letter-hint gap in `store.mistakes`
+  (`{at, t: text id, i: gap index, typed, s: w|e|h, m: u|p|r, hl}`) and one line per attempt in
+  `store.attempts`. Both are kept through „Alles zurücksetzen“, merged as a log, and included in backup codes.
+- „Fehler exportieren“ on the home screen downloads `lueckenheft-fehler-YYYY-MM-DD.json`: each mistake with
+  book, text, gap, correct word, accepted answers, what was typed, the full sentence (gap marked `[[pre___]]`),
+  the grammar and meaning hints, date and mode (Übung / Prüfung / Verbesserung). This file is the input for the
+  review PDF (cheat sheet). In exams, empty gaps may just be time running out.
